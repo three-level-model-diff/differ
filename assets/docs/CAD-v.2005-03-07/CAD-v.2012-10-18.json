@@ -1,0 +1,3331 @@
+[{
+    "id": "SEMANTIC-0001",
+    "operation": "MEANING",
+    "new": "del documento informatico",
+    "old": "informatica",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 4978,
+            "content": "del documento "
+        }, {
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 4988,
+            "endPosition": 4989,
+            "content": "a"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 4989,
+            "content": "o"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0002",
+    "operation": "MEANING",
+    "new": "del documento informatico",
+    "old": "dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne distinguono l’identità nei sistemi informativi, effettuata",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 5006,
+            "endPosition": 5148,
+            "content": "dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne distinguono l’identità nei sistemi informativi, effettuata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 5148,
+            "content": "del documento informatico"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0003",
+    "operation": "MEANING",
+    "new": "l’associazione di dati informatici relativi all’autore o alle circostanze, anche temporali, della redazione",
+    "old": "opportune tecnologie al fine di garantire la sicurezza dell’accesso",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 5160,
+            "endPosition": 5227,
+            "content": "opportune tecnologie al fine di garantire la sicurezza dell’accesso"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 5227,
+            "content": "l’associazione di dati informatici relativi all’autore o alle circostanze, anche temporali, della redazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0004",
+    "operation": "MEANING",
+    "new": "elementi per l’identificazione fisica",
+    "old": "fotografia",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 5330,
+            "endPosition": 5340,
+            "content": "fotografia"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 5340,
+            "content": "elementi per l’identificazione fisica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0005",
+    "operation": "MEANING",
+    "new": " all’identità del titolare",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 5812,
+            "content": " all’identità del titolare"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0006",
+    "operation": "MEANING",
+    "new": "",
+    "old": " ai titolari e confermano l’identità informatica dei titolari stessi",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "startPosition": 5867,
+            "endPosition": 5935,
+            "content": " ai titolari e confermano l’identità informatica dei titolari stessi"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0007",
+    "operation": "MEANING",
+    "new": "<p>i-bis) copia informatica di documento analogico: il documento informatico avente contenuto identico a quello del documento analogico da cui è tratto;</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 6846,
+            "content": "<p>i-bis) copia informatica di documento analogico: il documento informatico avente contenuto identico a quello del documento analogico da cui è tratto;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0008",
+    "operation": "MEANING",
+    "new": "<p>i-ter) copia per immagine su supporto informatico di documento analogico: il documento informatico avente contenuto e forma identici a quelli del documento analogico da cui è tratto;</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 6846,
+            "content": "<p>i-ter) copia per immagine su supporto informatico di documento analogico: il documento informatico avente contenuto e forma identici a quelli del documento analogico da cui è tratto;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0009",
+    "operation": "MEANING",
+    "new": "<p>i-quater) copia informatica di documento informatico: il documento informatico avente contenuto identico a quello del documento da cui è tratto su supporto informatico con diversa sequenza di valori binari;</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 6846,
+            "content": "<p>i-quater) copia informatica di documento informatico: il documento informatico avente contenuto identico a quello del documento da cui è tratto su supporto informatico con diversa sequenza di valori binari;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0010",
+    "operation": "MEANING",
+    "new": "<p>i-quinquies) duplicato informatico: il documento informatico ottenuto mediante la memorizzazione, sullo stesso dispositivo o su dispositivi diversi, della medesima sequenza di valori binari del documento originario;</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 6846,
+            "content": "<p>i-quinquies) duplicato informatico: il documento informatico ottenuto mediante la memorizzazione, sullo stesso dispositivo o su dispositivi diversi, della medesima sequenza di valori binari del documento originario;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0011",
+    "operation": "MEANING",
+    "new": "<p>n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 7255,
+            "content": "<p>n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0012",
+    "operation": "MEANING",
+    "new": "<p>p-bis) documento analogico: la rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti;</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 7546,
+            "content": "<p>p-bis) documento analogico: la rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0013",
+    "operation": "MEANING",
+    "new": "<p>q-bis) firma elettronica avanzata: insieme di dati in forma elettronica allegati oppure connessi a un documento informatico che consentono l’identificazione del firmatario del documento e garantiscono la connessione univoca al firmatario, creati con mezzi sui quali il firmatario può conservare un controllo esclusivo, collegati ai dati ai quali detta firma si riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati;</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 7777,
+            "content": "<p>q-bis) firma elettronica avanzata: insieme di dati in forma elettronica allegati oppure connessi a un documento informatico che consentono l’identificazione del firmatario del documento e garantiscono la connessione univoca al firmatario, creati con mezzi sui quali il firmatario può conservare un controllo esclusivo, collegati ai dati ai quali detta firma si riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0014",
+    "operation": "MEANING",
+    "new": "un particolare tipo di firma elettronica avanzata",
+    "old": "la firma elettronica ottenuta attraverso una procedura informatica che garantisce la connessione univoca al firmatario e la sua univoca autenticazione informatica, creata con mezzi sui quali il firmatario può conservare un controllo esclusivo e collegata ai dati ai quali si riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati,",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7846,
+            "endPosition": 8221,
+            "content": "la firma elettronica ottenuta attraverso una procedura informatica che garantisce la connessione univoca al firmatario e la sua univoca autenticazione informatica, creata con mezzi sui quali il firmatario può conservare un controllo esclusivo e collegata ai dati ai quali si riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati,"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 8221,
+            "content": "un particolare tipo di firma elettronica avanzata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0015",
+    "operation": "MEANING",
+    "new": "",
+    "old": ", quale l’apparato strumentale usato per la creazione della firma elettronica",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 8339,
+            "endPosition": 8416,
+            "content": ", quale l’apparato strumentale usato per la creazione della firma elettronica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0016",
+    "operation": "MEANING",
+    "new": "avanzata",
+    "old": "qualificata",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 8512,
+            "endPosition": 8523,
+            "content": "qualificata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 8523,
+            "content": "avanzata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0017",
+    "operation": "MEANING",
+    "new": " su un certificato qualificato e",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 8530,
+            "content": " su un certificato qualificato e"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0018",
+    "operation": "MEANING",
+    "new": "<p>u-bis) gestore di posta elettronica certificata: il soggetto che presta servizi di trasmissione dei documenti informatici mediante la posta elettronica certificata;</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 9472,
+            "content": "<p>u-bis) gestore di posta elettronica certificata: il soggetto che presta servizi di trasmissione dei documenti informatici mediante la posta elettronica certificata;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0019",
+    "operation": "MEANING",
+    "new": "<p>u-ter) identificazione informatica: la validazione dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne consentono l’individuazione nei sistemi informativi, effettuata attraverso opportune tecnologie anche al fine di garantire la sicurezza dell’accesso;</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 9472,
+            "content": "<p>u-ter) identificazione informatica: la validazione dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne consentono l’individuazione nei sistemi informativi, effettuata attraverso opportune tecnologie anche al fine di garantire la sicurezza dell’accesso;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0020",
+    "operation": "MEANING",
+    "new": "<p>v-bis) posta elettronica certificata: sistema di comunicazione in grado di attestare l’invio e l’avvenuta consegna di un messaggio di posta elettronica e di fornire ricevute opponibili ai terzi;</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 9707,
+            "content": "<p>v-bis) posta elettronica certificata: sistema di comunicazione in grado di attestare l’invio e l’avvenuta consegna di un messaggio di posta elettronica e di fornire ricevute opponibili ai terzi;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0021",
+    "operation": "MEANING",
+    "new": "",
+    "old": " salvo che sia diversamente stabilito, nel rispetto della loro autonomia organizzativa e comunque",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 11372,
+            "endPosition": 11469,
+            "content": " salvo che sia diversamente stabilito, nel rispetto della loro autonomia organizzativa e comunque"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0022",
+    "operation": "MEANING",
+    "new": ", nonché alle società, interamente partecipate da enti pubblici o con prevalente capitale pubblico inserite nel conto economico consolidato della pubblica amministrazione, come individuate dall’Istituto nazionale di statistica (ISTAT) ai sensi dell’articolo 1, comma 5, della legge 30 dicembre 2004, n. 311",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 11551,
+            "content": ", nonché alle società, interamente partecipate da enti pubblici o con prevalente capitale pubblico inserite nel conto economico consolidato della pubblica amministrazione, come individuate dall’Istituto nazionale di statistica (ISTAT) ai sensi dell’articolo 1, comma 5, della legge 30 dicembre 2004, n. 311"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0023",
+    "operation": "MEANING",
+    "new": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 11552,
+            "content": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0024",
+    "operation": "MEANING",
+    "new": ", agli articoli 40, 43 e 44 del",
+    "old": " concernenti i documenti informatici, le firme elettroniche, i pagamenti informatici, i libri e le scritture, le disposizioni di cui al",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 11615,
+            "endPosition": 11750,
+            "content": " concernenti i documenti informatici, le firme elettroniche, i pagamenti informatici, i libri e le scritture, le disposizioni di cui al"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 11750,
+            "content": ", agli articoli 40, 43 e 44 del"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0025",
+    "operation": "MEANING",
+    "new": "",
+    "old": " relative alla formazione, gestione, alla conservazione,",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 11760,
+            "endPosition": 11816,
+            "content": " relative alla formazione, gestione, alla conservazione,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0026",
+    "operation": "MEANING",
+    "new": "",
+    "old": " le disposizioni di cui",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 11823,
+            "endPosition": 11846,
+            "content": " le disposizioni di cui"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0027",
+    "operation": "MEANING",
+    "new": ",",
+    "old": " relative alla trasmissione dei documenti informatici",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 11857,
+            "endPosition": 11910,
+            "content": " relative alla trasmissione dei documenti informatici"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 11910,
+            "content": ","
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0028",
+    "operation": "MEANING",
+    "new": " del codice",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 12480,
+            "content": " del codice"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0029",
+    "operation": "MEANING",
+    "new": " I cittadini e le imprese hanno, comunque, diritto ad ottenere che il trattamento dei dati effettuato mediante l’uso di tecnologie telematiche sia conformato al rispetto dei diritti e delle libertà fondamentali, nonché della dignità dell’interessato.",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 12582,
+            "content": " I cittadini e le imprese hanno, comunque, diritto ad ottenere che il trattamento dei dati effettuato mediante l’uso di tecnologie telematiche sia conformato al rispetto dei diritti e delle libertà fondamentali, nonché della dignità dell’interessato."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0030",
+    "operation": "MEANING",
+    "new": " Con decreti del Presidente del Consiglio dei Ministri, tenuto conto delle esigenze derivanti dalla natura delle proprie particolari funzioni, sono stabiliti le modalità, i limiti ed i tempi di applicazione delle disposizioni del presente Codice alla Presidenza del Consiglio dei Ministri, nonché all’Amministrazione economico-finanziaria.",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 12808,
+            "content": " Con decreti del Presidente del Consiglio dei Ministri, tenuto conto delle esigenze derivanti dalla natura delle proprie particolari funzioni, sono stabiliti le modalità, i limiti ed i tempi di applicazione delle disposizioni del presente Codice alla Presidenza del Consiglio dei Ministri, nonché all’Amministrazione economico-finanziaria."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0031",
+    "operation": "MEANING",
+    "new": ", con i soggetti di cui all’articolo 2, comma 2,",
+    "old": " centrali",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 13363,
+            "endPosition": 13372,
+            "content": " centrali"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13372,
+            "content": ", con i soggetti di cui all’articolo 2, comma 2,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0032",
+    "operation": "MEANING",
+    "new": "ai sensi",
+    "old": "statali nei limiti",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 13409,
+            "endPosition": 13427,
+            "content": "statali nei limiti"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13427,
+            "content": "ai sensi"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0033",
+    "operation": "MEANING",
+    "new": "dal",
+    "old": "nel",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 13447,
+            "endPosition": 13450,
+            "content": "nel"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13450,
+            "content": "dal"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0034",
+    "operation": "MEANING",
+    "new": "<p>1-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>1-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0035",
+    "operation": "MEANING",
+    "new": "<p>1-ter. La tutela giurisdizionale davanti al giudice amministrativo è disciplinata dal codice del processo amministrativo.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>1-ter. La tutela giurisdizionale davanti al giudice amministrativo è disciplinata dal codice del processo amministrativo.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0036",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-3-bis-domicilio-digitale-del-cittadino'><span id='art3bis'></span><h4>Art. 3-bis. Domicilio digitale del cittadino</h4>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<div class='section' id='art-3-bis-domicilio-digitale-del-cittadino'><span id='art3bis'></span><h4>Art. 3-bis. Domicilio digitale del cittadino</h4>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0037",
+    "operation": "MEANING",
+    "new": "<p>1. Al fine di facilitare la comunicazione tra pubbliche amministrazioni e cittadini, è facoltà di ogni cittadino indicare alla pubblica amministrazione, secondo le modalità stabilite al comma 3, un proprio indirizzo di posta elettronica certificata, rilasciato ai sensi dell’articolo 16-bis, comma 5, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2 quale suo domicilio digitale.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>1. Al fine di facilitare la comunicazione tra pubbliche amministrazioni e cittadini, è facoltà di ogni cittadino indicare alla pubblica amministrazione, secondo le modalità stabilite al comma 3, un proprio indirizzo di posta elettronica certificata, rilasciato ai sensi dell’articolo 16-bis, comma 5, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2 quale suo domicilio digitale.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0038",
+    "operation": "MEANING",
+    "new": "<p>2. L’indirizzo di cui al comma 1 è inserito nell’Anagrafe nazionale della popolazione residente-ANPR e reso disponibile a tutte le pubbliche amministrazioni e ai gestori o esercenti di pubblici servizi.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>2. L’indirizzo di cui al comma 1 è inserito nell’Anagrafe nazionale della popolazione residente-ANPR e reso disponibile a tutte le pubbliche amministrazioni e ai gestori o esercenti di pubblici servizi.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0039",
+    "operation": "MEANING",
+    "new": "<p>3. Con decreto del Ministro dell’interno, di concerto con il Ministro per la pubblica amministrazione e la semplificazione e il Ministro delegato per l’innovazione tecnologica, sentita l’Agenzia per l’Italia digitale, sono definite le modalità di comunicazione, variazione e cancellazione del proprio domicilio digitale da parte del cittadino, nonché le modalità di consultazione dell’ANPR da parte dei gestori o esercenti di pubblici servizi ai fini del reperimento del domicilio digitale dei propri utenti.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>3. Con decreto del Ministro dell’interno, di concerto con il Ministro per la pubblica amministrazione e la semplificazione e il Ministro delegato per l’innovazione tecnologica, sentita l’Agenzia per l’Italia digitale, sono definite le modalità di comunicazione, variazione e cancellazione del proprio domicilio digitale da parte del cittadino, nonché le modalità di consultazione dell’ANPR da parte dei gestori o esercenti di pubblici servizi ai fini del reperimento del domicilio digitale dei propri utenti.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0040",
+    "operation": "MEANING",
+    "new": "<p>4. A decorrere dal 1° gennaio 2013, salvo i casi in cui è prevista dalla normativa vigente una diversa modalità di comunicazione o di pubblicazione in via telematica, le amministrazioni pubbliche e i gestori o esercenti di pubblici servizi comunicano con il cittadino esclusivamente tramite il domicilio digitale dallo stesso dichiarato, anche ai sensi dell’articolo 21-bis della legge 7 agosto 1990, n. 241, senza oneri di spedizione a suo carico. Ogni altra forma di comunicazione non può produrre effetti pregiudizievoli per il destinatario.L’utilizzo di differenti modalità di comunicazione rientra tra i parametri di valutazione della performance dirigenziale ai sensi dell’articolo 11, comma 9, del decreto legislativo 27 ottobre 2009, n. 150.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>4. A decorrere dal 1° gennaio 2013, salvo i casi in cui è prevista dalla normativa vigente una diversa modalità di comunicazione o di pubblicazione in via telematica, le amministrazioni pubbliche e i gestori o esercenti di pubblici servizi comunicano con il cittadino esclusivamente tramite il domicilio digitale dallo stesso dichiarato, anche ai sensi dell’articolo 21-bis della legge 7 agosto 1990, n. 241, senza oneri di spedizione a suo carico. Ogni altra forma di comunicazione non può produrre effetti pregiudizievoli per il destinatario.L’utilizzo di differenti modalità di comunicazione rientra tra i parametri di valutazione della performance dirigenziale ai sensi dell’articolo 11, comma 9, del decreto legislativo 27 ottobre 2009, n. 150.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0041",
+    "operation": "MEANING",
+    "new": "<p>4-bis. In assenza del domicilio digitale di cui al comma 1, le amministrazioni possono predispone le comunicazioni ai cittadini come documenti informatici sottoscritti con firma digitale o firma elettronica avanzata, da conservare nei propri archivi, ed inviare ai cittadini stessi, per posta ordinaria o raccomandata con avviso di ricevimento, copia analogica di tali documenti sottoscritti con firma autografa sostituita a mezzo stampa predisposta secondo le disposizioni di cui all’articolo 3 del decreto legislativo 12 dicembre 1993, n. 39.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>4-bis. In assenza del domicilio digitale di cui al comma 1, le amministrazioni possono predispone le comunicazioni ai cittadini come documenti informatici sottoscritti con firma digitale o firma elettronica avanzata, da conservare nei propri archivi, ed inviare ai cittadini stessi, per posta ordinaria o raccomandata con avviso di ricevimento, copia analogica di tali documenti sottoscritti con firma autografa sostituita a mezzo stampa predisposta secondo le disposizioni di cui all’articolo 3 del decreto legislativo 12 dicembre 1993, n. 39.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0042",
+    "operation": "MEANING",
+    "new": "<p>4-ter. Le disposizioni di cui al comma 4-bis soddisfano a tutti gli effetti di legge gli obblighi di conservazione e di esibizione dei documenti previsti dalla legislazione vigente laddove la copia analogica inviata al cittadino contenga una dicitura che specifichi che il documento informatico, da cui la copia è tratta, è stato predisposto e conservato presso l’amministrazione in conformità alle regole tecniche di cui all’articolo 71.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>4-ter. Le disposizioni di cui al comma 4-bis soddisfano a tutti gli effetti di legge gli obblighi di conservazione e di esibizione dei documenti previsti dalla legislazione vigente laddove la copia analogica inviata al cittadino contenga una dicitura che specifichi che il documento informatico, da cui la copia è tratta, è stato predisposto e conservato presso l’amministrazione in conformità alle regole tecniche di cui all’articolo 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0043",
+    "operation": "MEANING",
+    "new": "<p>4-quater. Le modalità di predisposizione della copia analogica di cui ai commi 4-bis e 4-ter soddisfano le condizioni di cui all’articolo 23-ter, comma 5, salvo i casi in cui il documento rappresenti, per propria natura, una certificazione rilasciata dall’amministrazione da utilizzarsi nei rapporti tra privati.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>4-quater. Le modalità di predisposizione della copia analogica di cui ai commi 4-bis e 4-ter soddisfano le condizioni di cui all’articolo 23-ter, comma 5, salvo i casi in cui il documento rappresenti, per propria natura, una certificazione rilasciata dall’amministrazione da utilizzarsi nei rapporti tra privati.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0044",
+    "operation": "MEANING",
+    "new": "<p>5. Dall’attuazione delle disposizioni di cui al presente articolo non devono derivare nuovi o maggiori oneri a carico della finanza pubblica.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "<p>5. Dall’attuazione delle disposizioni di cui al presente articolo non devono derivare nuovi o maggiori oneri a carico della finanza pubblica.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0045",
+    "operation": "MEANING",
+    "new": "</div>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 13467,
+            "content": "</div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0046",
+    "operation": "MEANING",
+    "new": "I soggetti di cui all’articolo 2, comma 2, e i gestori di pubblici servizi nei rapporti con l’utenza sono tenuti a far data dal 1° giugno 2013 ad accettare i pagamenti ad essi spettanti, a qualsiasi titolo dovuti, anche con l’uso delle tecnologie dell’informazione e della comunicazione. A tal fine:",
+    "old": "A decorrere dal 30 giugno 2007, le pubbliche amministrazioni centrali con sede nel territorio italiano consentono l’effettuazione dei pagamenti ad esse spettanti, a qualsiasi titolo dovuti, con l’uso delle tecnologie dell’informazione e della comunicazione.",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 14546,
+            "endPosition": 14803,
+            "content": "A decorrere dal 30 giugno 2007, le pubbliche amministrazioni centrali con sede nel territorio italiano consentono l’effettuazione dei pagamenti ad esse spettanti, a qualsiasi titolo dovuti, con l’uso delle tecnologie dell’informazione e della comunicazione."
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "I soggetti di cui all’articolo 2, comma 2, e i gestori di pubblici servizi nei rapporti con l’utenza sono tenuti a far data dal 1° giugno 2013 ad accettare i pagamenti ad essi spettanti, a qualsiasi titolo dovuti, anche con l’uso delle tecnologie dell’informazione e della comunicazione. A tal fine:"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0047",
+    "operation": "MEANING",
+    "new": "<p>a) sono tenuti a pubblicare nei propri siti istituzionali e a specificare nelle richieste di pagamento: 1) i codici IBAN identificativi del conto di pagamento, ovvero dell’imputazione del versamento in Tesoreria, di cui all’articolo 3 del decreto del Ministro dell’economia e delle finanze 9 ottobre 2006, n. 293, tramite i quali i soggetti versanti possono effettuare i pagamenti mediante bonifico bancario o postale, ovvero gli identificativi del conto corrente postale sul quale i soggetti versanti possono effettuare i pagamenti mediante bollettino postale; 2) i codici identificativi del pagamento da indicare obbligatoriamente per il versamento;</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>a) sono tenuti a pubblicare nei propri siti istituzionali e a specificare nelle richieste di pagamento: 1) i codici IBAN identificativi del conto di pagamento, ovvero dell’imputazione del versamento in Tesoreria, di cui all’articolo 3 del decreto del Ministro dell’economia e delle finanze 9 ottobre 2006, n. 293, tramite i quali i soggetti versanti possono effettuare i pagamenti mediante bonifico bancario o postale, ovvero gli identificativi del conto corrente postale sul quale i soggetti versanti possono effettuare i pagamenti mediante bollettino postale; 2) i codici identificativi del pagamento da indicare obbligatoriamente per il versamento;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0048",
+    "operation": "MEANING",
+    "new": "<p>b) si avvalgono di prestatori di servizi di pagamento, individuati mediante ricorso agli strumenti di acquisto e negoziazione messi a disposizione da Consip o dalle centrali di committenza regionali di riferimento costituite ai sensi dell’articolo 1, comma 455, della legge 27 dicembre 2006, n. 296, per consentire ai privati di effettuare i pagamenti in loro favore attraverso l’utilizzo di carte di debito, di credito, prepagate ovvero di altri strumenti di pagamento elettronico disponibili, che consentano anche l’addebito in conto corrente, indicando sempre le condizioni, anche economiche, per il loro utilizzo. Il prestatore dei servizi di pagamento, che riceve l’importo dell’operazione di pagamento, effettua il riversamento dell’importo trasferito al tesoriere dell’ente, registrando in apposito sistema informatico, a disposizione dell’amministrazione, il pagamento eseguito, i codici identificativi del pagamento medesimo, nonché i codici IBAN identificativi dell’utenza bancaria ovvero dell’imputazione del versamento in Tesoreria. Le modalità di movimentazione tra le sezioni di Tesoreria e Poste Italiane S.p.A. dei fondi connessi alle operazioni effettuate sui conti correnti postali intestati a pubbliche amministrazioni sono regolate dalla convenzione tra il Ministero dell’economia e delle finanze e Poste Italiane S.p.A. stipulata ai sensi dell’articolo 2, comma 2, del decreto-legge l° dicembre 1993, n. 487, convertito, con modificazioni, dalla legge 29 gennaio 1994, n. 71.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>b) si avvalgono di prestatori di servizi di pagamento, individuati mediante ricorso agli strumenti di acquisto e negoziazione messi a disposizione da Consip o dalle centrali di committenza regionali di riferimento costituite ai sensi dell’articolo 1, comma 455, della legge 27 dicembre 2006, n. 296, per consentire ai privati di effettuare i pagamenti in loro favore attraverso l’utilizzo di carte di debito, di credito, prepagate ovvero di altri strumenti di pagamento elettronico disponibili, che consentano anche l’addebito in conto corrente, indicando sempre le condizioni, anche economiche, per il loro utilizzo. Il prestatore dei servizi di pagamento, che riceve l’importo dell’operazione di pagamento, effettua il riversamento dell’importo trasferito al tesoriere dell’ente, registrando in apposito sistema informatico, a disposizione dell’amministrazione, il pagamento eseguito, i codici identificativi del pagamento medesimo, nonché i codici IBAN identificativi dell’utenza bancaria ovvero dell’imputazione del versamento in Tesoreria. Le modalità di movimentazione tra le sezioni di Tesoreria e Poste Italiane S.p.A. dei fondi connessi alle operazioni effettuate sui conti correnti postali intestati a pubbliche amministrazioni sono regolate dalla convenzione tra il Ministero dell’economia e delle finanze e Poste Italiane S.p.A. stipulata ai sensi dell’articolo 2, comma 2, del decreto-legge l° dicembre 1993, n. 487, convertito, con modificazioni, dalla legge 29 gennaio 1994, n. 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0049",
+    "operation": "MEANING",
+    "new": "<p>2. Per le finalità di cui al comma 1, lettera b), le amministrazioni e i soggetti di cui al comma 1 possono altresì avvalersi dei servizi erogati dalla piattaforma di cui all’articolo 81 comma 2-bis e dei prestatori di servizi di pagamento abilitati,</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>2. Per le finalità di cui al comma 1, lettera b), le amministrazioni e i soggetti di cui al comma 1 possono altresì avvalersi dei servizi erogati dalla piattaforma di cui all’articolo 81 comma 2-bis e dei prestatori di servizi di pagamento abilitati,</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0050",
+    "operation": "MEANING",
+    "new": "<p>3. Dalle previsioni di cui alla lettera a) del comma 1 possono essere escluse le operazioni di pagamento per le quali la verifica del buon fine dello stesso debba essere contestuale all’erogazione del servizio; in questi casi devono comunque essere rese disponibili modalità di pagamento di cui alla lettera b) del medesimo comma 1.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>3. Dalle previsioni di cui alla lettera a) del comma 1 possono essere escluse le operazioni di pagamento per le quali la verifica del buon fine dello stesso debba essere contestuale all’erogazione del servizio; in questi casi devono comunque essere rese disponibili modalità di pagamento di cui alla lettera b) del medesimo comma 1.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0051",
+    "operation": "MEANING",
+    "new": "<p>3-bis. I micro-pagamenti dovuti a titolo di corrispettivo dalle pubbliche amministrazioni di cui all’articolo 1, comma 450, della legge 27 dicembre 2006, n. 296, come modificato dall’articolo 7, comma 2, del decreto-legge 7 maggio 2012, n. 52, convertito, con modificazioni, dalla legge 6 luglio 2012, n. 94, per i contratti di acquisto di beni e servizi conclusi tramite gli strumenti elettronici di cui al medesimo articolo 1, comma 450, stipulati nelle forme di cui all’articolo 11, comma 13, del codice di cui al decreto legislativo 12 aprile 2006, n. 163, e successive modificazioni, sono effettuati mediante strumenti elettronici di pagamento se richiesto dalle imprese fornitrici.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>3-bis. I micro-pagamenti dovuti a titolo di corrispettivo dalle pubbliche amministrazioni di cui all’articolo 1, comma 450, della legge 27 dicembre 2006, n. 296, come modificato dall’articolo 7, comma 2, del decreto-legge 7 maggio 2012, n. 52, convertito, con modificazioni, dalla legge 6 luglio 2012, n. 94, per i contratti di acquisto di beni e servizi conclusi tramite gli strumenti elettronici di cui al medesimo articolo 1, comma 450, stipulati nelle forme di cui all’articolo 11, comma 13, del codice di cui al decreto legislativo 12 aprile 2006, n. 163, e successive modificazioni, sono effettuati mediante strumenti elettronici di pagamento se richiesto dalle imprese fornitrici.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0052",
+    "operation": "MEANING",
+    "new": "<p>3-ter. Con decreto del Ministero dell’economia e delle finanze da pubblicare entro il 1° marzo 2013 sono definiti i micro-pagamenti in relazione al volume complessivo del contratto e sono adeguate alle finalità di cui al comma 3-bis le norme relative alle procedure di pagamento delle pubbliche amministrazioni di cui al citato articolo 1, comma 450, della legge n. 296 del 2006. Le medesime pubbliche amministrazioni provvedono ad adeguare le proprie norme al fine di consentire il pagamento elettronico per gli acquisti di cui al comma 3-bis entro il 1° gennaio 2013.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>3-ter. Con decreto del Ministero dell’economia e delle finanze da pubblicare entro il 1° marzo 2013 sono definiti i micro-pagamenti in relazione al volume complessivo del contratto e sono adeguate alle finalità di cui al comma 3-bis le norme relative alle procedure di pagamento delle pubbliche amministrazioni di cui al citato articolo 1, comma 450, della legge n. 296 del 2006. Le medesime pubbliche amministrazioni provvedono ad adeguare le proprie norme al fine di consentire il pagamento elettronico per gli acquisti di cui al comma 3-bis entro il 1° gennaio 2013.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0053",
+    "operation": "MEANING",
+    "new": "<p>4. L’Agenzia per l’Italia digitale, sentita la Banca d’Italia, definisce linee guida per la specifica dei codici identificativi del pagamento di cui al comma 1, lettere a) e b) e le modalità attraverso le quali il prestatore dei servizi di pagamento mette a disposizione dell’ente le informazioni relative al pagamento medesimo.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>4. L’Agenzia per l’Italia digitale, sentita la Banca d’Italia, definisce linee guida per la specifica dei codici identificativi del pagamento di cui al comma 1, lettere a) e b) e le modalità attraverso le quali il prestatore dei servizi di pagamento mette a disposizione dell’ente le informazioni relative al pagamento medesimo.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0054",
+    "operation": "MEANING",
+    "new": "<p>5. Le attività previste dal presente articolo si svolgono con le risorse umane, finanziarie e strumentali disponibili a legislazione vigente.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>5. Le attività previste dal presente articolo si svolgono con le risorse umane, finanziarie e strumentali disponibili a legislazione vigente.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0055",
+    "operation": "MEANING",
+    "new": "<p>AGGIORNAMENTO (16) Il D.L. 9 febbraio 2012, n. 5, convertito con modificazioni dalla L. 4 aprile 2012, n. 35, ha disposto (con l’art. 6-ter, comma 2) che » Gli obblighi introdotti per le amministrazioni pubbliche con le disposizioni di cui al comma 1 acquistano efficacia decorsi novanta giorni dalla data di entrata in vigore della legge di conversione del presente decreto.»</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>AGGIORNAMENTO (16) Il D.L. 9 febbraio 2012, n. 5, convertito con modificazioni dalla L. 4 aprile 2012, n. 35, ha disposto (con l’art. 6-ter, comma 2) che » Gli obblighi introdotti per le amministrazioni pubbliche con le disposizioni di cui al comma 1 acquistano efficacia decorsi novanta giorni dalla data di entrata in vigore della legge di conversione del presente decreto.»</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0056",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-5-bis-comunicazioni-tra-imprese-e-amministrazioni-pubbliche'><span id='art5bis'></span><h4>Art. 5-bis. Comunicazioni tra imprese e amministrazioni pubbliche</h4>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<div class='section' id='art-5-bis-comunicazioni-tra-imprese-e-amministrazioni-pubbliche'><span id='art5bis'></span><h4>Art. 5-bis. Comunicazioni tra imprese e amministrazioni pubbliche</h4>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0057",
+    "operation": "MEANING",
+    "new": "<p>1. La presentazione di istanze, dichiarazioni, dati e lo scambio di informazioni e documenti, anche a fini statistici, tra le imprese e le amministrazioni pubbliche avviene esclusivamente utilizzando le tecnologie dell’informazione e della comunicazione. Con le medesime modalità le amministrazioni pubbliche adottano e comunicano atti e provvedimenti amministrativi nei confronti delle imprese.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>1. La presentazione di istanze, dichiarazioni, dati e lo scambio di informazioni e documenti, anche a fini statistici, tra le imprese e le amministrazioni pubbliche avviene esclusivamente utilizzando le tecnologie dell’informazione e della comunicazione. Con le medesime modalità le amministrazioni pubbliche adottano e comunicano atti e provvedimenti amministrativi nei confronti delle imprese.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0058",
+    "operation": "MEANING",
+    "new": "<p>2. Con decreto del Presidente del Consiglio dei Ministri, su proposta del Ministro per la pubblica amministrazione e l’innovazione, di concerto con il Ministro dello sviluppo economico e con il Ministro per la semplificazione normativa, sono adottate le modalità di attuazione del comma 1 da parte delle pubbliche amministrazioni centrali e fissati i relativi termini.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>2. Con decreto del Presidente del Consiglio dei Ministri, su proposta del Ministro per la pubblica amministrazione e l’innovazione, di concerto con il Ministro dello sviluppo economico e con il Ministro per la semplificazione normativa, sono adottate le modalità di attuazione del comma 1 da parte delle pubbliche amministrazioni centrali e fissati i relativi termini.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0059",
+    "operation": "MEANING",
+    "new": "<p>3. DigitPA, anche avvalendosi degli uffici di cui all’articolo 17, provvede alla verifica dell’attuazione del comma 1 secondo le modalità e i termini indicati nel decreto di cui al comma 2.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>3. DigitPA, anche avvalendosi degli uffici di cui all’articolo 17, provvede alla verifica dell’attuazione del comma 1 secondo le modalità e i termini indicati nel decreto di cui al comma 2.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0060",
+    "operation": "MEANING",
+    "new": "<p>4. Il Governo promuove l’intesa con regioni ed enti locali in sede di Conferenza unificata per l’adozione degli indirizzi utili alla realizzazione delle finalità di cui al comma 1.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "<p>4. Il Governo promuove l’intesa con regioni ed enti locali in sede di Conferenza unificata per l’adozione degli indirizzi utili alla realizzazione delle finalità di cui al comma 1.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0061",
+    "operation": "MEANING",
+    "new": "</div>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 14803,
+            "content": "</div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0062",
+    "operation": "MEANING",
+    "new": "Per le comunicazioni di cui all’articolo 48, comma 1, con i soggetti che hanno preventivamente dichiarato il proprio indirizzo ai sensi della vigente normativa tecnica,",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15051,
+            "content": "Per le comunicazioni di cui all’articolo 48, comma 1, con i soggetti che hanno preventivamente dichiarato il proprio indirizzo ai sensi della vigente normativa tecnica,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0063",
+    "operation": "FIX",
+    "new": "le",
+    "old": "Le",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDCHANGE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 15052,
+            "endPosition": 15053,
+            "content": "L"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15053,
+            "content": "l"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0064",
+    "operation": "MEANING",
+    "new": "",
+    "old": " centrali",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "startPosition": 15080,
+            "endPosition": 15089,
+            "content": " centrali"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0065",
+    "operation": "MEANING",
+    "new": ". La dichiarazione dell’indirizzo vincola solo il dichiarante e rappresenta espressa accettazione dell’invio, tramite posta elettronica certificata, da parte delle pubbliche amministrazioni, degli atti e dei provvedimenti che lo riguardano",
+    "old": ", di cui al decreto del Presidente della Repubblica 11 febbraio 2005, n. 68, per ogni scambio di documenti e informazioni con i soggetti interessati che ne fanno richiesta e che hanno preventivamente dichiarato il proprio indirizzo di posta elettronica certificata.",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 15133,
+            "endPosition": 15398,
+            "content": ", di cui al decreto del Presidente della Repubblica 11 febbraio 2005, n. 68, per ogni scambio di documenti e informazioni con i soggetti interessati che ne fanno richiesta e che hanno preventivamente dichiarato il proprio indirizzo di posta elettronica certificata."
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15398,
+            "content": ". La dichiarazione dell’indirizzo vincola solo il dichiarante e rappresenta espressa accettazione dell’invio, tramite posta elettronica certificata, da parte delle pubbliche amministrazioni, degli atti e dei provvedimenti che lo riguardano"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0066",
+    "operation": "MEANING",
+    "new": "<p>1-bis. La consultazione degli indirizzi di posta elettronica certificata, di cui agli articoli 16, comma 10, e 16-bis, comma 5, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2, e l’estrazione di elenchi dei suddetti indirizzi, da parte delle pubbliche amministrazioni è effettuata sulla base delle regole tecniche emanate da DigitPA, sentito il Garante per la protezione dei dati personali.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15398,
+            "content": "<p>1-bis. La consultazione degli indirizzi di posta elettronica certificata, di cui agli articoli 16, comma 10, e 16-bis, comma 5, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2, e l’estrazione di elenchi dei suddetti indirizzi, da parte delle pubbliche amministrazioni è effettuata sulla base delle regole tecniche emanate da DigitPA, sentito il Garante per la protezione dei dati personali.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0067",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "Le disposizioni di cui al comma 1 si applicano anche alle pubbliche amministrazioni regionali e locali salvo che non sia diversamente stabilito",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 15428,
+            "endPosition": 15571,
+            "content": "Le disposizioni di cui al comma 1 si applicano anche alle pubbliche amministrazioni regionali e locali salvo che non sia diversamente stabilito"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15571,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0068",
+    "operation": "MEANING",
+    "new": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0069",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-6-bis-indice-nazionale-degli-indirizzi-PEC-delle-imprese-e-dei-professionisti'><span id='art6bis'></span><h4>Art. 6-bis. Indice nazionale degli indirizzi PEC delle imprese e dei professionisti</h4>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<div class='section' id='art-6-bis-indice-nazionale-degli-indirizzi-PEC-delle-imprese-e-dei-professionisti'><span id='art6bis'></span><h4>Art. 6-bis. Indice nazionale degli indirizzi PEC delle imprese e dei professionisti</h4>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0070",
+    "operation": "MEANING",
+    "new": "<p>1. Al fine di favorire la presentazione di istanze, dichiarazioni e dati, nonché lo scambio di informazioni e documenti tra la pubblica amministrazione e le imprese e i professionisti in modalità telematica, è istituito, entro sei mesi dalla data di entrata in vigore della presente disposizione e con le risorse umane, strumentali e finanziarie disponibili a legislazione vigente, il pubblico elenco denominato Indice nazionale degli indirizzi di posta elettronica certificata (INI-PEC) delle imprese e dei professionisti, presso il Ministero per lo sviluppo economico.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>1. Al fine di favorire la presentazione di istanze, dichiarazioni e dati, nonché lo scambio di informazioni e documenti tra la pubblica amministrazione e le imprese e i professionisti in modalità telematica, è istituito, entro sei mesi dalla data di entrata in vigore della presente disposizione e con le risorse umane, strumentali e finanziarie disponibili a legislazione vigente, il pubblico elenco denominato Indice nazionale degli indirizzi di posta elettronica certificata (INI-PEC) delle imprese e dei professionisti, presso il Ministero per lo sviluppo economico.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0071",
+    "operation": "MEANING",
+    "new": "<p>2. L’Indice nazionale di cui al comma 1 è realizzato a partire dagli elenchi di indirizzi PEC costituiti presso il registro delle imprese e gli ordini o collegi professionali, in attuazione di quanto previsto dall’articolo 16 del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>2. L’Indice nazionale di cui al comma 1 è realizzato a partire dagli elenchi di indirizzi PEC costituiti presso il registro delle imprese e gli ordini o collegi professionali, in attuazione di quanto previsto dall’articolo 16 del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0072",
+    "operation": "MEANING",
+    "new": "<p>3. L’accesso all’INI-PEC è consentito alle pubbliche amministrazioni, ai professionisti, alle imprese, ai gestori o esercenti di pubblici servizi ed a tutti i cittadini tramite sito web e senza necessità di autenticazione. L’indice è realizzato in formato aperto, secondo la definizione di cui all’articolo 68, comma 3.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>3. L’accesso all’INI-PEC è consentito alle pubbliche amministrazioni, ai professionisti, alle imprese, ai gestori o esercenti di pubblici servizi ed a tutti i cittadini tramite sito web e senza necessità di autenticazione. L’indice è realizzato in formato aperto, secondo la definizione di cui all’articolo 68, comma 3.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0073",
+    "operation": "MEANING",
+    "new": "<p>4. Il Ministero per lo sviluppo economico, al fine del contenimento dei costi e dell’utilizzo razionale delle risorse, sentita l’Agenzia per l’Italia digitale, si avvale per la realizzazione e gestione operativa dell’Indice nazionale di cui al comma 1 delle strutture informatiche delle Camere di commercio deputate alla gestione del registro imprese e ne definisce con proprio decreto, da emanare entro 60 giorni dalla data di entrata in vigore della presente disposizione, le modalità di accesso e di aggiornamento.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>4. Il Ministero per lo sviluppo economico, al fine del contenimento dei costi e dell’utilizzo razionale delle risorse, sentita l’Agenzia per l’Italia digitale, si avvale per la realizzazione e gestione operativa dell’Indice nazionale di cui al comma 1 delle strutture informatiche delle Camere di commercio deputate alla gestione del registro imprese e ne definisce con proprio decreto, da emanare entro 60 giorni dalla data di entrata in vigore della presente disposizione, le modalità di accesso e di aggiornamento.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0074",
+    "operation": "MEANING",
+    "new": "<p>5. Nel decreto di cui al comma 4 sono anche definite le modalità e le forme con cui gli ordini e i collegi professionali comunicano all’Indice nazionale di cui al comma 1 tutti gli indirizzi PEC relativi ai professionisti di propria competenza e sono previsti gli strumenti telematici resi disponibili dalle Camere di commercio per il tramite delle proprie strutture informatiche al fine di ottimizzare la raccolta e aggiornamento dei medesimi indirizzi.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>5. Nel decreto di cui al comma 4 sono anche definite le modalità e le forme con cui gli ordini e i collegi professionali comunicano all’Indice nazionale di cui al comma 1 tutti gli indirizzi PEC relativi ai professionisti di propria competenza e sono previsti gli strumenti telematici resi disponibili dalle Camere di commercio per il tramite delle proprie strutture informatiche al fine di ottimizzare la raccolta e aggiornamento dei medesimi indirizzi.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0075",
+    "operation": "MEANING",
+    "new": "<p>6. Dall’attuazione delle disposizioni di cui al presente articolo non devono derivare nuovi o maggiori oneri a carico della finanza pubblica.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "<p>6. Dall’attuazione delle disposizioni di cui al presente articolo non devono derivare nuovi o maggiori oneri a carico della finanza pubblica.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0076",
+    "operation": "MEANING",
+    "new": "</div>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 15572,
+            "content": "</div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0077",
+    "operation": "MEANING",
+    "new": "",
+    "old": " centrali",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 15865,
+            "endPosition": 15874,
+            "content": " centrali"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0078",
+    "operation": "MEANING",
+    "new": "Le pubbliche amministrazioni favoriscono",
+    "old": "Lo Stato favorisce",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 17233,
+            "endPosition": 17251,
+            "content": "Lo Stato favorisce"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 17251,
+            "content": "Le pubbliche amministrazioni favoriscono"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0079",
+    "operation": "MEANING",
+    "new": "Sportello",
+    "old": "Sportelli",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDCHANGE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 17670,
+            "endPosition": 17671,
+            "content": "i"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 17671,
+            "content": "o"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0080",
+    "operation": "MEANING",
+    "new": " unico",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 17671,
+            "content": " unico"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0081",
+    "operation": "MEANING",
+    "new": " per le attività produttive",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 17747,
+            "content": " per le attività produttive"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0082",
+    "operation": "MEANING",
+    "new": "38, comma 3, del decreto-legge 25 giugno 2008, n.112, convertito, con modificazioni, dalla legge 6 agosto 2008, n.133,",
+    "old": "3 del decreto del Presidente della Repubblica 20 ottobre 1998, n. 447, è realizzato in modalità informatica ed",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 17768,
+            "endPosition": 17878,
+            "content": "3 del decreto del Presidente della Repubblica 20 ottobre 1998, n. 447, è realizzato in modalità informatica ed"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 17878,
+            "content": "38, comma 3, del decreto-legge 25 giugno 2008, n.112, convertito, con modificazioni, dalla legge 6 agosto 2008, n.133,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0083",
+    "operation": "MEANING",
+    "new": "",
+    "old": " anche",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 17916,
+            "endPosition": 17922,
+            "content": " anche"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0084",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "Gli sportelli unici consentono l’invio di istanze, dichiarazioni, documenti e ogni altro atto trasmesso dall’utente in via telematica e sono integrati con i servizi erogati in rete dalle pubbliche amministrazioni",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 17971,
+            "endPosition": 18183,
+            "content": "Gli sportelli unici consentono l’invio di istanze, dichiarazioni, documenti e ogni altro atto trasmesso dall’utente in via telematica e sono integrati con i servizi erogati in rete dalle pubbliche amministrazioni"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 18183,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0085",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "Al fine di promuovere la massima efficacia ed efficienza dello sportello unico, anche attraverso l’adozione di modalità omogenee di relazione con gli utenti nell’intero territorio nazionale, lo Stato, d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, individua uno o più modelli tecnico-organizzativi di riferimento, tenendo presenti le migliori esperienze realizzate che garantiscano l’interoperabilità delle soluzioni individuate",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 18214,
+            "endPosition": 18702,
+            "content": "Al fine di promuovere la massima efficacia ed efficienza dello sportello unico, anche attraverso l’adozione di modalità omogenee di relazione con gli utenti nell’intero territorio nazionale, lo Stato, d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, individua uno o più modelli tecnico-organizzativi di riferimento, tenendo presenti le migliori esperienze realizzate che garantiscano l’interoperabilità delle soluzioni individuate"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 18702,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0086",
+    "operation": "MEANING",
+    "new": " presente",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 18829,
+            "content": " presente"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0087",
+    "operation": "MEANING",
+    "new": "",
+    "old": " legislativo 28 febbraio 2005, n. 42",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 18837,
+            "endPosition": 18873
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0088",
+    "operation": "FIX",
+    "new": "III",
+    "old": "II",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 21512,
+            "content": "I"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0089",
+    "operation": "MEANING",
+    "new": " nel rispetto dei principi di uguaglianza e di non discriminazione, nonché per la garanzia dei diritti dei cittadini e delle imprese di cui al capo I, sezione II, del presente decreto",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 22246,
+            "content": " nel rispetto dei principi di uguaglianza e di non discriminazione, nonché per la garanzia dei diritti dei cittadini e delle imprese di cui al capo I, sezione II, del presente decreto"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0090",
+    "operation": "MEANING",
+    "new": "<p>1-bis. Gli organi di Governo nell’esercizio delle funzioni di indirizzo politico ed in particolare nell’emanazione delle direttive generali per l’attività amministrativa e per la gestione ai sensi del comma 1 dell’articolo 14 del decreto legislativo 30 marzo 2001, n. 165, e le amministrazioni pubbliche nella redazione del piano di performance di cui all’articolo 10 del decreto legislativo 27 ottobre 2009, n. 150, dettano disposizioni per l’attuazione delle disposizioni del presente decreto.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 22247,
+            "content": "<p>1-bis. Gli organi di Governo nell’esercizio delle funzioni di indirizzo politico ed in particolare nell’emanazione delle direttive generali per l’attività amministrativa e per la gestione ai sensi del comma 1 dell’articolo 14 del decreto legislativo 30 marzo 2001, n. 165, e le amministrazioni pubbliche nella redazione del piano di performance di cui all’articolo 10 del decreto legislativo 27 ottobre 2009, n. 150, dettano disposizioni per l’attuazione delle disposizioni del presente decreto.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0091",
+    "operation": "MEANING",
+    "new": "<p>1-ter. I dirigenti rispondono dell’osservanza ed attuazione delle disposizioni di cui al presente decreto ai sensi e nei limiti degli articoli 21 e 55 del decreto legislativo 30 marzo 2001, n. 165, ferme restando le eventuali responsabilità penali, civili e contabili previste dalle norme vigenti. L’attuazione delle disposizioni del presente decreto è comunque rilevante ai fini della misurazione e valutazione della performance organizzativa ed individuale dei dirigenti.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 22247,
+            "content": "<p>1-ter. I dirigenti rispondono dell’osservanza ed attuazione delle disposizioni di cui al presente decreto ai sensi e nei limiti degli articoli 21 e 55 del decreto legislativo 30 marzo 2001, n. 165, ferme restando le eventuali responsabilità penali, civili e contabili previste dalle norme vigenti. L’attuazione delle disposizioni del presente decreto è comunque rilevante ai fini della misurazione e valutazione della performance organizzativa ed individuale dei dirigenti.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0092",
+    "operation": "MEANING",
+    "new": ", ivi comprese le reti di telefonia fissa e mobile in tutte le loro articolazioni,",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 22755,
+            "content": ", ivi comprese le reti di telefonia fissa e mobile in tutte le loro articolazioni,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0093",
+    "operation": "MEANING",
+    "new": "<p>5-bis. Le pubbliche amministrazioni implementano e consolidano i processi di informatizzazione in atto, ivi compresi quelli riguardanti l’erogazione attraverso le tecnologie dell’informazione e della comunicazione in via telematica di servizi a cittadini ed imprese anche con l’intervento di privati.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 23507,
+            "content": "<p>5-bis. Le pubbliche amministrazioni implementano e consolidano i processi di informatizzazione in atto, ivi compresi quelli riguardanti l’erogazione attraverso le tecnologie dell’informazione e della comunicazione in via telematica di servizi a cittadini ed imprese anche con l’intervento di privati.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0094",
+    "operation": "MEANING",
+    "new": ", nonché dei temi relativi all’accessibilità e alle tecnologie assistive, ai sensi dell’articolo 8 della legge 9 gennaio 2004, n. 4",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 24113,
+            "content": ", nonché dei temi relativi all’accessibilità e alle tecnologie assistive, ai sensi dell’articolo 8 della legge 9 gennaio 2004, n. 4"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0095",
+    "operation": "MEANING",
+    "new": "<p>2-bis. Le regioni promuovono sul territorio azioni tese a realizzare un processo di digitalizzazione dell’azione amministrativa coordinato e condiviso tra le autonomie locali.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 25169,
+            "content": "<p>2-bis. Le regioni promuovono sul territorio azioni tese a realizzare un processo di digitalizzazione dell’azione amministrativa coordinato e condiviso tra le autonomie locali.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0096",
+    "operation": "MEANING",
+    "new": "<p>2-ter. Le regioni e gli enti locali digitalizzano la loro azione amministrativa e implementano l’utilizzo delle tecnologie dell’informazione e della comunicazione per garantire servizi migliori ai cittadini e alle imprese.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 25169,
+            "content": "<p>2-ter. Le regioni e gli enti locali digitalizzano la loro azione amministrativa e implementano l’utilizzo delle tecnologie dell’informazione e della comunicazione per garantire servizi migliori ai cittadini e alle imprese.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0097",
+    "operation": "MEANING",
+    "new": "<p>3-bis. Ai fini di quanto previsto ai commi 1, 2 e 3, è istituita senza nuovi o maggiori oneri per la finanza pubblica, presso la Conferenza unificata, previa delibera della medesima che ne definisce la composizione e le specifiche competenze, una Commissione permanente per l’innovazione tecnologica nelle regioni e negli enti locali con funzioni istruttorie e consultive.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 25666,
+            "content": "<p>3-bis. Ai fini di quanto previsto ai commi 1, 2 e 3, è istituita senza nuovi o maggiori oneri per la finanza pubblica, presso la Conferenza unificata, previa delibera della medesima che ne definisce la composizione e le specifiche competenze, una Commissione permanente per l’innovazione tecnologica nelle regioni e negli enti locali con funzioni istruttorie e consultive.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0098",
+    "operation": "MEANING",
+    "new": "<p>2-bis. Le pubbliche amministrazioni nella valutazione dei progetti di investimento in materia di innovazione tecnologica tengono conto degli effettivi risparmi derivanti dalla razionalizzazione di cui al comma 2, nonché dei costi e delle economie che ne derivano.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 26789,
+            "content": "<p>2-bis. Le pubbliche amministrazioni nella valutazione dei progetti di investimento in materia di innovazione tecnologica tengono conto degli effettivi risparmi derivanti dalla razionalizzazione di cui al comma 2, nonché dei costi e delle economie che ne derivano.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0099",
+    "operation": "MEANING",
+    "new": "<p>2-ter. Le pubbliche amministrazioni, quantificano annualmente, ai sensi dell’articolo 27, del decreto legislativo 27 ottobre 2009, n.150, i risparmi effettivamente conseguiti in attuazione delle disposizioni di cui ai commi 1 e 2. Tali risparmi sono utilizzati, per due terzi secondo quanto previsto dall’articolo 27, comma 1, del citato decreto legislativo n. 150 del 2009 e in misura pari ad un terzo per il finanziamento di ulteriori progetti di innovazione.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 26789,
+            "content": "<p>2-ter. Le pubbliche amministrazioni, quantificano annualmente, ai sensi dell’articolo 27, del decreto legislativo 27 ottobre 2009, n.150, i risparmi effettivamente conseguiti in attuazione delle disposizioni di cui ai commi 1 e 2. Tali risparmi sono utilizzati, per due terzi secondo quanto previsto dall’articolo 27, comma 1, del citato decreto legislativo n. 150 del 2009 e in misura pari ad un terzo per il finanziamento di ulteriori progetti di innovazione.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0100",
+    "operation": "MEANING",
+    "new": "<p>3-bis. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-bis. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0101",
+    "operation": "MEANING",
+    "new": "<p>3-ter. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-ter. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0102",
+    "operation": "MEANING",
+    "new": "<p>3-quater. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-quater. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0103",
+    "operation": "MEANING",
+    "new": "<p>3-quinquies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-quinquies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0104",
+    "operation": "MEANING",
+    "new": "<p>3-sexies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-sexies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0105",
+    "operation": "MEANING",
+    "new": "<p>3-septies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-septies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0106",
+    "operation": "MEANING",
+    "new": "<p>3-octies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 27113,
+            "content": "<p>3-octies. COMMA ABROGATO DAL D.L. 6 LUGLIO 2012, N. 95, CONVERTITO CON MODIFICAZIONI DALLA L. 7 AGOSTO 2012, N. 135.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0107",
+    "operation": "STYLE",
+    "new": ",",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "PUNCTUATION",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 29842,
+            "content": ","
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0108",
+    "operation": "MEANING",
+    "new": "unico ufficio dirigenziale generale, fermo restando il numero complessivo di tali uffici, responsabile del coordinamento funzionale. Al predetto ufficio",
+    "old": "centro di competenza cui",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 29886,
+            "endPosition": 29910,
+            "content": "centro di competenza cui"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 29910,
+            "content": "unico ufficio dirigenziale generale, fermo restando il numero complessivo di tali uffici, responsabile del coordinamento funzionale. Al predetto ufficio"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0109",
+    "operation": "MEANING",
+    "new": " di telecomunicazione e fonia,",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 30107,
+            "content": " di telecomunicazione e fonia,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0110",
+    "operation": "MEANING",
+    "new": " di telecomunicazione e fonia",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 30344,
+            "content": " di telecomunicazione e fonia"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0111",
+    "operation": "MEANING",
+    "new": " pianificazione,",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 30414,
+            "content": " pianificazione,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0112",
+    "operation": "MEANING",
+    "new": " relativamente ai dati, ai sistemi e alle infrastrutture anche in relazione al sistema pubblico di connettività, nel rispetto delle regole tecniche di cui all’articolo 51, comma 1",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 30471,
+            "content": " relativamente ai dati, ai sistemi e alle infrastrutture anche in relazione al sistema pubblico di connettività, nel rispetto delle regole tecniche di cui all’articolo 51, comma 1"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0113",
+    "operation": "MEANING",
+    "new": " di telecomunicazione e fonia",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 31286,
+            "content": " di telecomunicazione e fonia"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0114",
+    "operation": "MEANING",
+    "new": "",
+    "old": " sicurezza,",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 32182,
+            "endPosition": 32193,
+            "content": " sicurezza,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0115",
+    "operation": "MEANING",
+    "new": "<p>1-bis. Per lo svolgimento dei compiti di cui al comma 1, le Agenzie, le Forze armate, compresa l’Arma dei carabinieri e il Corpo delle capitanerie di porto, nonché i Corpi di polizia hanno facoltà di individuare propri uffici senza incrementare il numero complessivo di quelli già previsti nei rispettivi assetti organizzativi.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 32221,
+            "content": "<p>1-bis. Per lo svolgimento dei compiti di cui al comma 1, le Agenzie, le Forze armate, compresa l’Arma dei carabinieri e il Corpo delle capitanerie di porto, nonché i Corpi di polizia hanno facoltà di individuare propri uffici senza incrementare il numero complessivo di quelli già previsti nei rispettivi assetti organizzativi.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0116",
+    "operation": "MEANING",
+    "new": "<p>1-ter. DigitPA assicura il coordinamento delle iniziative di cui al comma 1, lettera c), con le modalità di cui all’articolo 51.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 32221,
+            "content": "<p>1-ter. DigitPA assicura il coordinamento delle iniziative di cui al comma 1, lettera c), con le modalità di cui all’articolo 51.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0117",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "Centro nazionale per l’informatica nella pubblica amministrazione",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 33151,
+            "endPosition": 33216,
+            "content": "Centro nazionale per l’informatica nella pubblica amministrazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 33216,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0118",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 33231,
+            "endPosition": 33236,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 33236,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0119",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 33256,
+            "endPosition": 33261,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 33261,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0120",
+    "operation": "MEANING",
+    "new": "trasferimenti",
+    "old": "pagamenti",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 35669,
+            "endPosition": 35678,
+            "content": "pagamenti"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 35678,
+            "content": "trasferimenti"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0121",
+    "operation": "MEANING",
+    "new": "memorizzazione",
+    "old": "registrazione",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 36058,
+            "endPosition": 36071,
+            "content": "registrazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36071,
+            "content": "memorizzazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0122",
+    "operation": "MEANING",
+    "new": " conformi alle regole tecniche di cui all’articolo 71",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36138,
+            "content": " conformi alle regole tecniche di cui all’articolo 71"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0123",
+    "operation": "MEANING",
+    "new": "agli",
+    "old": "a tutti gli",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 36163,
+            "endPosition": 36174,
+            "content": "a tutti gli"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36174,
+            "content": "agli"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0124",
+    "operation": "MEANING",
+    "new": "ai sensi delle disposizioni del presente codice",
+    "old": "se conformi alle disposizioni del presente codice ed alle regole tecniche di cui all’articolo 71",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 36193,
+            "endPosition": 36289,
+            "content": "se conformi alle disposizioni del presente codice ed alle regole tecniche di cui all’articolo 71"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36289,
+            "content": "ai sensi delle disposizioni del presente codice"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0125",
+    "operation": "MEANING",
+    "new": "<p>1-bis. L’idoneità del documento informatico a soddisfare il requisito della forma scritta e il suo valore probatorio sono liberamente valutabili in giudizio, tenuto conto delle sue caratteristiche oggettive di qualità, sicurezza, integrità ed immodificabilità, fermo restando quanto disposto dall’articolo 21.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36290,
+            "content": "<p>1-bis. L’idoneità del documento informatico a soddisfare il requisito della forma scritta e il suo valore probatorio sono liberamente valutabili in giudizio, tenuto conto delle sue caratteristiche oggettive di qualità, sicurezza, integrità ed immodificabilità, fermo restando quanto disposto dall’articolo 21.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0126",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "Il documento informatico sottoscritto con firma elettronica qualificata o con firma digitale soddisfa il requisito legale della forma scritta se formato nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71 che garantiscano l’identificabilità dell’autore e l’integrità del documento",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 36320,
+            "endPosition": 36619,
+            "content": "Il documento informatico sottoscritto con firma elettronica qualificata o con firma digitale soddisfa il requisito legale della forma scritta se formato nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71 che garantiscano l’identificabilità dell’autore e l’integrità del documento"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36619,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0127",
+    "operation": "MEANING",
+    "new": "per la formazione, ",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36669,
+            "content": "per la formazione, "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0128",
+    "operation": "MEANING",
+    "new": " la copia,",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36707,
+            "content": " la copia,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0129",
+    "operation": "MEANING",
+    "new": ", nonché quelle in materia di generazione, apposizione e verifica di qualsiasi tipo di firma elettronica avanzata,",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36793,
+            "content": ", nonché quelle in materia di generazione, apposizione e verifica di qualsiasi tipo di firma elettronica avanzata,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0130",
+    "operation": "MEANING",
+    "new": ". L",
+    "old": "; l",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "PUNCTUATION",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 36834,
+            "endPosition": 36837,
+            "content": "; l"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 36837,
+            "content": ". L"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0131",
+    "operation": "MEANING",
+    "new": "<p>5-bis. Gli obblighi di conservazione e di esibizione di documenti previsti dalla legislazione vigente si intendono soddisfatti a tutti gli effetti di legge a mezzo di documenti informatici, se le procedure utilizzate sono conformi alle regole tecniche dettate ai sensi dell’articolo 71.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 37348,
+            "content": "<p>5-bis. Gli obblighi di conservazione e di esibizione di documenti previsti dalla legislazione vigente si intendono soddisfatti a tutti gli effetti di legge a mezzo di documenti informatici, se le procedure utilizzate sono conformi alle regole tecniche dettate ai sensi dell’articolo 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0132",
+    "operation": "MEANING",
+    "new": "",
+    "old": "Valore probatorio del ",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 37537,
+            "endPosition": 37559,
+            "content": "Valore probatorio del "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0133",
+    "operation": "FIX",
+    "new": "Documento",
+    "old": "documento",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDCHANGE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 37559,
+            "endPosition": 37560,
+            "content": "d"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 37560,
+            "content": "D"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0134",
+    "operation": "MEANING",
+    "new": " con firma elettronica.",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 37593,
+            "content": " con firma elettronica."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0135",
+    "operation": "MEANING",
+    "new": "qualità, sicurezza, integrità e immodificabilità",
+    "old": "qualità e sicurezza",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 37798,
+            "endPosition": 37817,
+            "content": "qualità e sicurezza"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 37817,
+            "content": "qualità, sicurezza, integrità e immodificabilità"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0136",
+    "operation": "MEANING",
+    "new": "",
+    "old": ",",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "PUNCTUATION",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 37872,
+            "endPosition": 37873,
+            "content": ","
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0137",
+    "operation": "MEANING",
+    "new": "elettronica avanzata, qualificata o digitale",
+    "old": "digitale o con un altro tipo di firma elettronica qualificata",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 37897,
+            "endPosition": 37958,
+            "content": "digitale o con un altro tipo di firma elettronica qualificata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 37958,
+            "content": "elettronica avanzata, qualificata o digitale"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0138",
+    "operation": "MEANING",
+    "new": "formato nel rispetto delle regole tecniche di cui all’articolo 20, comma 3, che garantiscano l’identificabilità dell’autore, l’integrità e l’immodificabilità del documento,",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 37960,
+            "content": "formato nel rispetto delle regole tecniche di cui all’articolo 20, comma 3, che garantiscano l’identificabilità dell’autore, l’integrità e l’immodificabilità del documento,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0139",
+    "operation": "MEANING",
+    "new": " elettronica qualificata o digitale",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 38057,
+            "content": " elettronica qualificata o digitale"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0140",
+    "operation": "MEANING",
+    "new": "questi dia",
+    "old": "sia data",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 38106,
+            "endPosition": 38114,
+            "content": "sia data"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 38114,
+            "content": "questi dia"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0141",
+    "operation": "MEANING",
+    "new": "<p>2-bis). Salvo quanto previsto dall’articolo 25, le scritture private di cui all’articolo 1350, primo comma, numeri da 1 a 12, del codice civile, se fatte con documento informatico, sono sottoscritte, a pena di nullità, con firma elettronica qualificata o con firma digitale. Gli atti di cui all’articolo 1350, numero 13), del codice civile soddisfano comunque il requisito della forma scritta se sottoscritti con firma elettronica avanzata, qualificata o digitale.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 38131,
+            "content": "<p>2-bis). Salvo quanto previsto dall’articolo 25, le scritture private di cui all’articolo 1350, primo comma, numeri da 1 a 12, del codice civile, se fatte con documento informatico, sono sottoscritte, a pena di nullità, con firma elettronica qualificata o con firma digitale. Gli atti di cui all’articolo 1350, numero 13), del codice civile soddisfano comunque il requisito della forma scritta se sottoscritti con firma elettronica avanzata, qualificata o digitale.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0142",
+    "operation": "MEANING",
+    "new": "Copie informatiche di documenti analogici",
+    "old": "Documenti informatici delle pubbliche amministrazioni",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 40119,
+            "endPosition": 40172,
+            "content": "Documenti informatici delle pubbliche amministrazioni"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 40172,
+            "content": "Copie informatiche di documenti analogici"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0143",
+    "operation": "MEANING",
+    "new": "I documenti informatici contenenti copia di atti pubblici, scritture private e documenti in genere, compresi gli atti e documenti amministrativi di ogni tipo formati in origine su supporto analogico, spediti o rilasciati dai depositari pubblici autorizzati e dai pubblici ufficiali, hanno piena efficacia, ai sensi degli articoli 2714 e 2715 del codice civile, se ad essi è apposta o associata, da parte di colui che li spedisce o rilascia, una firma digitale o altra firma elettronica qualificata. La loro esibizione e produzione sostituisce quella dell’originale",
+    "old": "Gli atti formati con strumenti informatici, i dati e i documenti informatici delle pubbliche amministrazioni costituiscono informazione primaria ed originale da cui è possibile effettuare, su diversi tipi di supporto, riproduzioni e copie per gli usi consentiti dalla legge",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 40203,
+            "endPosition": 40476,
+            "content": "Gli atti formati con strumenti informatici, i dati e i documenti informatici delle pubbliche amministrazioni costituiscono informazione primaria ed originale da cui è possibile effettuare, su diversi tipi di supporto, riproduzioni e copie per gli usi consentiti dalla legge"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 40476,
+            "content": "I documenti informatici contenenti copia di atti pubblici, scritture private e documenti in genere, compresi gli atti e documenti amministrativi di ogni tipo formati in origine su supporto analogico, spediti o rilasciati dai depositari pubblici autorizzati e dai pubblici ufficiali, hanno piena efficacia, ai sensi degli articoli 2714 e 2715 del codice civile, se ad essi è apposta o associata, da parte di colui che li spedisce o rilascia, una firma digitale o altra firma elettronica qualificata. La loro esibizione e produzione sostituisce quella dell’originale"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0144",
+    "operation": "MEANING",
+    "new": "Le copie per immagine su supporto informatico di documenti originali formati in origine su supporto analogico hanno la stessa efficacia probatoria degli originali da cui sono estratte, se la loro conformità è attestata da un notaio o da altro pubblico ufficiale a ciò autorizzato, con dichiarazione allegata al documento informatico e asseverata secondo le regole tecniche stabilite ai sensi dell’articolo 71",
+    "old": "Nelle operazioni riguardanti le attività di produzione, immissione, conservazione, riproduzione e trasmissione di dati, documenti ed atti amministrativi con sistemi informatici e telematici, ivi compresa l’emanazione degli atti con i medesimi sistemi, devono essere indicati e resi facilmente individuabili sia i dati relativi alle amministrazioni interessate, sia il soggetto che ha effettuato l’operazione",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 40507,
+            "endPosition": 40914,
+            "content": "Nelle operazioni riguardanti le attività di produzione, immissione, conservazione, riproduzione e trasmissione di dati, documenti ed atti amministrativi con sistemi informatici e telematici, ivi compresa l’emanazione degli atti con i medesimi sistemi, devono essere indicati e resi facilmente individuabili sia i dati relativi alle amministrazioni interessate, sia il soggetto che ha effettuato l’operazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 40914,
+            "content": "Le copie per immagine su supporto informatico di documenti originali formati in origine su supporto analogico hanno la stessa efficacia probatoria degli originali da cui sono estratte, se la loro conformità è attestata da un notaio o da altro pubblico ufficiale a ciò autorizzato, con dichiarazione allegata al documento informatico e asseverata secondo le regole tecniche stabilite ai sensi dell’articolo 71"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0145",
+    "operation": "MEANING",
+    "new": " per immagine",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 40953,
+            "content": " per immagine"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0146",
+    "operation": "MEANING",
+    "new": " originali",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 40990,
+            "content": " originali"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0147",
+    "operation": "MEANING",
+    "new": "",
+    "old": " altro tipo di",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 41012,
+            "endPosition": 41026,
+            "content": " altro tipo di"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0148",
+    "operation": "MEANING",
+    "new": "analogico nel rispetto delle regole tecniche di cui all’articolo 71 hanno la stessa efficacia probatoria degli originali da cui sono tratte se la loro conformità all’originale non è espressamente disconosciuta",
+    "old": "sostituiscono, ad ogni effetto di legge, gli originali da cui sono tratte, se la loro conformità all’originale è assicurata dal funzionario a ciò delegato nell’ambito dell’ordinamento proprio dell’amministrazione di appartenenza, mediante l’utilizzo della firma digitale e nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 41036,
+            "endPosition": 41379,
+            "content": "sostituiscono, ad ogni effetto di legge, gli originali da cui sono tratte, se la loro conformità all’originale è assicurata dal funzionario a ciò delegato nell’ambito dell’ordinamento proprio dell’amministrazione di appartenenza, mediante l’utilizzo della firma digitale e nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 41379,
+            "content": "analogico nel rispetto delle regole tecniche di cui all’articolo 71 hanno la stessa efficacia probatoria degli originali da cui sono tratte se la loro conformità all’originale non è espressamente disconosciuta"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0149",
+    "operation": "MEANING",
+    "new": "Le copie formate ai sensi dei commi 1, 2 e 3 sostituiscono ad ogni effetto di legge gli originali formati in origine su supporto analogico, e sono idonee ad assolvere gli obblighi di conservazione previsti dalla legge, salvo quanto stabilito dal comma 5",
+    "old": "Le regole tecniche in materia di formazione e conservazione di documenti informatici delle pubbliche amministrazioni sono definite ai sensi dell’articolo 71, di concerto con il Ministro per i beni e le attività culturali, nonché d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, e sentito il Garante per la protezione dei dati personali",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 41410,
+            "endPosition": 41803,
+            "content": "Le regole tecniche in materia di formazione e conservazione di documenti informatici delle pubbliche amministrazioni sono definite ai sensi dell’articolo 71, di concerto con il Ministro per i beni e le attività culturali, nonché d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, e sentito il Garante per la protezione dei dati personali"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 41803,
+            "content": "Le copie formate ai sensi dei commi 1, 2 e 3 sostituiscono ad ogni effetto di legge gli originali formati in origine su supporto analogico, e sono idonee ad assolvere gli obblighi di conservazione previsti dalla legge, salvo quanto stabilito dal comma 5"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0150",
+    "operation": "MEANING",
+    "new": "<p>5. Con decreto del Presidente del Consiglio dei Ministri possono essere individuate particolari tipologie di documenti analogici originali unici per le quali, in ragione di esigenze di natura pubblicistica, permane l’obbligo della conservazione dell’originale analogico oppure, in caso di conservazione sostitutiva, la loro conformità all’originale deve essere autenticata da un notaio o da altro pubblico ufficiale a ciò autorizzato con dichiarazione da questi firmata digitalmente ed allegata al documento informatico.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 41804,
+            "content": "<p>5. Con decreto del Presidente del Consiglio dei Ministri possono essere individuate particolari tipologie di documenti analogici originali unici per le quali, in ragione di esigenze di natura pubblicistica, permane l’obbligo della conservazione dell’originale analogico oppure, in caso di conservazione sostitutiva, la loro conformità all’originale deve essere autenticata da un notaio o da altro pubblico ufficiale a ciò autorizzato con dichiarazione da questi firmata digitalmente ed allegata al documento informatico.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0151",
+    "operation": "MEANING",
+    "new": "<p>6. Fino alla data di emanazione del decreto di cui al comma 5r per tutti i documenti analogici originali unici permane l’obbligo della conservazione dell’originale analogico oppure, in caso di conservazione sostitutiva, la loro conformità all’originale deve essere autenticata da un notaio o da altro pubblico ufficiale a ciò autorizzato con dichiarazione da questi firmata digitalmente ed allegata al documento informatico.</p>",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 41804,
+            "content": "<p>6. Fino alla data di emanazione del decreto di cui al comma 5r per tutti i documenti analogici originali unici permane l’obbligo della conservazione dell’originale analogico oppure, in caso di conservazione sostitutiva, la loro conformità all’originale deve essere autenticata da un notaio o da altro pubblico ufficiale a ciò autorizzato con dichiarazione da questi firmata digitalmente ed allegata al documento informatico.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0152",
+    "operation": "MEANING",
+    "new": " analogiche",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 41979,
+            "content": " analogiche"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0153",
+    "operation": "MEANING",
+    "new": "",
+    "old": " atti e",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 41982,
+            "endPosition": 41989,
+            "content": " atti e"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0154",
+    "operation": "MEANING",
+    "new": "Le copie su supporto analogico di documento informatico, anche sottoscritto con firma elettronica avanzata, qualificata o digitale, hanno la stessa efficacia probatoria dell’originale da cui sono tratte se la loro conformità all’originale in tutte le sue componenti è attestata da un pubblico ufficiale a ciò autorizzato",
+    "old": "All’articolo 2712 del codice civile dopo le parole: «riproduzioni fotografiche» è inserita la seguente: «, informatiche»",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 42042,
+            "endPosition": 42162,
+            "content": "All’articolo 2712 del codice civile dopo le parole: «riproduzioni fotografiche» è inserita la seguente: «, informatiche»"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 42162,
+            "content": "Le copie su supporto analogico di documento informatico, anche sottoscritto con firma elettronica avanzata, qualificata o digitale, hanno la stessa efficacia probatoria dell’originale da cui sono tratte se la loro conformità all’originale in tutte le sue componenti è attestata da un pubblico ufficiale a ciò autorizzato"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0155",
+    "operation": "MEANING",
+    "new": "Le copie e gli estratti su supporto analogico del documento informatico, conformi alle vigenti regole tecniche, hanno la stessa efficacia probatoria dell’originale se la loto conformità non è espressamente disconosciuta. Resta fermo, ove previsto l’obbligo di conservazione dell’originale informatico",
+    "old": "I duplicati, le copie, gli estratti del documento informatico, anche se riprodotti su diversi tipi di supporto, sono validi a tutti gli effetti di legge, se conformi alle vigenti regole tecniche",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 42193,
+            "endPosition": 42387,
+            "content": "I duplicati, le copie, gli estratti del documento informatico, anche se riprodotti su diversi tipi di supporto, sono validi a tutti gli effetti di legge, se conformi alle vigenti regole tecniche"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 42387,
+            "content": "Le copie e gli estratti su supporto analogico del documento informatico, conformi alle vigenti regole tecniche, hanno la stessa efficacia probatoria dell’originale se la loto conformità non è espressamente disconosciuta. Resta fermo, ove previsto l’obbligo di conservazione dell’originale informatico"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0156",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>3. I documenti informatici contenenti copia o riproduzione di atti pubblici, scritture private e documenti in genere, compresi gli atti e documenti amministrativi di ogni tipo, spediti o rilasciati dai depositari pubblici autorizzati e dai pubblici ufficiali, hanno piena efficacia, ai sensi degli articoli 2714 e 2715 del codice civile, se ad essi è apposta o associata, da parte di colui che li spedisce o rilascia, una firma digitale o altra firma elettronica qualificata.</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 42412,
+            "endPosition": 42894,
+            "content": "<p>3. I documenti informatici contenenti copia o riproduzione di atti pubblici, scritture private e documenti in genere, compresi gli atti e documenti amministrativi di ogni tipo, spediti o rilasciati dai depositari pubblici autorizzati e dai pubblici ufficiali, hanno piena efficacia, ai sensi degli articoli 2714 e 2715 del codice civile, se ad essi è apposta o associata, da parte di colui che li spedisce o rilascia, una firma digitale o altra firma elettronica qualificata.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0157",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>4. Le copie su supporto informatico di documenti originali non unici formati in origine su supporto cartaceo o, comunque, non informatico sostituiscono, ad ogni effetto di legge, gli originali da cui sono tratte se la loro conformità all’originale è assicurata dal responsabile della conservazione mediante l’utilizzo della propria firma digitale e nel rispetto delle regole tecniche di cui all’articolo 71.</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 42914,
+            "endPosition": 43328,
+            "content": "<p>4. Le copie su supporto informatico di documenti originali non unici formati in origine su supporto cartaceo o, comunque, non informatico sostituiscono, ad ogni effetto di legge, gli originali da cui sono tratte se la loro conformità all’originale è assicurata dal responsabile della conservazione mediante l’utilizzo della propria firma digitale e nel rispetto delle regole tecniche di cui all’articolo 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0158",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>5. Le copie su supporto informatico di documenti, originali unici, formati in origine su supporto cartaceo o, comunque, non informatico sostituiscono, ad ogni effetto di legge, gli originali da cui sono tratte se la loro conformità all’originale è autenticata da un notaio o da altro pubblico ufficiale a ciò autorizzato, con dichiarazione allegata al documento informatico e asseverata secondo le regole tecniche stabilite ai sensi dell’articolo 71.</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 43354,
+            "endPosition": 43805,
+            "content": "<p>5. Le copie su supporto informatico di documenti, originali unici, formati in origine su supporto cartaceo o, comunque, non informatico sostituiscono, ad ogni effetto di legge, gli originali da cui sono tratte se la loro conformità all’originale è autenticata da un notaio o da altro pubblico ufficiale a ciò autorizzato, con dichiarazione allegata al documento informatico e asseverata secondo le regole tecniche stabilite ai sensi dell’articolo 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0159",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>6. La spedizione o il rilascio di copie di atti e documenti di cui al comma 3, esonera dalla produzione e dalla esibizione dell’originale formato su supporto cartaceo quando richieste ad ogni effetto di legge.</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 43825,
+            "endPosition": 44041,
+            "content": "<p>6. La spedizione o il rilascio di copie di atti e documenti di cui al comma 3, esonera dalla produzione e dalla esibizione dell’originale formato su supporto cartaceo quando richieste ad ogni effetto di legge.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0160",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>7. Gli obblighi di conservazione e di esibizione di documenti previsti dalla legislazione vigente si intendono soddisfatti a tutti gli effetti di legge a mezzo di documenti informatici, se le procedure utilizzate sono conformi alle regole tecniche dettate ai sensi dell’articolo 71 di concerto con il Ministro dell’economia e delle finanze.</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 44061,
+            "endPosition": 44408,
+            "content": "<p>7. Gli obblighi di conservazione e di esibizione di documenti previsti dalla legislazione vigente si intendono soddisfatti a tutti gli effetti di legge a mezzo di documenti informatici, se le procedure utilizzate sono conformi alle regole tecniche dettate ai sensi dell’articolo 71 di concerto con il Ministro dell’economia e delle finanze.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0161",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-23-bis-duplicati-e-copie-informatiche-di-documenti-informatici'><span id='art23bis'></span><h4>Art. 23-bis. Duplicati e copie informatiche di documenti informatici</h4>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<div class='section' id='art-23-bis-duplicati-e-copie-informatiche-di-documenti-informatici'><span id='art23bis'></span><h4>Art. 23-bis. Duplicati e copie informatiche di documenti informatici</h4>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0162",
+    "operation": "MEANING",
+    "new": "<p>1. I duplicati informatici hanno il medesimo valore giuridico, ad ogni effetto di legge, del documento informatico da cui sono tratti, se prodotti in conformità alle regole tecniche di cui all’articolo 71.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>1. I duplicati informatici hanno il medesimo valore giuridico, ad ogni effetto di legge, del documento informatico da cui sono tratti, se prodotti in conformità alle regole tecniche di cui all’articolo 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0163",
+    "operation": "MEANING",
+    "new": "<p>2. Le copie e gli estratti informatici del documento informatico, se prodotti in conformità alle vigenti regole tecniche di cui all’articolo 71, hanno la stessa efficacia probatoria dell’originale da cui sono tratte se la loro conformità all’originale, in tutti le sue componenti, è attestata da un pubblico ufficiale a ciò autorizzato o se la conformità non è espressamente disconosciuta. Resta fermo, ove previsto, l’obbligo di conservazione dell’originale informatico.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>2. Le copie e gli estratti informatici del documento informatico, se prodotti in conformità alle vigenti regole tecniche di cui all’articolo 71, hanno la stessa efficacia probatoria dell’originale da cui sono tratte se la loro conformità all’originale, in tutti le sue componenti, è attestata da un pubblico ufficiale a ciò autorizzato o se la conformità non è espressamente disconosciuta. Resta fermo, ove previsto, l’obbligo di conservazione dell’originale informatico.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0164",
+    "operation": "MEANING",
+    "new": "</div>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "</div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0165",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-23-ter-documenti-amministrativi-informatici'><span id='art23ter'></span><h4>Art. 23-ter. Documenti amministrativi informatici</h4>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<div class='section' id='art-23-ter-documenti-amministrativi-informatici'><span id='art23ter'></span><h4>Art. 23-ter. Documenti amministrativi informatici</h4>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0166",
+    "operation": "MEANING",
+    "new": "<p>1. Gli atti formati dalle pubbliche amministrazioni con strumenti informatici, nonché i dati e i documenti informatici detenuti dalle stesse, costituiscono informazione primaria ed originale da cui è possibile effettuare, su diversi o identici tipi di supporto, duplicazioni e copie per gli usi consentiti dalla legge.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>1. Gli atti formati dalle pubbliche amministrazioni con strumenti informatici, nonché i dati e i documenti informatici detenuti dalle stesse, costituiscono informazione primaria ed originale da cui è possibile effettuare, su diversi o identici tipi di supporto, duplicazioni e copie per gli usi consentiti dalla legge.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0167",
+    "operation": "MEANING",
+    "new": "<p>2. I documenti costituenti atti amministrativi con rilevanza interna al procedimento amministrativo sottoscritti con firma elettronica avanzata hanno l’efficacia prevista dall’art. 2702 del codice civile.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>2. I documenti costituenti atti amministrativi con rilevanza interna al procedimento amministrativo sottoscritti con firma elettronica avanzata hanno l’efficacia prevista dall’art. 2702 del codice civile.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0168",
+    "operation": "MEANING",
+    "new": "<p>3. Le copie su supporto informatico di documenti formati dalla pubblica amministrazione in origine su supporto analogico ovvero da essa detenuti, hanno il medesimo valore giuridico, ad ogni effetto di legge, degli originali da cui sono tratte, se la loro conformità all’originale è assicurata dal funzionario a ciò delegato nell’ambito dell’ordinamento proprio dell’amministrazione di appartenenza, mediante l’utilizzo della firma digitale o di altra firma elettronica qualificata e nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71; in tale caso l’obbligo di conservazione dell’originale del documento è soddisfatto con la conservazione della copia su supporto informatico.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>3. Le copie su supporto informatico di documenti formati dalla pubblica amministrazione in origine su supporto analogico ovvero da essa detenuti, hanno il medesimo valore giuridico, ad ogni effetto di legge, degli originali da cui sono tratte, se la loro conformità all’originale è assicurata dal funzionario a ciò delegato nell’ambito dell’ordinamento proprio dell’amministrazione di appartenenza, mediante l’utilizzo della firma digitale o di altra firma elettronica qualificata e nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71; in tale caso l’obbligo di conservazione dell’originale del documento è soddisfatto con la conservazione della copia su supporto informatico.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0169",
+    "operation": "MEANING",
+    "new": "<p>4. Le regole tecniche in materia di formazione e conservazione di documenti informatici delle pubbliche amministrazioni sono definite con decreto del Presidente del Consiglio dei Ministri o del Ministro delegato per la pubblica amministrazione e l’innovazione, di concerto con il Ministro per i beni e le attività culturali, nonché d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, e sentiti DigitPA e il Garante per la protezione dei dati personali.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>4. Le regole tecniche in materia di formazione e conservazione di documenti informatici delle pubbliche amministrazioni sono definite con decreto del Presidente del Consiglio dei Ministri o del Ministro delegato per la pubblica amministrazione e l’innovazione, di concerto con il Ministro per i beni e le attività culturali, nonché d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, e sentiti DigitPA e il Garante per la protezione dei dati personali.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0170",
+    "operation": "MEANING",
+    "new": "<p>5. Sulle copie analogiche di documenti amministrativi informatici può essere apposto a stampa un contrassegno, sulla base dei criteri definiti con linee guida dell’Agenzia per l’Italia digitale, tramite il quale è possibile ottenere il documento informatico, ovvero verificare la corrispondenza allo stesso della copia analogica. Il contrassegno apposto ai sensi del primo periodo sostituisce a tutti gli effetti di legge la sottoscrizione autografa e non può essere richiesta la produzione di altra copia analogica con sottoscrizione autografa del medesimo documento informatico. I programmi software eventualmente necessari alla verifica sono di libera e gratuita disponibilità.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>5. Sulle copie analogiche di documenti amministrativi informatici può essere apposto a stampa un contrassegno, sulla base dei criteri definiti con linee guida dell’Agenzia per l’Italia digitale, tramite il quale è possibile ottenere il documento informatico, ovvero verificare la corrispondenza allo stesso della copia analogica. Il contrassegno apposto ai sensi del primo periodo sostituisce a tutti gli effetti di legge la sottoscrizione autografa e non può essere richiesta la produzione di altra copia analogica con sottoscrizione autografa del medesimo documento informatico. I programmi software eventualmente necessari alla verifica sono di libera e gratuita disponibilità.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0171",
+    "operation": "MEANING",
+    "new": "<p>5-bis. I documenti di cui al presente articolo devono essere fruibili indipendentemente dalla condizione di disabilità personale, applicando i criteri di accessibilità definiti dai requisiti tecnici di cui all’articolo 11 della legge 9 gennaio 2004, n. 4.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>5-bis. I documenti di cui al presente articolo devono essere fruibili indipendentemente dalla condizione di disabilità personale, applicando i criteri di accessibilità definiti dai requisiti tecnici di cui all’articolo 11 della legge 9 gennaio 2004, n. 4.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0172",
+    "operation": "MEANING",
+    "new": "<p>6. Per quanto non previsto dal presente articolo si applicano gli articoli 21, 22 , 23 e 23-bis.</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>6. Per quanto non previsto dal presente articolo si applicano gli articoli 21, 22 , 23 e 23-bis.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0173",
+    "operation": "MEANING",
+    "new": "</div>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "</div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0174",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-23-quater-riproduzioni-informatiche'><span id='art23quater'></span><h4>Art. 23-quater. Riproduzioni informatiche</h4>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<div class='section' id='art-23-quater-riproduzioni-informatiche'><span id='art23quater'></span><h4>Art. 23-quater. Riproduzioni informatiche</h4>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0175",
+    "operation": "MEANING",
+    "new": "<p>1. All’articolo 2712 del codice civile dopo le parole: «riproduzioni fotografiche» è inserita la seguente: «, informatiche».</p>",
+    "old": "",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<p>1. All’articolo 2712 del codice civile dopo le parole: «riproduzioni fotografiche» è inserita la seguente: «, informatiche».</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0176",
+    "operation": "MEANING",
+    "new": "elettronica",
+    "old": "digitale",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 45909,
+            "endPosition": 45917,
+            "content": "digitale"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 45917,
+            "content": "elettronica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0177",
+    "operation": "MEANING",
+    "new": " qualsiasi",
+    "old": "",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 45919,
+            "content": " qualsiasi"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0178",
+    "operation": "MEANING",
+    "new": "avanzata",
+    "old": "elettronica qualificata",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 45940,
+            "endPosition": 45963,
+            "content": "elettronica qualificata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 45963,
+            "content": "avanzata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0179",
+    "operation": "MEANING",
+    "new": "elettronica",
+    "old": "digitale",
+    "timestamp": "500",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 46094,
+            "endPosition": 46102,
+            "content": "digitale"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 46102,
+            "content": "elettronica"
+        }]
+    }]
+}]

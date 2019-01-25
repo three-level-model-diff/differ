@@ -1,0 +1,1279 @@
+[{
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "0a) AgID: l’Agenzia per l’Italia digitale di cui all’articolo 19 del decreto-legge 22 giugno 2012, n. 83, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 134;",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW FIRST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>0a) AgID: l’Agenzia per l’Italia digitale di cui all’articolo 19 del decreto-legge 22 giugno 2012, n. 83, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 134;</p>"
+        }]
+    }]
+},{
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "a) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "a) allineamento dei dati: il processo di coordinamento dei dati presenti in più archivi finalizzato alla verifica della corrispondenza delle informazioni in essi contenute;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "operation": "TEXTREPLACE",
+        "type": "TEXT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(2)",
+            "content": "a) allineamento dei dati: il processo di coordinamento dei dati presenti in più archivi finalizzato alla verifica della corrispondenza delle informazioni in essi contenute;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(2)",
+            "content": "a) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "b) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "b) autenticazione informatica: la validazione dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne distinguono l’identità nei sistemi informativi, effettuata attraverso opportune tecnologie al fine di garantire la sicurezza dell’accesso;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(3)",
+            "content": "b) autenticazione informatica: la validazione dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne distinguono l’identità nei sistemi informativi, effettuata attraverso opportune tecnologie al fine di garantire la sicurezza dell’accesso;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(3)",
+            "content": "b) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "elementi per l’identificazione fisica",
+    "old": "fotografia",
+    "items":[{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(4)",
+            "content": "elementi per l'identificazione fisica"
+        }, {
+            "id":"EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(4)",
+            "content": "fotografia"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "e) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "e) certificati elettronici: gli attestati elettronici che collegano i dati utilizzati per verificare le firme elettroniche ai titolari e confermano l’identità informatica dei titolari stessi;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(6)",
+            "content": "e) certificati elettronici: gli attestati elettronici che collegano i dati utilizzati per verificare le firme elettroniche ai titolari e confermano l’identità informatica dei titolari stessi;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(6)",
+            "content": "e) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "f) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "f) certificato qualificato: il certificato elettronico conforme ai requisiti di cui all’allegato I della direttiva 1999/93/CE, rilasciati da certificatori che rispondono ai requisiti di cui all’allegato II della medesima direttiva;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(7)",
+            "content": "f) certificato qualificato: il certificato elettronico conforme ai requisiti di cui all’allegato I della direttiva 1999/93/CE, rilasciati da certificatori che rispondono ai requisiti di cui all’allegato II della medesima direttiva;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(7)",
+            "content": "f) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "g) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "g) certificatore: il soggetto che presta servizi di certificazione delle firme elettroniche o che fornisce altri servizi connessi con queste ultime;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(8)",
+            "content": "g) certificatore: il soggetto che presta servizi di certificazione delle firme elettroniche o che fornisce altri servizi connessi con queste ultime;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(8)",
+            "content": "g) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "h) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "h) chiave privata: l’elemento della coppia di chiavi asimmetriche, utilizzato dal soggetto titolare, mediante il quale si appone la firma digitale sul documento informatico;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(9)",
+            "content": "h) chiave privata: l’elemento della coppia di chiavi asimmetriche, utilizzato dal soggetto titolare, mediante il quale si appone la firma digitale sul documento informatico;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(9)",
+            "content": "h) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "i) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "i) chiave pubblica: l’elemento della coppia di chiavi asimmetriche destinato ad essere reso pubblico, con il quale si verifica la firma digitale apposta sul documento informatico dal titolare delle chiavi asimmetriche;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(10)",
+            "content": "i) chiave pubblica: l’elemento della coppia di chiavi asimmetriche destinato ad essere reso pubblico, con il quale si verifica la firma digitale apposta sul documento informatico dal titolare delle chiavi asimmetriche;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(10)",
+            "content": "i) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>i-bis) copia informatica di documento analogico: il documento informatico avente contenuto identico a quello del documento analogico da cui è tratto;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(11)",
+            "content": "<p>i-bis) copia informatica di documento analogico: il documento informatico avente contenuto identico a quello del documento analogico da cui è tratto;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>i-ter) copia per immagine su supporto informatico di documento analogico: il documento informatico avente contenuto e forma identici a quelli del documento analogico da cui è tratto;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(12)",
+            "content": "<p>i-ter) copia per immagine su supporto informatico di documento analogico: il documento informatico avente contenuto e forma identici a quelli del documento analogico da cui è tratto;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>i-quater) copia informatica di documento informatico: il documento informatico avente contenuto identico a quello del documento da cui è tratto su supporto informatico con diversa sequenza di valori binari;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(13)",
+            "content": "<p>i-quater) copia informatica di documento informatico: il documento informatico avente contenuto identico a quello del documento da cui è tratto su supporto informatico con diversa sequenza di valori binari;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>i-quinquies) duplicato informatico: il documento informatico ottenuto mediante la memorizzazione, sullo stesso dispositivo o su dispositivi diversi, della medesima sequenza di valori binari del documento originario;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(14)",
+            "content": "<p>i-quinquies) duplicato informatico: il documento informatico ottenuto mediante la memorizzazione, sullo stesso dispositivo o su dispositivi diversi, della medesima sequenza di valori binari del documento originario;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>i-sexies) dati territoriali: i dati che attengono, direttamente o indirettamente, a una località o a un’area geografica specifica;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(15)",
+            "content": "<p>i-sexies) dati territoriali: i dati che attengono, direttamente o indirettamente, a una località o a un’area geografica specifica;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "l) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "l) dato a conoscibilità limitata: il dato la cui conoscibilità è riservata per legge o regolamento a specifici soggetti o categorie di soggetti;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(16)",
+            "content": "l) dato a conoscibilità limitata: il dato la cui conoscibilità è riservata per legge o regolamento a specifici soggetti o categorie di soggetti;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(16)",
+            "content": "l) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>l-bis) formato aperto: un formato di dati reso pubblico, documentato esaustivamente e neutro rispetto agli strumenti tecnologici necessari per la fruizione dei dati stessi;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(17)",
+            "content": "<p>l-bis) formato aperto: un formato di dati reso pubblico, documentato esaustivamente e neutro rispetto agli strumenti tecnologici necessari per la fruizione dei dati stessi;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>l-ter) dati di tipo aperto: i dati che presentano le seguenti caratteristiche: 1) sono disponibili secondo i termini di una licenza o di una previsione normativa che ne permetta l’utilizzo da parte di chiunque, anche per finalità commerciali, in formato disaggregato; 2) sono accessibili attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, in formati aperti ai sensi della lettera l-bis), sono adatti all’utilizzo automatico da parte di programmi per elaboratori e sono provvisti dei relativi metadati; 3) sono resi disponibili gratuitamente attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, oppure sono resi disponibili ai costi marginali sostenuti per la loro riproduzione e divulgazione salvo quanto previsto dall’articolo 7 del decreto legislativo 24 gennaio 2006, n. 36;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(18)",
+            "content": "<p>l-ter) dati di tipo aperto: i dati che presentano le seguenti caratteristiche: 1) sono disponibili secondo i termini di una licenza o di una previsione normativa che ne permetta l’utilizzo da parte di chiunque, anche per finalità commerciali, in formato disaggregato; 2) sono accessibili attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, in formati aperti ai sensi della lettera l-bis), sono adatti all’utilizzo automatico da parte di programmi per elaboratori e sono provvisti dei relativi metadati; 3) sono resi disponibili gratuitamente attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, oppure sono resi disponibili ai costi marginali sostenuti per la loro riproduzione e divulgazione salvo quanto previsto dall’articolo 7 del decreto legislativo 24 gennaio 2006, n. 36;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "m) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "m) dato delle pubbliche amministrazioni: il dato formato, o comunque trattato da una pubblica amministrazione",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(19)",
+            "content": "m) dato delle pubbliche amministrazioni: il dato formato, o comunque trattato da una pubblica amministrazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(19)",
+            "content": "m) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "n) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "n) dato pubblico: il dato conoscibile da chiunque;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(20)",
+            "content": "n) dato pubblico: il dato conoscibile da chiunque;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(20)",
+            "content": "n) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(21)",
+            "content": "<p>n-bis) Riutilizzo: uso del dato di cui all’articolo 2, comma 1, lettera e), del decreto legislativo 24 gennaio 2006, n. 36;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>n-ter) domicilio digitale: un indirizzo elettronico eletto presso un servizio di posta elettronica certificata o un servizio elettronico di recapito certificato qualificato, come definito dal regolamento (UE) 23 luglio 2014 n. 910 del Parlamento europeo e del Consiglio in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE, di seguito «Regolamento eIDAS»,valido ai fini delle comunicazioni elettroniche aventi valore legale;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(22)",
+            "content": "<p>n-ter) domicilio digitale: un indirizzo elettronico eletto presso un servizio di posta elettronica certificata o un servizio elettronico di recapito certificato qualificato, come definito dal regolamento (UE) 23 luglio 2014 n. 910 del Parlamento europeo e del Consiglio in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE, di seguito «Regolamento eIDAS»,valido ai fini delle comunicazioni elettroniche aventi valore legale;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>n-quater) servizio in rete o on-line: qualsiasi servizio di una amministrazione pubblica fruibile a distanza per via elettronica;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(23)",
+            "content": "<p>n-quater) servizio in rete o on-line: qualsiasi servizio di una amministrazione pubblica fruibile a distanza per via elettronica;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "o) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "o) disponibilità: la possibilità di accedere ai dati senza restrizioni non riconducibili a esplicite norme di legge;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(24)",
+            "content": "o) disponibilità: la possibilità di accedere ai dati senza restrizioni non riconducibili a esplicite norme di legge;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(24)",
+            "content": "o) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "il documento elettronico che contiene ",
+    "old": "documento informatico: ",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(25)",
+            "content": "il documento elettronico che contiene "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>p-bis) documento analogico: la rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(26)",
+            "content": "<p>p-bis) documento analogico: la rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "q) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "q) firma elettronica: l’insieme dei dati in forma elettronica, allegati oppure connessi tramite associazione logica ad altri dati elettronici, utilizzati come metodo di autenticazione informatica;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(27)",
+            "content": "q) firma elettronica: l’insieme dei dati in forma elettronica, allegati oppure connessi tramite associazione logica ad altri dati elettronici, utilizzati come metodo di autenticazione informatica;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(27)",
+            "content": "q) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>q-bis) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(28)",
+            "content": "<p>q-bis) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "r) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "r) firma elettronica qualificata: la firma elettronica ottenuta attraverso una procedura informatica che garantisce la connessione univoca al firmatario e la sua univoca autenticazione informatica, creata con mezzi sui quali il firmatario può conservare un controllo esclusivo e collegata ai dati ai quali si riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati, che sia basata su un certificato qualificato e realizzata mediante un dispositivo sicuro per la creazione della firma, quale l’apparato strumentale usato per la creazione della firma elettronica;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(29)",
+            "content": "r) firma elettronica qualificata: la firma elettronica ottenuta attraverso una procedura informatica che garantisce la connessione univoca al firmatario e la sua univoca autenticazione informatica, creata con mezzi sui quali il firmatario può conservare un controllo esclusivo e collegata ai dati ai quali si riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati, che sia basata su un certificato qualificato e realizzata mediante un dispositivo sicuro per la creazione della firma, quale l’apparato strumentale usato per la creazione della firma elettronica;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(29)",
+            "content": "r) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "",
+    "old": "elettronica ",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "elettronica "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "a un soggetto terzo",
+    "old": "al destinatario",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "al destinatario"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(30)",
+            "content": "a un soggetto terzo"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "t) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "t) fruibilità di un dato: la possibilità di utilizzare il dato anche trasferendolo nei sistemi informativi automatizzati di un’altra amministrazione;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "t) fruibilità di un dato: la possibilità di utilizzare il dato anche trasferendolo nei sistemi informativi automatizzati di un’altra amministrazione;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(31)",
+            "content": "t) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "u) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "u) gestione informatica dei documenti: l’insieme delle attività finalizzate alla registrazione e segnatura di protocollo, nonché alla classificazione, organizzazione, assegnazione, reperimento e conservazione dei documenti amministrativi formati o acquisiti dalle amministrazioni, nell’ambito del sistema di classificazione d’archivio adottato, effettuate mediante sistemi informatici;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "u) gestione informatica dei documenti: l’insieme delle attività finalizzate alla registrazione e segnatura di protocollo, nonché alla classificazione, organizzazione, assegnazione, reperimento e conservazione dei documenti amministrativi formati o acquisiti dalle amministrazioni, nell’ambito del sistema di classificazione d’archivio adottato, effettuate mediante sistemi informatici;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(32)",
+            "content": "u) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>u-bis) gestore di posta elettronica certificata: il soggetto che presta servizi di trasmissione dei documenti informatici mediante la posta elettronica certificata;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(33)",
+            "content": "<p>u-bis) gestore di posta elettronica certificata: il soggetto che presta servizi di trasmissione dei documenti informatici mediante la posta elettronica certificata;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>u-ter) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(34)",
+            "content": "<p>u-ter) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>u-quater) identità digitale: la rappresentazione informatica della corrispondenza tra un utente e i suoi attributi identificativi, verificata attraverso l’insieme dei dati raccolti e registrati in forma digitale secondo le modalità fissate nel decreto attuativo dell’articolo 64;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(35)",
+            "content": "<p>u-quater) identità digitale: la rappresentazione informatica della corrispondenza tra un utente e i suoi attributi identificativi, verificata attraverso l’insieme dei dati raccolti e registrati in forma digitale secondo le modalità fissate nel decreto attuativo dell’articolo 64;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>v-bis) posta elettronica certificata: sistema di comunicazione in grado di attestare l’invio e l’avvenuta consegna di un messaggio di posta elettronica e di fornire ricevute opponibili ai terzi;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(37)",
+            "content": "<p>v-bis) posta elettronica certificata: sistema di comunicazione in grado di attestare l’invio e l’avvenuta consegna di un messaggio di posta elettronica e di fornire ricevute opponibili ai terzi;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "z) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "z) pubbliche amministrazioni centrali: le amministrazioni dello Stato, ivi compresi gli istituti e scuole di ogni ordine e grado e le istituzioni educative, le aziende ed amministrazioni dello Stato ad ordinamento autonomo, le istituzioni universitarie, gli enti pubblici non economici nazionali, l’Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni (ARAN), le agenzie di cui al decreto legislativo 30 luglio 1999, n. 300;",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "z) pubbliche amministrazioni centrali: le amministrazioni dello Stato, ivi compresi gli istituti e scuole di ogni ordine e grado e le istituzioni educative, le aziende ed amministrazioni dello Stato ad ordinamento autonomo, le istituzioni universitarie, gli enti pubblici non economici nazionali, l’Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni (ARAN), le agenzie di cui al decreto legislativo 30 luglio 1999, n. 300;"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(38)",
+            "content": "z) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "bb) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
+    "old": "bb) validazione temporale: il risultato della procedura informatica con cui si attribuiscono, ad uno o più documenti informatici, una data ed un orario opponibili ai terzi.",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "bb) validazione temporale: il risultato della procedura informatica con cui si attribuiscono, ad uno o più documenti informatici, una data ed un orario opponibili ai terzi."
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div > p:nth-of-type(40)",
+            "content": "bb) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>cc) titolare del dato: uno dei soggetti di cui all’articolo 2, comma 2, che ha originariamente formato per uso proprio o commissionato ad altro soggetto il documento che rappresenta il dato, o che ne ha la disponibilità;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>cc) titolare del dato: uno dei soggetti di cui all’articolo 2, comma 2, che ha originariamente formato per uso proprio o commissionato ad altro soggetto il documento che rappresenta il dato, o che ne ha la disponibilità;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>dd) interoperabilità: caratteristica di un sistema informativo, le cui interfacce sono pubbliche e aperte, di interagire in maniera automatica con altri sistemi informativi per lo scambio di informazioni e l’erogazione di servizi;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>dd) interoperabilità: caratteristica di un sistema informativo, le cui interfacce sono pubbliche e aperte, di interagire in maniera automatica con altri sistemi informativi per lo scambio di informazioni e l’erogazione di servizi;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>ee) cooperazione applicativa: la parte del Sistema Pubblico di Connettività finalizzata all’interazione tra i sistemi informatici dei soggetti partecipanti, per garantire l’integrazione dei metadati, delle informazioni, dei processi e procedimenti amministrativi.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>ee) cooperazione applicativa: la parte del Sistema Pubblico di Connettività finalizzata all’interazione tra i sistemi informatici dei soggetti partecipanti, per garantire l’integrazione dei metadati, delle informazioni, dei processi e procedimenti amministrativi.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>ff) Linee guida: le regole tecniche e di indirizzo adottate secondo il procedimento di cui all’articolo 71.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>ff) Linee guida: le regole tecniche e di indirizzo adottate secondo il procedimento di cui all’articolo 71.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-bis. Ai fini del presente Codice, valgono le definizioni di cui all’articolo 3 del Regolamento eIDAS;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>1-bis. Ai fini del presente Codice, valgono le definizioni di cui all’articolo 3 del Regolamento eIDAS;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-ter. Ove la legge consente l’utilizzo della posta elettronica certificata è ammesso anche l’utilizzo di altro servizio elettronico di recapito certificato qualificato ai sensi degli articoli 3, numero 37), e 44 del Regolamento eIDAS.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-i-definizioni > blockquote > div",
+            "content": "<p>1-ter. Ove la legge consente l’utilizzo della posta elettronica certificata è ammesso anche l’utilizzo di altro servizio elettronico di recapito certificato qualificato ai sensi degli articoli 3, numero 37), e 44 del Regolamento eIDAS.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "e nel modo più adeguato al soddisfacimento degli interessi degli utenti ",
+    "old": "più appropriate ",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(1)",
+            "content": "e nel modo più adeguato al soddisfacimento degli interessi degli utenti "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "STYLE",
+    "new": ":",
+    "old": "si applicano",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "PUNCTUATION",
+        "new": ":",
+        "old": "si applicano",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(2)",
+            "content": ":"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "STYLE",
+    "new": "</p><p>a)",
+    "old": "si applicano:",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "SPLIT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(2)",
+            "content": "</p><p>a)"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "STYLE",
+    "new": "",
+    "old": " nel rispetto del riparto di competenza di cui all’articolo 117 della Costituzione.",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": " nel rispetto del riparto di competenza di cui all’articolo 117 della Costituzione."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "STYLE",
+    "new": " nel rispetto del riparto di competenza di cui all’articolo 117 della Costituzione,",
+    "old": "165,",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(2)",
+            "content": " nel rispetto del riparto di competenza di cui all’articolo 117 della Costituzione,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "",
+    "old": "salvo che sia diversamente stabilito, nel rispetto della loro autonomia organizzativa e comunque",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "salvo che sia diversamente stabilito, nel rispetto della loro autonomia organizzativa e comunque"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": " ivi comprese le autorità di sistema portuale, nonché alle autorità amministrative indipendenti di garanzia, vigilanza e regolazione;",
+    "old": "Costituzione,",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(2)",
+            "content": " ivi comprese le autorità di sistema portuale, nonché alle autorità amministrative indipendenti di garanzia, vigilanza e regolazione;"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>b) ai gestori di servizi pubblici, ivi comprese le società quotate, in relazione ai servizi di pubblico interesse;</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(3)",
+            "content": "<p>b) ai gestori di servizi pubblici, ivi comprese le società quotate, in relazione ai servizi di pubblico interesse;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>c) alle società a controllo pubblico, come definite nel decreto legislativo 19 agosto 2016, n. 175, escluse le società quotate di cui all’articolo 2, comma 1, lettera p), del medesimo decreto che non rientrino nella categoria di cui alla lettera b).</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(4)",
+            "content": "<p>c) alle società a controllo pubblico, come definite nel decreto legislativo 19 agosto 2016, n. 175, escluse le società quotate di cui all’articolo 2, comma 1, lettera p), del medesimo decreto che non rientrino nella categoria di cui alla lettera b).</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(5)",
+            "content": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>"
+        }]
+    }]
+},{
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": " del presente Codice e le relative Linee guida",
+    "old": "di cui al capo II",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(6)",
+            "content": " del presente Codice e le relative Linee guida"
+        },{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "di cui al capo II"
+        }]
+    }]
+},{
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "il documento informatico",
+    "old": "i documenti informatici",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(6)",
+            "content": "il documento informatico"
+        },{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "i documenti informatici"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "",
+    "old": "i pagamenti informatici, i libri e le scritture, le disposizioni di cui al capo III, relative alla formazione, gestione, alla conservazione, nonché le disposizioni di cui al capo IV relative alla trasmissione dei documenti informatici si applicano anche ai privati ai sensi dell’articolo 3 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445.",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "i pagamenti informatici, i libri e le scritture, le disposizioni di cui al capo III, relative alla formazione, gestione, alla conservazione, nonché le disposizioni di cui al capo IV relative alla trasmissione dei documenti informatici si applicano anche ai privati ai sensi dell’articolo 3 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": " e i servizi fiduciari di cui al Capo II, la riproduzione e conservazione dei documenti di cui agli articoli 43 e 44, il domicilio digitale e le comunicazioni elettroniche di cui all’articolo 3-bis e al Capo IV, l’identità digitale di cui agli articoli 3-bis e 64 si applicano anche ai privati, ove non diversamente previsto.",
+    "old": "elettroniche,",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(6)",
+            "content": " e i servizi fiduciari di cui al Capo II, la riproduzione e conservazione dei documenti di cui agli articoli 43 e 44, il domicilio digitale e le comunicazioni elettroniche di cui all’articolo 3-bis e al Capo IV, l’identità digitale di cui agli articoli 3-bis e 64 si applicano anche ai privati, ove non diversamente previsto."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "",
+    "old": "ai gestori di servizi pubblici ed ",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "ai gestori di servizi pubblici ed "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "",
+    "old": "rilevante ",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "rilevante "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": " del Codice",
+    "old": "delle disposizioni",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(8)",
+            "content": " del Codice"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": " polizia giudiziaria e polizia economico-finanziaria ",
+    "old": "sicurezza nazionale,",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(9)",
+            "content": " polizia giudiziaria e polizia economico-finanziaria "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": ", nonché alle comunicazioni di emergenza e di allerta in ambito di protezione civile. Le disposizioni del presente Codice si applicano al processo civile, penale, amministrativo, contabile e tributario, in quanto compatibili e salvo che non sia diversamente disposto dalle disposizioni in materia di processo telematico",
+    "old": "consultazioni elettorali",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione > p:nth-of-type(9)",
+            "content": ", nonché alle comunicazioni di emergenza e di allerta in ambito di protezione civile. Le disposizioni del presente Codice si applicano al processo civile, penale, amministrativo, contabile e tributario, in quanto compatibili e salvo che non sia diversamente disposto dalle disposizioni in materia di processo telematico"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>6-bis. Ferma restando l’applicabilità delle disposizioni del presente decreto agli atti di liquidazione, rettifica, accertamento e di irrogazione delle sanzioni di natura tributaria, con decreto del Presidente del Consiglio dei ministri o del Ministro delegato, adottato su proposta del Ministro dell’economia e delle finanze, sono stabiliti le modalità e i termini di applicazione delle disposizioni del presente Codice alle attività e funzioni ispettive e di controllo fiscale.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-2-finalita-e-ambito-di-applicazione",
+            "content": "<p>6-bis. Ferma restando l’applicabilità delle disposizioni del presente decreto agli atti di liquidazione, rettifica, accertamento e di irrogazione delle sanzioni di natura tributaria, con decreto del Presidente del Consiglio dei ministri o del Ministro delegato, adottato su proposta del Ministro dell’economia e delle finanze, sono stabiliti le modalità e i termini di applicazione delle disposizioni del presente Codice alle attività e funzioni ispettive e di controllo fiscale.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "Chiunque ha il diritto di usare, in modo accessibile ed efficace, le soluzioni e gli strumenti di cui al presente Codice nei rapporti con i soggetti di cui all’articolo 2, comma 2, anche ai fini dell’esercizio dei diritti di accesso e della partecipazione al procedimento amministrativo, fermi restando i diritti delle minoranze linguistiche riconosciute.",
+    "old": "I cittadini e le imprese hanno diritto a richiedere ed ottenere l’uso delle tecnologie telematiche nelle comunicazioni con le pubbliche amministrazioni centrali e con i gestori di pubblici servizi statali nei limiti di quanto previsto nel presente codice.",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 7638,
+            "endPosition": 7834,
+            "content": "I cittadini e le imprese hanno diritto a richiedere ed ottenere l’uso delle tecnologie telematiche nelle comunicazioni con le pubbliche amministrazioni centrali e con i gestori di pubblici servizi statali nei limiti di quanto previsto nel presente codice."
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-3-diritto-all-uso-delle-tecnologie > p:nth-of-type(1)",
+            "content": "Chiunque ha il diritto di usare, in modo accessibile ed efficace, le soluzioni e gli strumenti di cui al presente Codice nei rapporti con i soggetti di cui all’articolo 2, comma 2, anche ai fini dell’esercizio dei diritti di accesso e della partecipazione al procedimento amministrativo, fermi restando i diritti delle minoranze linguistiche riconosciute."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-3-diritto-all-uso-delle-tecnologie",
+            "content": "<p>1-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-ter. La tutela giurisdizionale davanti al giudice amministrativo è disciplinata dal codice del processo amministrativo.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-3-diritto-all-uso-delle-tecnologie",
+            "content": "<p>1-ter. La tutela giurisdizionale davanti al giudice amministrativo è disciplinata dal codice del processo amministrativo.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-quater. COMMA ABROGATO DAL D.LGS. 13 DICEMBRE 2017, N. 217.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-3-diritto-all-uso-delle-tecnologie",
+            "content": "<p>1-quater. COMMA ABROGATO DAL D.LGS. 13 DICEMBRE 2017, N. 217.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-quinquies. COMMA ABROGATO DAL D.LGS. 13 DICEMBRE 2017, N. 217.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-3-diritto-all-uso-delle-tecnologie",
+            "content": "<p>1-quinquies. COMMA ABROGATO DAL D.LGS. 13 DICEMBRE 2017, N. 217.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC",
+    "operation": "MEANING",
+    "new": "<p>1-sexies. COMMA ABROGATO DAL D.LGS. 13 DICEMBRE 2017, N. 217.</p>",
+    "old": "",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "scenario": "NEW LAST CHILD",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": "#art-3-diritto-all-uso-delle-tecnologie",
+            "content": "<p>1-sexies. COMMA ABROGATO DAL D.LGS. 13 DICEMBRE 2017, N. 217.</p>"
+        }]
+    }]
+}]

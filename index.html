@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Differ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Dondi Simone">
+    <meta name="description" content="">
+    <!-- Favicon -->
+    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Argon CSS -->
+    <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom.css" type="text/css">
+</head>
+
+<body>
+    <header class="header-global">
+        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+            <div class="container">
+            <a class="navbar-brand mr-lg-5" href="./index.html">
+                <img src="./assets/img/brand/white.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                    <a href="./index.html">
+                        <img src="./assets/img/brand/blue.png">
+                    </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    </div>
+                </div>
+                </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                        <i class="ni ni-ui-04 d-lg-none"></i>
+                        <span class="nav-link-inner--text">Documents</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xl">
+                            <div class="dropdown-menu-inner">
+                                <a href="#" class="media d-flex align-items-center">
+                                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white active">
+                                    <i class="far fa-file-word"></i>
+                                </div>
+                                <div class="media-body ml-3">
+                                    <h6 class="heading text-primary mb-md-1 active">Word Style</h6>
+                                    <p class="description d-none d-md-inline-block mb-0 active">Learn how to use Argon compiling Scss, change brand colors and more.</p>
+                                </div>
+                                </a>
+                                <a href="wiki.html" class="media d-flex align-items-center">
+                                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                                    <i class="fab fa-wikipedia-w"></i>
+                                </div>
+                                <div class="media-body ml-3">
+                                    <h6 class="heading text-primary mb-md-1">Wiki Style</h6>
+                                    <p class="description d-none d-md-inline-block mb-0">Learn more about colors, typography, icons and the grid system we used for Argon.</p>
+                                </div>
+                                </a>
+                                <a href="git.html" class="media d-flex align-items-center">
+                                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="media-body ml-3">
+                                    <h5 class="heading text-warning mb-md-1">Git Style</h5>
+                                    <p class="description d-none d-md-inline-block mb-0">Browse our 50 beautiful handcrafted components offered in the Free version.</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <span class="nav-link-inner--text d-lg-none">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+                        <i class="fab fa-twitter-square"></i>
+                        <span class="nav-link-inner--text d-lg-none">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system" target="_blank" data-toggle="tooltip" title="Star us on Github">
+                        <i class="fab fa-github"></i>
+                        <span class="nav-link-inner--text d-lg-none">Github</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="position-relative">
+            <section class="section section-lg section-hero section-shaped shape-dark" style="background: linear-gradient(150deg, #281483 15%, #c71919 70%, #cf4343 94%);">
+                <!-- Background circles -->
+                <div class="shape shape-style-1 shape-primary">
+                    <span class="span-150"></span>
+                    <span class="span-50"></span>
+                    <span class="span-50"></span>
+                    <span class="span-75"></span>
+                    <span class="span-100"></span>
+                    <span class="span-75"></span>
+                    <span class="span-50"></span>
+                    <span class="span-100"></span>
+                    <span class="span-50"></span>
+                    <span class="span-100"></span>
+                </div>
+                <div class="container py-lg-md d-flex">
+                    <div class="col px-0">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h1 class="display-3 text-white">Differ
+                            <span>Visualize changes in documents</span>
+                          </h1>
+                          <p class="lead text-white">With this page you can see how the library works. There are different styles of visualization.</p>
+                          <h4 class="text-white mt-5" id="word-header1">Word Style</h4>
+                          <p class="lead text-white" id="word-header2">The changes are shown in the document: red ones are cancellations of text, green ones are insertions of text and the ones with borders are structural changes</p>
+                          <h4 class="text-white" id="wiki-header1">Wiki Style</h4>
+                          <p class="lead text-white" id="wiki-header2">The changes are shown in a comparative way: in the card on the left is shown the old version and in the card on the right the new one</p>
+                          <h4 class="text-white" id="git-header1">Git Style</h4>
+                          <p class="lead text-white" id="git-header2">The changes are shown in a comparative way: in the card on the left is shown the old version and in the card on the right the new one</p>
+                          <br>
+                          <p class="lead text-white" id="doc-header">Choose a document to see them in action!</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- SVG separator -->
+                <div class="separator separator-bottom separator-skew zindex-100">
+                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+            </section>
+            <section class="section section-lg pt-lg-0 mt--250">
+                <div class="container" id="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12" id="mod">
+                            <div class="row row-grid">
+                                <div class="col-lg-4">
+                                    <div class="card card-lift--hover card-link shadow border-0">
+                                        <a href="" onclick="CAD2017chosen(event)">
+                                            <div class="card-body py-5">
+                                                <h6 class="text-primary text-uppercase text-center">
+                                                    CAD
+                                                </h6>
+                                                <p class="description d-none d-md-inline-block mb-0 text-left">Lo Stato, le Regioni e le autonomie locali assicurano la disponibilità, la gestione, l’accesso, la trasmissione, la conservazione e la fruibilità dell’informazione in modalità digitale e si organizzano ed agiscono a tale fine utilizzando con le modalità più appropriate e nel modo più adeguato al soddisfacimento degli interessi degli utenti le tecnologie dell’informazione e della comunicazione.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- More documents goes here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Core -->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/popper/popper.min.js"></script>
+    <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/vendor/headroom/headroom.min.js"></script>
+    <!-- Optional JS -->
+    <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+    <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+    <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- Argon JS -->
+    <script src="./assets/js/argon.js?v=1.0.1"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/word4.js"></script>
+    <script src="./assets/js/wiki.js"></script>
+    <script src="./assets/js/git.js"></script>
+    <script>
+        // JSON dei diff del CAD v.2017
+        let CADedits2017 = $.getJSON("assets/docs/CAD-v.2005-03-07/CAD-v.2017-12-13.json");
+        // JSON dei diff del CAD v.2012
+        let CADedits2012 = $.getJSON("assets/docs/CAD-v.2005-03-07/CAD-v.2012-10-18.json");
+        // il documento caricato dall'utente
+        let doc;
+        // stringa che identifica il documento caricato
+        let docChosen; //the document chosen by the user
+        // regole CSS
+        let cssRules;
+
+        // template HTML per le nav-pills di selezione dello stile
+        let navPills = `<section class="section section-lg">
+                            <ul class="nav nav-pills nav-pills-circle" style="justify-content: center" id="tabs_2" role="tablist">
+                                <li class="nav-item" onclick="loadWordStyle()">
+                                    <h6>Word Style</h6>
+                                    <a class="nav-link rounded-circle active" id="home-tab" data-toggle="tab" href="#tabs_2_1" role="tab" aria-controls="home" aria-selected="true">
+                                    <span class="nav-link-icon d-block"><i class="far fa-file-word"></i></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" onclick="loadWikiStyle()">
+                                    <h6>Wiki Style</h6>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabs_2_2" role="tab" aria-controls="profile" aria-selected="false">
+                                    <span class="nav-link-icon d-block"><i class="fab fa-wikipedia-w"></i></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" onclick="loadGitStyle()">
+                                    <h6>Git Style</h6>
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tabs_2_3" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span class="nav-link-icon d-block"><i class="fab fa-github"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>`;
+
+        // template HTML per i tabs di selezione tra visualizzazione orizzontale e verticale
+        var tabs = `<div class="nav-wrapper">
+                        <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link mb-sm-4 mb-md-0 active" id="tabs-icons-text-1-tab" onclick="loadHorizontalCSS();" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Horizontal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-sm-4 mb-md-0" id="tabs-icons-text-2-tab" onclick="loadVerticalCSS();" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Vertical</a>
+                            </li>
+                        </ul>
+                    </div>`;
+
+        // template HTML per la sezione relativa allo stile Word
+        var word = `<div class="row row-grid">
+                        <div class="col-lg-3 col-md-3 col-sm-3" id="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body py-5">
+                                    <h4 class="text-default text-uppercase text-center">EDITS</h4>
+                                    <div class="container">
+                                        <p id="edits"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <div class="card shadow border-0">
+                                <div class="card-body py-5">
+                                    <div class="container" id="doc">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+
+        // template HTML per i bottoni di selezione della versione del CAD da visualizzare
+        var cadButtons = `<button type="button" class="btn btn-outline-primary pressed" style="margin-bottom: 1rem;" id="v.2017-12-13">v.2017-12-13</button>
+                        <button type="button" class="btn btn-outline-primary not-pressed" style="margin-bottom: 1rem;" id="v.2012-10-18">v.2012-10-18</button>`;
+
+        // template HTML per la sezione relativa allo stile Wiki
+        var wiki = `<section class="section section-lg pt-lg-0 mt--250">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="row row-grid">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="card shadow border-0">
+                                                <div class="card-body py-5">
+                                                    <h6 class="text-primary text-uppercase">
+                                                        Deleted content
+                                                    </h6>
+                                                    <div id="old"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="card shadow border-0">
+                                                <div class="card-body py-5">
+                                                    <h6 class="text-primary text-uppercase">
+                                                        Inserted content
+                                                    </h6>
+                                                    <div id="new"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>`;
+
+        // template HTML per la sezione relativa allo stile Git
+        var git = `<section class="section section-lg pt-lg-0 mt--250">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="card shadow py-5">
+                                           <div class="container" id="git">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>`;
+    
+        /**
+         * Fired when CAD v.2017 is chosen. Set docChosen to "CAD2017" and load some HTML templates: nav-pills, word-style and cad-buttons
+         */
+        function CAD2017chosen(event) {
+            event.preventDefault();
+
+            docChosen = "CAD2017";
+
+            loadNavPills();
+            loadWordStyle();
+            loadButtons();
+
+        };
+
+        /**
+         * Fired when CAD v.2012 is chosen. Set docChosen to "CAD2012" and load some HTML templates: nav-pills, word-style and cad-buttons
+         */
+        function CAD2012chosen(event) {
+            event.preventDefault();
+
+            docChosen = "CAD2012";
+
+            loadNavPills();
+            loadWordStyle();
+            loadButtons();
+
+        };
+
+        /**
+         * Handles the injection of HTML template for nav-pills
+         */
+        function loadNavPills() {
+
+            var mod = document.getElementById("mod");
+            mod.removeChild(mod.childNodes[1]);
+            mod.insertAdjacentHTML("afterbegin", navPills);
+
+        };
+
+        /**
+         * Handles the injection of HTML template for cad-buttons. Adds also a Event Listener on every button inserted
+         */
+        function loadButtons() {
+            document.getElementById("col-3").insertAdjacentHTML("afterbegin", cadButtons);
+            document.getElementById("v.2017-12-13").addEventListener("click", function(event) {
+                cadButton2017pressed(event);
+            });
+            document.getElementById("v.2012-10-18").addEventListener("click", function(event) {
+                cadButton2012pressed(event);
+            });
+        };
+
+        /**
+         * Applies the CSS rules for the vertical view
+         */
+        function loadVerticalCSS() {
+            let vertRules = cssRules.vertical;
+            for (const index in vertRules) {
+                let selector = vertRules[index].selector;
+                let rules = vertRules[index].rules;
+                let apt = vertRules[index].applyToParent
+                let keys = Object.keys(rules);
+                for (let key of keys) {
+                    let rule = rules[key];
+                    if (apt) {
+                        $(selector).parent().css(key, rule);
+                    } else {
+                        $(selector).css(key, rule);
+                    };
+                };
+            };
+        };
+
+        /**
+         * Applies the CSS rules for the horizontal view
+         */
+        function loadHorizontalCSS() {
+            let horizRules = cssRules.horizontal;
+            for (const index in horizRules) {
+                let selector = horizRules[index].selector;
+                let rules = horizRules[index].rules;
+                let keys = Object.keys(rules);
+                for (let key of keys) {
+                    let rule = rules[key];
+                    $(selector).css(key, rule);
+                };
+            };
+        };
+
+        /**
+         * Handles an AJAX request to load CAD document in HTML and a call to Differ library for Word style.
+         * /@param {JSON} edits - the JSON of diffs for the call to Differ library
+         */
+        function loadCAD(edits) {
+            $.ajax({
+                    context: this,
+                    dataType : "html",
+                    url : "assets/docs/CAD-v.2005-03-07/CAD-v.2005-03-07.html",
+                    success : function(results) {
+                        doc = results;
+                        var res = newVisualize(doc, edits.responseJSON);
+                        cssRules = res.css;
+                        document.getElementById("doc").innerHTML = res.modifiedText;
+                        document.getElementById("edits").innerHTML = "<p>Punctuation: " + res.edits.punctuation +
+                             "</p><p> Word Change: " + res.edits.wordChange +
+                                 "</p><p> Word Replace: " + res.edits.wordReplace +
+                                     "</p><p> Text Insert: " + res.edits.textInsert +
+                                         "</p><p> Text Delete: " + res.edits.textDelete +
+                                             "</p><p>Text Replace: " + res.edits.textReplace +
+                                                 "</p><p> Insert: " + res.edits.insert +
+                                                     "</p><p> Delete: " + res.edits.delete +
+                                                         "</p><p> Move: " + res.edits.move +
+                                                             "</p><p>Wrap: " + res.edits.wrap +
+                                                                 "</p><p> Unwrap: " + res.edits.unwrap +
+                                                                     "</p><p> Join: " + res.edits.join +
+                                                                         "</p><p> Split: " + res.edits.split +
+                                                                             "</p><p> Replace: " + res.edits.replace + "</p>";
+                        document.getElementById("tabs-icons-text-1-tab").click();
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+        };
+
+        /**
+         * Function called by the Event Listener in the cad-button v.2012. Modifies the style of the buttons and load the right JSON of diffs
+         */
+        function cadButton2012pressed(event) {
+            event.preventDefault();
+            document.getElementById("v.2017-12-13").classList.remove("pressed");
+            document.getElementById("v.2017-12-13").classList.add("not-pressed");
+            document.getElementById("v.2012-10-18").classList.remove("not-pressed");
+            document.getElementById("v.2012-10-18").classList.add("pressed");
+            loadCAD(CADedits2012);
+        };
+
+        /**
+         * Function called by the Event Listener in the cad-button v.2017. Modifies the style of the buttons and load the right JSON of diffs
+         */
+        function cadButton2017pressed(event) {
+            event.preventDefault();
+            document.getElementById("v.2017-12-13").classList.remove("not-pressed");
+            document.getElementById("v.2017-12-13").classList.add("pressed");
+            document.getElementById("v.2012-10-18").classList.remove("pressed");
+            document.getElementById("v.2012-10-18").classList.add("not-pressed");
+            loadCAD(CADedits2017);
+        };
+
+        /**
+         * Loads the HTML template for the Word style and the document chosen by the user. Calls also the Differ library
+         */
+        function loadWordStyle() {
+
+            document.getElementById("word-header1").style.display = "block";
+            document.getElementById("word-header2").style.display = "block";
+            document.getElementById("wiki-header1").style.display = "none";
+            document.getElementById("wiki-header2").style.display = "none";
+            document.getElementById("git-header1").style.display = "none";
+            document.getElementById("git-header2").style.display = "none";
+            document.getElementById("doc-header").textContent = "Change the style to see what you can do!"
+
+            var mod = document.getElementById("mod");
+            mod.removeChild(mod.childNodes[2]);
+
+            var div = document.createElement("div");
+            div.insertAdjacentHTML("afterbegin", word);
+            div.insertAdjacentHTML("afterbegin", tabs);
+
+            mod.appendChild(div);
+            
+            if (docChosen == "CAD2017") {
+                loadCAD(CADedits2017);
+            } else if (docChosen == "CAD2012") {
+                loadCAD(CADedits2012);
+            } else {
+                
+            };
+
+        };
+
+        /**
+         * Loads the HTML template for the Wiki style. Calls also the Differ library
+         */
+        function loadWikiStyle() {
+
+            let results;
+
+            toggleCSS('./assets/css/custom.css', 6);
+
+            document.getElementById("word-header1").style.display = "none";
+            document.getElementById("word-header2").style.display = "none";
+            document.getElementById("wiki-header1").style.display = "block";
+            document.getElementById("wiki-header2").style.display = "block";
+            document.getElementById("git-header1").style.display = "none";
+            document.getElementById("git-header2").style.display = "none";
+
+            var div = document.createElement("div");
+            div.insertAdjacentHTML("afterbegin", wiki);
+
+            var mod = document.getElementById("mod");
+            mod.removeChild(mod.childNodes[2]);
+
+            mod.appendChild(div);
+
+            if (docChosen=="CAD2017") {
+                results = showOldAlt(CADedits2017.responseJSON);
+            } else if (docChosen == "CAD2012") {
+                results = showOldAlt(CADedits2012.responseJSON);
+            } else {
+                
+            };
+
+            showOldContentsAlt(results);
+            showNewContentsAlt(results);
+        };
+
+        /**
+         * Shows the results of Differ library in the HTML
+         * /@param {Array} results - Result array from Differ library
+         */
+        function showOldContentsAlt(results) {
+            for (i in results) {
+                for (n in results[i]) {
+                    var div = document.createElement("div");
+                    div.classList.add("faded");
+                    div.addEventListener("click", function () {
+                        if (this.style.height == "5.2rem") {
+                            this.style.height = "auto";
+                        } else {
+                            this.style.height = "5.2rem";
+                        }
+                    });
+                    var p = document.createElement("p");
+                    var hr = document.createElement("hr");
+                    if (results[i][n].oldContent == "") {
+                        p.textContent = "//"
+                    } else {
+                        p.textContent = results[i][n].oldContent;
+                    };
+                    div.appendChild(p);
+                    document.getElementById("old").appendChild(div);
+                    document.getElementById("old").appendChild(hr);
+                };
+            };
+        };
+
+        /**
+         * Shows the results of Differ library in the HTML
+         * /@param {Array} results - Result array from Differ library
+         */
+        function showNewContentsAlt(results) {
+            for (i in results) {
+                for (n in results[i]) {
+                    var div = document.createElement("div");
+                    div.classList.add("faded");
+                    div.addEventListener("click", function () {
+                        if (this.style.height == "5.2rem") {
+                            this.style.height = "auto";
+                        } else {
+                            this.style.height = "5.2rem";
+                        }
+                    });
+                    var p = document.createElement("p");
+                    var hr = document.createElement("hr");
+                    if (results[i][n].newContent == "") {
+                        p.textContent = "//"
+                    } else {
+                        p.textContent = results[i][n].newContent;
+                    };
+                    div.appendChild(p);
+                    document.getElementById("new").appendChild(div);
+                    document.getElementById("new").appendChild(hr);
+                };
+            };
+        };
+
+        /**
+         * Loads the HTML template for the Git style. Calls also the Differ library
+         */
+        function loadGitStyle() {
+
+            toggleCSS('./assets/css/custom.css', 6);
+
+            document.getElementById("word-header1").style.display = "none";
+            document.getElementById("word-header2").style.display = "none";
+            document.getElementById("wiki-header1").style.display = "none";
+            document.getElementById("wiki-header2").style.display = "none";
+            document.getElementById("git-header1").style.display = "block";
+            document.getElementById("git-header2").style.display = "block";
+
+            let div = document.createElement("div");
+            div.insertAdjacentHTML("afterbegin", git);
+
+            let mod = document.getElementById("mod");
+            mod.replaceChild(div, mod.childNodes[2]);
+
+            let res = showGitStyle(CADedits2012.responseJSON);
+            let ts = res.timestamps[0];
+            let diffs = [];
+            
+            for (const key in ts) {
+                if (ts.hasOwnProperty(key)) {
+                    diffs.push(ts[key]);
+                    let h6 = document.createElement("h6");
+                    h6.classList.add("text-primary");
+                    h6.textContent = key;
+                    $("#git").append(h6);
+                    let p = document.createElement("p");
+                    p.textContent = diffs[key];
+                    $("#git").append(p);
+                    let hr = document.createElement("hr");
+                    $("#git").append(hr);
+                }
+            }
+            console.log(diffs)
+        };
+
+    </script>
+</body>
+</html>

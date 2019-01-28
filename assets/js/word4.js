@@ -42,6 +42,175 @@ var str2DOMElement = function(html) {
     return element;
 };
 
+RegExp.escape = function (string) {
+    return string.replace(/[-\\/\\^$*+?.()|[\]{}#&;,]/g, '\\$&')
+}
+
+RegExp.prototype.execGlobal = function (text) {
+    // Save matches
+    let matches = []
+    let match
+  
+    // Return all matches
+    let tagSelectorRegexp = RegExp(this.source, this.flags)
+    while ((match = tagSelectorRegexp.exec(text)) !== null) {
+      matches.push(match)
+    }
+  
+    return matches
+}
+
+function getEnclosingTag (text, pos, content) {
+    // Get the correct context
+    // Normally, the position is calculated over the NEWTEXT. The regexp must be executed over it.
+    // The algorithm needs to create a pattern with the text at the position, in the
+    let newContent = text.substring(pos, pos + content.length)
+
+
+    // If the new content is a sequence of open and close tags
+    if (/^[<>]+/.test(newContent)) {
+      newContent = text.substring(pos - content.length, pos)
+    }
+
+
+    // Set left and right selector
+    const left = '<[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*'
+    const right = '[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*>'
+
+
+    // Get list of matching patterns
+    let matches = RegExp(`${left}${RegExp.escape(newContent)}${right}`, 'g').execGlobal(text)
+
+
+    // Check each matching tag
+    for (const match of matches) {
+      // Save upper vars
+      const regexUpperIndex = match.index + match[0].length
+      let diffUpperIndex = this.pos + this.content.length
+
+
+      // If the DIFF is a DEL, then add its length to the regexUpperIndex
+      if (this.op === diffType.mechanical.del) diffUpperIndex -= this.content.length
+
+
+      // The regex result must contain the entire diff content MUST start before and end after
+      if (match.index < this.pos && regexUpperIndex > diffUpperIndex) {
+        // Retrieve XPATH and character position proper of the tag
+        let tag = this.getCssSelector(text, match)
+
+
+        // TODO CHANGE
+        if (tag === null) return null
+        // Add a more specific selector
+        tag.path = `#newTextTemplate${tag.path}`
+
+
+        return document.querySelector(tag.path)
+      }
+    }
+
+
+    return null
+}
+
+function   getCssSelector (text, tagString) {
+    /**
+     *
+     */
+    const initialiseTag = tag => {
+      tag.tag = tag[0].replace(/[<>]/g, ' ').trim().split(/\s/)[0]
+      tag.opening = tag.tag.indexOf('/') !== 0
+      tag.tag = tag.tag.replace('/', '')
+      tag.pos = 1
+
+
+      return tag
+    }
+
+
+    // #newTextTemplate>div>table>tbody>tr:nth-child(10)>td>span>a>wbr
+
+
+    /**
+     *
+     */
+    const setSiblings = function (i, sibling) {
+      // Left to end
+      for (let j = i; j < previousTags.length; j++) {
+        // If the parent is not a closing tag
+        // Add the removing tag as his child
+        if (previousTags[j].opening && sibling.tag === previousTags[j].tag) {
+          previousTags[j].pos++
+        }
+
+
+        if (previousTags[j].deepness !== sibling.deepness) break
+      }
+    }
+
+
+    // When the the tag is retrieved, it should create its XPATH
+    // Logging all of its parents I.E. everytime it finds a opening tag
+    // const leftText = text.split(tagString[0])[0]
+    const leftText = text.substring(0, this.pos)
+
+
+    // Match all of the opening and closing elements
+    let previousTags = RegExp(`<\\/?[\\w]+[\\w\\/\\-\\d\\=\\"\\s\\:\\%\\#\\?\\;\\&\\.\\,\\(\\)\\{\\}\\!\\;\\+${regexp.accented}]*>`, 'g').execGlobal(leftText)
+
+
+    // Add the current element
+    previousTags.push(tagString)
+
+
+    // Initialise all of the tags
+    previousTags.map(tag => initialiseTag(tag))
+
+
+    // Save the deepness
+    let deepness = 0
+    previousTags[previousTags.length - 1].deepness = deepness
+
+
+    for (let i = previousTags.length - 2; i > 0; i--) {
+      // Save the current tag
+      let curr = previousTags[i]
+      let next = previousTags[i + 1]
+
+
+      if (!curr.opening) curr.deepness = ++deepness
+
+
+      if (curr.tag === 'img' || curr.tag === 'wbr' || curr.tag === 'link') {
+        previousTags.splice(i, 1)
+        setSiblings(i, curr)
+      } else if ((curr.opening && !next.opening) && next.tag === curr.tag) {
+        previousTags.splice(i, 2)
+        setSiblings(i, curr)
+        deepness--
+      }
+    }
+
+
+    // Build the resultpath
+    let resultpath = ''
+    for (const parent of previousTags) {
+      // Add the tag name
+      resultpath += `>${parent.tag}`
+
+
+      // If the siblings are more than 1 write it on path
+      if (parent.pos > 1) resultpath += `:nth-child(${parent.pos})`
+    }
+
+
+    // position and css selector
+    return {
+      index: previousTags.splice(-1).pop().index,
+      path: resultpath
+    }
+}
+
 /**
  * Variable used to store the modified text during the application of diffs
  */
@@ -413,6 +582,7 @@ function newVisualize(doc, edits) {
                                 }
                                 if (typeof trPos !== "undefined" && typeof trDelContent !== "undefined" && typeof trInsContent !== "undefined") {
                                     differReplace2(trPos, trDelContent, trInsContent, operation);
+                                    //console.log(getEnclosingTag(doc, trPos, trDelContent));
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -437,6 +607,7 @@ function newVisualize(doc, edits) {
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "INS") {
                                 differInsWithoutShiftStruct(mechanical_diff.position, mechanical_diff.content, operation);
+
                             };
                         };
                         insertCounter++;

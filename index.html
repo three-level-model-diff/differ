@@ -332,7 +332,6 @@
 
             loadNavPills();
             loadWordStyle();
-            loadButtons();
 
         };
 
@@ -346,7 +345,6 @@
 
             loadNavPills();
             loadWordStyle();
-            loadButtons();
 
         };
 
@@ -494,11 +492,13 @@
             mod.appendChild(div);
             
             if (docChosen == "CAD2017") {
+                loadButtons();
                 loadCAD(CADedits2017);
             } else if (docChosen == "CAD2012") {
+                loadButtons();
                 loadCAD(CADedits2012);
             } else {
-                
+                // other documents here
             };
 
         };
@@ -509,8 +509,6 @@
         function loadWikiStyle() {
 
             let results;
-
-            toggleCSS('./assets/css/custom.css', 6);
 
             document.getElementById("word-header1").style.display = "none";
             document.getElementById("word-header2").style.display = "none";
@@ -528,9 +526,9 @@
             mod.appendChild(div);
 
             if (docChosen=="CAD2017") {
-                results = showOldAlt(CADedits2017.responseJSON);
+                results = wikiStyle(CADedits2017.responseJSON);
             } else if (docChosen == "CAD2012") {
-                results = showOldAlt(CADedits2012.responseJSON);
+                results = wikiStyle(CADedits2012.responseJSON);
             } else {
                 
             };
@@ -546,22 +544,56 @@
         function showOldContentsAlt(results) {
             for (i in results) {
                 for (n in results[i]) {
-                    var div = document.createElement("div");
+                    let div = document.createElement("div");
                     div.classList.add("faded");
                     div.addEventListener("click", function () {
                         if (this.style.height == "5.2rem") {
                             this.style.height = "auto";
+                            this.classList.remove("faded");
+                            let prev = this.previousElementSibling;
+                            let index = 0;
+                            while (prev !== null) {
+                                prev = prev.previousElementSibling;
+                                index++;
+                            }
+                            let height = this.getBoundingClientRect().height;
+                            let newDiv = document.getElementById("new").children[index];
+                            newDiv.style.height = height + "px";
                         } else {
                             this.style.height = "5.2rem";
-                        }
+                            this.classList.add("faded");
+                            let prev = this.previousElementSibling;
+                            let index = 0;
+                            while (prev !== null) {
+                                prev = prev.previousElementSibling;
+                                index++;
+                            };
+                            let height = this.getBoundingClientRect().height;
+                            let newDiv = document.getElementById("new").children[index];
+                            newDiv.style.height = height + "px";
+                        };
                     });
-                    var p = document.createElement("p");
-                    var hr = document.createElement("hr");
+                    let p = document.createElement("p");
+                    let hr = document.createElement("hr");
+                    let operationSpan = document.createElement("span");
+                    operationSpan.classList.add("operation");
+                    operationSpan.textContent = results[i][n].operation;
+                    let contentSpan = document.createElement("span");
+                    contentSpan.classList.add("content");
                     if (results[i][n].oldContent == "") {
-                        p.textContent = "//"
+                        contentSpan.textContent = "//"
                     } else {
-                        p.textContent = results[i][n].oldContent;
+                        for (const index in results[i][n].delContent) {
+                            let delSpan = document.createElement("span");
+                            delSpan.classList.add("delete");
+                            delSpan.textContent = results[i][n].delContent[index];
+                        }
+                        
+
+                        contentSpan.textContent = results[i][n].oldContent;
                     };
+                    p.appendChild(operationSpan);
+                    p.appendChild(contentSpan);
                     div.appendChild(p);
                     document.getElementById("old").appendChild(div);
                     document.getElementById("old").appendChild(hr);
@@ -576,22 +608,49 @@
         function showNewContentsAlt(results) {
             for (i in results) {
                 for (n in results[i]) {
-                    var div = document.createElement("div");
+                    let div = document.createElement("div");
                     div.classList.add("faded");
                     div.addEventListener("click", function () {
                         if (this.style.height == "5.2rem") {
                             this.style.height = "auto";
+                            this.classList.remove("faded");
+                            let prev = this.previousElementSibling;
+                            let index = 0;
+                            while (prev !== null) {
+                                prev = prev.previousElementSibling;
+                                index++;
+                            };
+                            let height = this.getBoundingClientRect().height;
+                            let oldDiv = document.getElementById("old").children[index];
+                            oldDiv.style.height = height + "px";
                         } else {
                             this.style.height = "5.2rem";
-                        }
+                            this.classList.add("faded");
+                            let prev = this.previousElementSibling;
+                            let index = 0;
+                            while (prev !== null) {
+                                prev = prev.previousElementSibling;
+                                index++;
+                            };
+                            let height = this.getBoundingClientRect().height;
+                            let oldDiv = document.getElementById("old").children[index];
+                            oldDiv.style.height = height + "px";
+                        };
                     });
-                    var p = document.createElement("p");
-                    var hr = document.createElement("hr");
+                    let p = document.createElement("p");
+                    let hr = document.createElement("hr");
+                    let operationSpan = document.createElement("span");
+                    operationSpan.classList.add("operation");
+                    operationSpan.textContent = results[i][n].operation;
+                    let contentSpan = document.createElement("span");
+                    contentSpan.classList.add("content");
                     if (results[i][n].newContent == "") {
-                        p.textContent = "//"
+                        contentSpan.textContent = "//"
                     } else {
-                        p.textContent = results[i][n].newContent;
+                        contentSpan.textContent = results[i][n].newContent;
                     };
+                    p.appendChild(operationSpan);
+                    p.appendChild(contentSpan);
                     div.appendChild(p);
                     document.getElementById("new").appendChild(div);
                     document.getElementById("new").appendChild(hr);
@@ -604,7 +663,7 @@
          */
         function loadGitStyle() {
 
-            toggleCSS('./assets/css/custom.css', 6);
+            //toggleCSS('./assets/css/custom.css', 6);
 
             document.getElementById("word-header1").style.display = "none";
             document.getElementById("word-header2").style.display = "none";
@@ -626,18 +685,30 @@
             for (const key in ts) {
                 if (ts.hasOwnProperty(key)) {
                     diffs.push(ts[key]);
-                    let h6 = document.createElement("h6");
-                    h6.classList.add("text-primary");
-                    h6.textContent = key;
-                    $("#git").append(h6);
-                    let p = document.createElement("p");
-                    p.textContent = diffs[key];
-                    $("#git").append(p);
-                    let hr = document.createElement("hr");
-                    $("#git").append(hr);
+                    let h5 = document.createElement("h5");
+                    h5.classList.add("text-primary");
+                    h5.textContent = key;
+                    $("#git").append(h5);
+                    let div = document.createElement("div");
+                    for (const diff of diffs) {
+                        for (const index in diff) {
+                            let p = document.createElement("p");
+                            p.classList.add("diff-info");
+                            p.textContent = diff[index].id;
+                            let p1 = document.createElement("p");
+                            p1.classList.add("diff-info");
+                            p1.textContent = diff[index].operation;
+                            div.append(p);
+                            div.append(p1);
+                            let hr = document.createElement("hr");
+                            div.append(hr);
+                        }
+                    }
+                    $("#git").append(div);
+                    //let hr = document.createElement("hr");
+                    //$("#git").append(hr);
                 }
             }
-            console.log(diffs)
         };
 
     </script>

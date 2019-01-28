@@ -73,7 +73,7 @@
     margin: 0 0 1em 0;
     overflow: hidden;
     position: relative;
-    height: 5.1em;
+    height: 6.1em;
 }
 
 .faded::after {
@@ -90,4 +90,19 @@
 .faded p {
     margin: 0;
     height: auto;
+}
+
+.operation {
+    display: block;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: block;
+}
+
+.diff-info {
+    padding: 0.5rem;
+    margin: 1rem;
 }

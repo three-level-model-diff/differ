@@ -3,7 +3,7 @@
     "operation": "MEANING",
     "new": "del documento informatico",
     "old": "informatica",
-    "timestamp": "1000",
+    "timestamp": "2019-01-28T14:12:30.151Z",
     "items": [{
         "id": "STRUCTURAL",
         "type": "TEXT",
@@ -31,7 +31,7 @@
     "operation": "MEANING",
     "new": "del documento informatico",
     "old": "dell’insieme di dati attribuiti in modo esclusivo ed univoco ad un soggetto, che ne distinguono l’identità nei sistemi informativi, effettuata",
-    "timestamp": "1000",
+    "timestamp": "2019-01-28T14:12:30.151Z",
     "items": [{
         "id": "STRUCTURAL",
         "type": "TEXT",
@@ -3310,7 +3310,7 @@
     "operation": "MEANING",
     "new": "elettronica",
     "old": "digitale",
-    "timestamp": "500",
+    "timestamp": "2019-01-28T14:12:30.151Z",
     "items": [{
         "id": "STRUCTURAL",
         "type": "TEXT",

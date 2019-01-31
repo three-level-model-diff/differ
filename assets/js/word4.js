@@ -42,6 +42,95 @@ var str2DOMElement = function(html) {
     return element;
 };
 
+const inline_elements = [
+    "a",
+    "abbr",
+    "acronym",
+    "audio",
+    "b",
+    "bdi",
+    "bdo",
+    "big",
+    "br",
+    "button",
+    "canvas",
+    "cite",
+    "code",
+    "data",
+    "datalist",
+    "del",
+    "dfn",
+    "em",
+    "embed",
+    "i",
+    "iframe",
+    "img",
+    "input",
+    "ins",
+    "kbd",
+    "label",
+    "map",
+    "mark",
+    "meter",
+    "noscript",
+    "object",
+    "output",
+    "picture",
+    "progress",
+    "q",
+    "ruby",
+    "s",
+    "samp",
+    "script",
+    "select",
+    "slot",
+    "small",
+    "span",
+    "strong",
+    "sub",
+    "sup",
+    "svg",
+    "template",
+    "textarea",
+    "time",
+    "u",
+    "tt",
+    "var",
+    "video",
+    "wbr"
+];
+
+const block_elements = [
+    "address",
+    "article",
+    "aside",
+    "blockquote",
+    "details",
+    "dialog",
+    "dd",
+    "div",
+    "dl",
+    "dt",
+    "fieldset",
+    "figcaption",
+    "figure",
+    "footer",
+    "form",
+    "h1", "h2", "h3", "h4", "h5", "h6",
+    "header",
+    "hgroup",
+    "hr",
+    "li",
+    "main",
+    "nav",
+    "ol",
+    "p",
+    "pre",
+    "section",
+    "table",
+    "ul"
+]
+
 RegExp.escape = function (string) {
     return string.replace(/[-\\/\\^$*+?.()|[\]{}#&;,]/g, '\\$&')
 }
@@ -60,60 +149,61 @@ RegExp.prototype.execGlobal = function (text) {
     return matches
 }
 
-function getEnclosingTag (text, pos, content) {
+function getEnclosingTag (text, pos, content, op) {
     // Get the correct context
     // Normally, the position is calculated over the NEWTEXT. The regexp must be executed over it.
     // The algorithm needs to create a pattern with the text at the position, in the
+    //old
     let newContent = text.substring(pos, pos + content.length)
-
+    //new
+    let oldContent = text.substring(pos, pos + content.length)
 
     // If the new content is a sequence of open and close tags
     if (/^[<>]+/.test(newContent)) {
-      newContent = text.substring(pos - content.length, pos)
+      newContent = text.substring(pos - content.length, pos).split(/[<>]/).splice(-1).pop()
     }
-
+    if (/[<>]+$/.test(newContent)) {
+      newContent = text.substring(pos - content.length, pos).split(/[<>]/).splice(-1).pop()
+    }
 
     // Set left and right selector
     const left = '<[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*'
     const right = '[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*>'
 
-
     // Get list of matching patterns
-    let matches = RegExp(`${left}${RegExp.escape(newContent)}${right}`, 'g').execGlobal(text)
-
+    let matches = RegExp(`${left}${RegExp.escape(oldContent)}${right}`, 'g').execGlobal(text)
 
     // Check each matching tag
     for (const match of matches) {
       // Save upper vars
       const regexUpperIndex = match.index + match[0].length
-      let diffUpperIndex = this.pos + this.content.length
-
+      let diffUpperIndex = pos + content.length
 
       // If the DIFF is a DEL, then add its length to the regexUpperIndex
-      if (this.op === diffType.mechanical.del) diffUpperIndex -= this.content.length
-
+      if (op === diffType.mechanical.del) diffUpperIndex -= content.length
 
       // The regex result must contain the entire diff content MUST start before and end after
-      if (match.index < this.pos && regexUpperIndex > diffUpperIndex) {
+      if (match.index < pos && regexUpperIndex > diffUpperIndex) {
         // Retrieve XPATH and character position proper of the tag
-        let tag = this.getCssSelector(text, match)
-
+        let tag = getCssSelector(text, match, pos)
 
         // TODO CHANGE
         if (tag === null) return null
+
         // Add a more specific selector
         tag.path = `#newTextTemplate${tag.path}`
 
-
-        return document.querySelector(tag.path)
+        return {
+          tag: document.querySelector(tag.path),
+          index: tag.index
+        }
       }
     }
-
 
     return null
 }
 
-function   getCssSelector (text, tagString) {
+function getCssSelector (text, tagString, pos) {
     /**
      *
      */
@@ -123,13 +213,8 @@ function   getCssSelector (text, tagString) {
       tag.tag = tag.tag.replace('/', '')
       tag.pos = 1
 
-
       return tag
     }
-
-
-    // #newTextTemplate>div>table>tbody>tr:nth-child(10)>td>span>a>wbr
-
 
     /**
      *
@@ -137,51 +222,43 @@ function   getCssSelector (text, tagString) {
     const setSiblings = function (i, sibling) {
       // Left to end
       for (let j = i; j < previousTags.length; j++) {
-        // If the parent is not a closing tag
-        // Add the removing tag as his child
-        if (previousTags[j].opening && sibling.tag === previousTags[j].tag) {
+        if ((previousTags[j].opening || j === previousTags.length - 1) && sibling.tag === previousTags[j].tag) {
           previousTags[j].pos++
         }
-
 
         if (previousTags[j].deepness !== sibling.deepness) break
       }
     }
 
-
     // When the the tag is retrieved, it should create its XPATH
     // Logging all of its parents I.E. everytime it finds a opening tag
     // const leftText = text.split(tagString[0])[0]
-    const leftText = text.substring(0, this.pos)
-
+    const leftText = text.substring(0, pos)
 
     // Match all of the opening and closing elements
     let previousTags = RegExp(`<\\/?[\\w]+[\\w\\/\\-\\d\\=\\"\\s\\:\\%\\#\\?\\;\\&\\.\\,\\(\\)\\{\\}\\!\\;\\+${regexp.accented}]*>`, 'g').execGlobal(leftText)
 
-
     // Add the current element
     previousTags.push(tagString)
-
 
     // Initialise all of the tags
     previousTags.map(tag => initialiseTag(tag))
 
-
     // Save the deepness
     let deepness = 0
     previousTags[previousTags.length - 1].deepness = deepness
-
 
     for (let i = previousTags.length - 2; i > 0; i--) {
       // Save the current tag
       let curr = previousTags[i]
       let next = previousTags[i + 1]
 
+      // Update deepness
+      curr.deepness = deepness
 
       if (!curr.opening) curr.deepness = ++deepness
 
-
-      if (curr.tag === 'img' || curr.tag === 'wbr' || curr.tag === 'link') {
+      if (curr.tag === 'img' || curr.tag === 'wbr' || curr.tag === 'link' || curr.tag === 'input') {
         previousTags.splice(i, 1)
         setSiblings(i, curr)
       } else if ((curr.opening && !next.opening) && next.tag === curr.tag) {
@@ -191,18 +268,15 @@ function   getCssSelector (text, tagString) {
       }
     }
 
-
     // Build the resultpath
     let resultpath = ''
     for (const parent of previousTags) {
       // Add the tag name
       resultpath += `>${parent.tag}`
 
-
       // If the siblings are more than 1 write it on path
-      if (parent.pos > 1) resultpath += `:nth-child(${parent.pos})`
+      if (parent.pos > 1) resultpath += `:nth-of-type(${parent.pos})`
     }
-
 
     // position and css selector
     return {
@@ -219,52 +293,72 @@ let modifiedText = "";
 /**
  * Wrap a textual delete in a span element with custom attributes - TEXTUAL DELETE
  * @param {number} start - start index of the diff
- * @param {number} end - end index of the diff
+ * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
  */
-function differDel(start, end, operation) {
+function differDel(start, content, operation) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
+
     let span = document.createElement("span");
     let attr = document.createAttribute("data-differ-del");
     attr.value = "text " + operation;
     span.setAttributeNode(attr);
-    let content = doc.substring(start, end);
+    let end = start + content.length;
     span.textContent = content;
-    // begin test
+
     let span2 = document.createElement("span");
     let attr2 = document.createAttribute("data-differ-diff");
     span2.setAttributeNode(attr2);
     span2.append(span);
-    // end test
+
     let modText = doc.substring(0, start) + span2.outerHTML + doc.substring(end);
     modifiedText = modText;
 };
 
 /**
- * Add custom attributes in a node that is deleted - STRUCTURAL DELETE
+ * Handle the case of a structural delete
  * @param {number} start - start index of the diff
- * @param {number} end - end index of the diff
+ * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
  */
-function differDelStruct(start, end, operation) {
+function differDelStruct(start, content, operation) {       // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
     var doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-    var content = doc.substring(start, end);
-    var el = str2DOMElement(content);
-    if (el.nodeType == 1) {     //se nodeType è uguale ad 1, il nodo è un "element"
-        let stringAttr = "structure " + operation;
-        el.setAttribute("data-differ-del", stringAttr);
-        var modText = doc.substring(0, start) + el.outerHTML + doc.substring(end);
-        modifiedText = modText;
-    };
+
+    let diff_span = document.createElement("span");
+    let diff_attr = document.createAttribute("data-differ-diff");
+    diff_span.setAttributeNode(diff_attr);
+
+    let del_span = document.createElement("span");
+    let del_attr = document.createAttribute("data-differ-del");
+    del_attr.value = "structure " + operation;
+    del_span.setAttributeNode(del_attr);
+    let end = start + content.length;
+    del_span.innerHTML = content;
+
+    diff_span.append(del_span);
+    let modText = doc.substring(0, start) + diff_span.outerHTML + doc.substring(end);
+    modifiedText = modText;
 };
 
-function differDelUnwrap(start1, start2, end1, end2, content) {
+function differDelUnwrap(start1, start2, end1, end2, content) {     // va fatto il wrap oppure no?
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     
 };
+
+/**
+ * Handle the case of a DEL which I can't wrap in an HTML elements
+ * @param {number} pos - position of the diff
+ * @param {String} content - content of the diff
+ */
+function differDelWithoutWrap(pos, content) {
+    let doc = modifiedText;
+    let length = pos + content.length;
+    let modText = doc.substring(0, pos) + doc.substring(length);
+    modifiedText = modText;
+}
 
 /**
  * Wrap a textual insert in a span element with custom attributes - TEXTUAL INSERT
@@ -287,7 +381,7 @@ function differIns(pos, content, operation) {
     span2.setAttributeNode(attr2);
     span2.append(span);
     
-    let modText = doc.slice(0, pos) + span2.outerHTML + doc.slice(pos);
+    let modText = doc.substring(0, pos) + span2.outerHTML + doc.substring(pos);
     modifiedText = modText;
 };
 
@@ -297,36 +391,23 @@ function differIns(pos, content, operation) {
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
  */
-function differInsStruct(pos, content, operation) {
-    var el = str2DOMElement(content);
-    var doc = modifiedText;
+function differInsStruct(pos, content, operation) {    // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
+    let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-    var attr = document.createAttribute("data-differ-ins");
-    let stringAttr = "structure " + operation;
-    attr.value = stringAttr;
-    if (el !== null) {
-        el.setAttributeNode(attr);
-        var modText = doc.slice(0, pos) + el.outerHTML + doc.slice(pos);
-        modifiedText = modText;
-    };
-};
 
-/**
- * Wrap a content into an HTML Element with custom attributes - STRUCTURAL INSERT
- * @param {number} pos - index of the diff
- * @param {String} content - content of the diff
- * @param {String} operation - String representing the operation
- */
-function differInsWithoutShiftStruct(pos, content, operation) {
-    var el = str2DOMElement(content);
-    var doc = modifiedText;
-    doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-    if (el !== null) {
-        let stringAttr = "structure " + operation;
-        el.setAttribute("data-differ-ins", stringAttr);
-        var modText = doc.slice(0, pos) + el.outerHTML + doc.slice(pos);
-        modifiedText = modText;
-    }
+    let diff_div = document.createElement("div");
+    let diff_attr = document.createAttribute("data-differ-diff");
+    diff_div.setAttributeNode(diff_attr);
+
+    let ins_div = document.createElement("div");
+    let ins_attr = document.createAttribute("data-differ-ins");
+    ins_attr.value = "structure " + operation;
+    ins_div.setAttributeNode(ins_attr);
+    ins_div.innerHTML = content;
+
+    diff_div.append(ins_div);
+    let modText = doc.substring(0, pos) + diff_div.outerHTML + doc.substring(pos);
+    modifiedText = modText;
 };
 
 /**
@@ -341,12 +422,38 @@ function differInsWrap(pos1, content1, pos2, content2) {
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     let txt = doc.slice(pos1, pos2);
     let stringElement = content1 + txt + content2;
-    let el = str2DOMElement(stringElement);
-    if (el !== null) {
-        el.setAttribute("data-differ-ins", "structure WRAP");
-        let modText = doc.slice(0, pos1) + el.outerHTML + doc.slice(pos2);
-        modifiedText = modText;
-    }
+    let opening_tag = content1.replace(/[<>/]/g, "");
+    for (const index in inline_elements) {
+        if (opening_tag == inline_elements[index]) {
+            let diff_span = document.createElement("span");
+            let diff_attr = document.createAttribute("data-differ-diff");
+            diff_span.setAttributeNode(diff_attr);
+
+            let ins_span = document.createElement("span");
+            let ins_attr = document.createAttribute("data-differ-ins");
+            ins_attr.value = "structure WRAP";
+            ins_span.setAttributeNode(ins_attr);
+            ins_span.innerHTML = stringElement;
+
+            diff_span.append(ins_span);
+            let modText = doc.substring(0, pos1) + diff_span.outerHTML + doc.substring(pos2);
+            modifiedText = modText;
+        } else if (opening_tag == block_elements[index]) {
+            let diff_div = document.createElement("div");
+            let diff_attr = document.createAttribute("data-differ-diff");
+            diff_div.setAttributeNode(diff_attr);
+
+            let ins_div = document.createElement("div");
+            let ins_attr = document.createAttribute("data-differ-ins");
+            ins_attr.value = "structure WRAP";
+            ins_div.setAttributeNode(ins_attr);
+            ins_div.innerHTML = stringElement;
+
+            diff_div.append(ins_div);
+            let modText = doc.substring(0, pos1) + diff_div.outerHTML + doc.substring(pos2);
+            modifiedText = modText;
+        };
+    };
 };
 
 /**
@@ -365,64 +472,40 @@ function differInsSplit(pos, content) {
     modifiedText = modText;
 };
 
-/**
- * 
- * @param {number} start - start index of the diff
- * @param {number} end - end index of the diff
- * @param {String} content - content of the diff
- * @param {String} operation - String representing the operation
- */
-function differReplace(start, end, content, operation) {
+function differInsWithoutWrap(pos, content) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-
-    let span = document.createElement("span");
-    let attr = document.createAttribute("data-differ-del");
-    attr.value = "text " + operation;
-    span.setAttributeNode(attr);
-    let cont = doc.substring(start, end);
-    span.textContent = cont;
-
-    let span2 = document.createElement("span");
-    let attr2 = document.createAttribute("data-differ-ins");
-    attr2.value = "text " + operation;
-    span2.setAttributeNode(attr2);
-    span2.innerHTML = content;
-
-    let span3 = document.createElement("span");
-    let attr3 = document.createAttribute("data-differ-diff");
-    span3.setAttributeNode(attr3);
-    span3.append(span);
-    span3.append(span2);
-    let modText = doc.slice(0, start) + span3.outerHTML + doc.slice(end);
+    let modText = doc.substring(0, pos) + content + doc.substring(pos);
     modifiedText = modText;
 };
 
-function differReplace2(pos, delContent, insContent, operation) {
-    let doc = modifiedText;
-    doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-    let length = delContent.length;
+function differReplace2(pos, delContent, insContent, operation) {       //TODO: gestire il caso di più di 2 diff
+    for (const index in pos) {
+        let doc = modifiedText;
+        doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
+        let length = delContent[index].length;
 
-    let del_span = document.createElement("span");
-    let del_attr = document.createAttribute("data-differ-del");
-    del_attr.value = "text " + operation;
-    del_span.setAttributeNode(del_attr);
-    del_span.innerHTML = delContent;
+        let del_span = document.createElement("span");
+        let del_attr = document.createAttribute("data-differ-del");
+        del_attr.value = "text " + operation;
+        del_span.setAttributeNode(del_attr);
+        del_span.innerHTML = delContent[index];
 
-    let ins_span = document.createElement("span");
-    let ins_attr = document.createAttribute("data-differ-ins");
-    ins_attr.value = "text " + operation;
-    ins_span.setAttributeNode(ins_attr);
-    ins_span.innerHTML = insContent;
+        let ins_span = document.createElement("span");
+        let ins_attr = document.createAttribute("data-differ-ins");
+        ins_attr.value = "text " + operation;
+        ins_span.setAttributeNode(ins_attr);
+        ins_span.innerHTML = insContent[index];
 
-    let diff_span = document.createElement("span");
-    let diff_attr = document.createAttribute("data-differ-diff");
-    diff_span.setAttributeNode(diff_attr);
-    diff_span.append(del_span);
-    diff_span.append(ins_span);
+        let diff_span = document.createElement("span");
+        let diff_attr = document.createAttribute("data-differ-diff");
+        diff_span.setAttributeNode(diff_attr);
+        diff_span.append(del_span);
+        diff_span.append(ins_span);
 
-    let modText = doc.slice(0, pos) + diff_span.outerHTML + doc.slice(pos + length);
-    modifiedText = modText;
+        let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index] + length);
+        modifiedText = modText;
+    }
 };
 
 // da mettere a posto
@@ -460,6 +543,7 @@ function newVisualize(doc, edits) {
     let joinCounter = 0;
     let splitCounter = 0;
     let replaceCounter = 0;
+    let noopCounter = 0;
 
     modifiedText = doc;
 
@@ -472,22 +556,22 @@ function newVisualize(doc, edits) {
 
                 switch (operation) {
                     case "PUNCTUATION":
-                    let pPos, pDelContent, pInsContent;
+                    let pPos = [], pDelContent = [], pInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    pPos = mechanical_diff.startPosition;
-                                    pDelContent = mechanical_diff.content;
+                                    pPos.push(mechanical_diff.startPosition);
+                                    pDelContent.push(mechanical_diff.content);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    pInsContent = mechanical_diff.content;
+                                    pInsContent.push(mechanical_diff.content);
                                 }
                                 if (typeof pPos !== "undefined" && typeof pDelContent !== "undefined" && typeof pInsContent !== "undefined") {
                                     differReplace2(pPos, pDelContent, pInsContent, operation);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                                 } else if (mechanical_diff.operation === "INS") {
                                     differIns(mechanical_diff.position, mechanical_diff.content, operation);
                                 };
@@ -497,23 +581,23 @@ function newVisualize(doc, edits) {
                         break;
 
                     case "WORDCHANGE":
-                    let wcPos, wcEndContent, wcInsContent;
+                    let wcPos = [], wcDelContent = [], wcInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    wcPos = mechanical_diff.startPosition;
-                                    wcDelContent = mechanical_diff.content;
+                                    wcPos.push(mechanical_diff.startPosition);
+                                    wcDelContent.push(mechanical_diff.content);
                                 }
                                 if (mechanical_diff.operation === "INS") {
-                                    wcInsContent = mechanical_diff.content;
+                                    wcInsContent.push(mechanical_diff.content);
                                 }
                                 if (typeof wcPos !== "undefined" && typeof wcEndContent !== "undefined" && typeof wcInsContent !== "undefined") {
                                     differReplace2(wcPos, wcEndContent, wcInsContent, operation);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                                 } else if (mechanical_diff.operation === "INS") {
                                     differIns(mechanical_diff.position, mechanical_diff.content, operation);
                                 };
@@ -523,23 +607,23 @@ function newVisualize(doc, edits) {
                         break;
 
                     case "WORDREPLACE":
-                    let wrPos, wrDelContent, wrIsnContent;
+                    let wrPos = [], wrDelContent = [], wrInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    wrPos = mechanical_diff.startPosition;
-                                    wrDelContent = mechanical_diff.content;
+                                    wrPos.push(mechanical_diff.startPosition);
+                                    wrDelContent.push(mechanical_diff.content);
                                 }
                                 if (mechanical_diff.operation === "INS") {
-                                    wrInsContent = mechanical_diff.content;
+                                    wrInsContent.push(mechanical_diff.content);
                                 }
                                 if (typeof wrPos !== "undefined" && typeof wrDelContent !== "undefined" && typeof wrInsContent !== "undefined") {
                                     differReplace2(wrPos, wrDelContent, wrInsContent, operation);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                                 } else if (mechanical_diff.operation === "INS") {
                                     differIns(mechanical_diff.position, mechanical_diff.content, operation);
                                 };
@@ -562,23 +646,23 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             };
                         };
                         textdeleteCounter++;
                         break;
 
                     case "TEXTREPLACE":
-                        let trPos, trDelContent, trInsContent;
+                        let trPos = [], trDelContent = [], trInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    trPos = mechanical_diff.startPosition;
-                                    trDelContent = mechanical_diff.content;
+                                    trPos.push(mechanical_diff.startPosition);
+                                    trDelContent.push(mechanical_diff.content);
                                 }
                                 if (mechanical_diff.operation === "INS") {
-                                    trInsContent = mechanical_diff.content;
+                                    trInsContent.push(mechanical_diff.content);
                                 }
                                 if (typeof trPos !== "undefined" && typeof trDelContent !== "undefined" && typeof trInsContent !== "undefined") {
                                     differReplace2(trPos, trDelContent, trInsContent, operation);
@@ -586,7 +670,7 @@ function newVisualize(doc, edits) {
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                                 } else if (mechanical_diff.operation === "INS") {
                                     differIns(mechanical_diff.position, mechanical_diff.content, operation);
                                 };
@@ -602,12 +686,22 @@ function newVisualize(doc, edits) {
             }  else if (item.type === "STRUCTURE") {
                 let operation = item.operation;
                 switch (operation) {
+                    case "NOOP":
+                        for (let index = iten.items.length -1; index >= 0; index--) {
+                            let mechanical_diff = item.items[index];
+                            if (mechanical_diff.operation === "DEL") {
+                                differDelWithoutWrap(mechanical_diff.startPosition, mechanical_diff.content);
+                            } else if (echanical_diff.operation === "INS") {
+                                differInsWithoutWrap(mechanical_diff.position, mechanical_diff.content);
+                            };
+                        };
+                        noopCounter++;
+                        break;
                     case "INSERT":
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "INS") {
-                                differInsWithoutShiftStruct(mechanical_diff.position, mechanical_diff.content, operation);
-
+                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation);
                             };
                         };
                         insertCounter++;
@@ -617,17 +711,34 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             };
                         };
                         deleteCounter++;
                         break;
 
-                    case "MOVE":
+                    case "MOVE":    // da guardare meglio se va bene chiamare quelle funzioni
+                        let mvDelPos = [], mvInsPos = [], mvDelContent = [], mvInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
+                            if (item.items.length > 1) {
+                                if (mechanical_diff.operation === "DEL") {
+                                    mvDelPos.push(mechanical_diff.startPosition);
+                                    mvDelContent.push(mechanical_diff.content);
+                                };
+                                if (mechanical_diff.operation === "INS") {
+                                    mvInsPos.push(mechanical_diff.position);
+                                    mvInsContent.push(mechanical_diff.content);
+                                };
+                                if (typeof mvDelPos !== "undefined" && typeof mvDelContent !== "undefined") {
+                                    differDelStruct(mvDelPos, mvDelContent, operation);
+                                };
+                                if (typeof mvInsPos !== "undefined" && typeof mvInsContent !== "undefined") {
+                                    differInsStruct(mvDelPos, mvDelContent, operation);
+                                };
+                            }
                             if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             } else if (mechanical_diff.operation === "INS") {
                                 differInsStruct(mechanical_diff.position, mechanical_diff.content, operation);
                             };
@@ -666,7 +777,7 @@ function newVisualize(doc, edits) {
                                     startIndex2 = mechanical_diff.startPosition;
                                     endIndex2 = mechanical_diff.endPosition;
                                 }
-                                //differDelStruct(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                //differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             };
                         };
                         differDelUnwrap(startIndex1, startIndex2, endIndex1, endIndex2, tagContent);
@@ -677,7 +788,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             };
                         };
                         joinCounter++;
@@ -698,13 +809,13 @@ function newVisualize(doc, edits) {
                             let mechanical_diff = item.items[index];
                             /*
                             if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             } else if (mechanical_diff.operation === "INS") {
                                 differInsStruct(mechanical_diff.position, mechanical_diff.content, operation);
                             };
                             */
                            if (mechanical_diff.operation === "DEL") {
-                               differDel(mechanical_diff.startPosition, mechanical_diff.endPosition, operation);
+                               differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
                            } else if (mechanical_diff.operation === "INS") {
                                differIns(mechanical_diff.position, mechanical_diff.content, operation);
                            }
@@ -737,7 +848,8 @@ function newVisualize(doc, edits) {
             "unwrap" : unwrapCounter,
             "join" : joinCounter,
             "split" : splitCounter,
-            "replace" : replaceCounter
+            "replace" : replaceCounter,
+            "noop": noopCounter
         },
         "css": {
             "horizontal": [{

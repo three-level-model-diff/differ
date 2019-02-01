@@ -241,7 +241,7 @@
                         </section>`;
 
         // template HTML per i tabs di selezione tra visualizzazione orizzontale e verticale
-        var tabs = `<div class="nav-wrapper">
+        let tabs = `<div class="nav-wrapper">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-4 mb-md-0 active" id="tabs-icons-text-1-tab" onclick="loadHorizontalCSS();" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Horizontal</a>
@@ -253,7 +253,7 @@
                     </div>`;
 
         // template HTML per la sezione relativa allo stile Word
-        var word = `<div class="row row-grid">
+        let word = `<div class="row row-grid">
                         <div class="col-lg-3 col-md-3 col-sm-3" id="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body py-5">
@@ -275,11 +275,11 @@
                     </div>`;
 
         // template HTML per i bottoni di selezione della versione del CAD da visualizzare
-        var cadButtons = `<button type="button" class="btn btn-outline-primary pressed" style="margin-bottom: 1rem;" id="v.2017-12-13">v.2017-12-13</button>
+        let cadButtons = `<button type="button" class="btn btn-outline-primary pressed" style="margin-bottom: 1rem;" id="v.2017-12-13">v.2017-12-13</button>
                         <button type="button" class="btn btn-outline-primary not-pressed" style="margin-bottom: 1rem;" id="v.2012-10-18">v.2012-10-18</button>`;
 
         // template HTML per la sezione relativa allo stile Wiki
-        var wiki = `<section class="section section-lg pt-lg-0 mt--250">
+        let wiki = `<section class="section section-lg pt-lg-0 mt--250">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
@@ -288,7 +288,7 @@
                                             <div class="card shadow border-0">
                                                 <div class="card-body py-5">
                                                     <h6 class="text-primary text-uppercase">
-                                                        Deleted content
+                                                        Old content
                                                     </h6>
                                                     <div id="old"></div>
                                                 </div>
@@ -298,7 +298,7 @@
                                             <div class="card shadow border-0">
                                                 <div class="card-body py-5">
                                                     <h6 class="text-primary text-uppercase">
-                                                        Inserted content
+                                                        New content
                                                     </h6>
                                                     <div id="new"></div>
                                                 </div>
@@ -311,7 +311,7 @@
                     </section>`;
 
         // template HTML per la sezione relativa allo stile Git
-        var git = `<section class="section section-lg pt-lg-0 mt--250">
+        let git = `<section class="section section-lg pt-lg-0 mt--250">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
@@ -365,7 +365,7 @@
          */
         function loadNavPills() {
 
-            var mod = document.getElementById("mod");
+            let mod = document.getElementById("mod");
             mod.removeChild(mod.childNodes[1]);
             mod.insertAdjacentHTML("afterbegin", navPills);
 
@@ -432,7 +432,7 @@
                     url : "assets/docs/CAD-v.2005-03-07/CAD-v.2005-03-07.html",
                     success : function(results) {
                         doc = results;
-                        var res = newVisualize(doc, edits.responseJSON);
+                        let res = newVisualize(doc, edits.responseJSON);
                         cssRules = res.css;
                         document.getElementById("doc").innerHTML = res.modifiedText;
                         document.getElementById("edits").innerHTML = "<p>Punctuation: " + res.edits.punctuation +
@@ -465,7 +465,7 @@
                     url : "assets/docs/CAD-v.2016-08-26/CAD-v.2016-08-26.html",
                     success : function(results) {
                         doc = results;
-                        var res = newVisualize(doc, edits.responseJSON);
+                        let res = newVisualize(doc, edits.responseJSON);
                         cssRules = res.css;
                         document.getElementById("doc").innerHTML = res.modifiedText;
                         document.getElementById("edits").innerHTML = "<p>Punctuation: " + res.edits.punctuation +
@@ -527,10 +527,10 @@
             document.getElementById("git-header2").style.display = "none";
             document.getElementById("doc-header").textContent = "Change the style to see what you can do!"
 
-            var mod = document.getElementById("mod");
+            let mod = document.getElementById("mod");
             mod.removeChild(mod.childNodes[2]);
 
-            var div = document.createElement("div");
+            let div = document.createElement("div");
             div.insertAdjacentHTML("afterbegin", word);
             div.insertAdjacentHTML("afterbegin", tabs);
 
@@ -562,10 +562,10 @@
             document.getElementById("git-header1").style.display = "none";
             document.getElementById("git-header2").style.display = "none";
 
-            var div = document.createElement("div");
+            let div = document.createElement("div");
             div.insertAdjacentHTML("afterbegin", wiki);
 
-            var mod = document.getElementById("mod");
+            let mod = document.getElementById("mod");
             mod.removeChild(mod.childNodes[2]);
 
             mod.appendChild(div);
@@ -584,7 +584,7 @@
 
         function escapeRegExp(str) {
             return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-        }
+        };
 
         /**
          * Shows the results of Differ library in the HTML
@@ -596,7 +596,7 @@
                     let div = document.createElement("div");
                     div.classList.add("faded");
                     div.addEventListener("click", function () {
-                        if (this.style.height == "5.2rem") {
+                        if (this.style.height == "6.1rem") {
                             this.style.height = "auto";
                             this.classList.remove("faded");
                             let prev = this.previousElementSibling;
@@ -609,7 +609,7 @@
                             let newDiv = document.getElementById("new").children[index];
                             newDiv.style.height = height + "px";
                         } else {
-                            this.style.height = "5.2rem";
+                            this.style.height = "6.1rem";
                             this.classList.add("faded");
                             let prev = this.previousElementSibling;
                             let index = 0;
@@ -626,24 +626,23 @@
                     let hr = document.createElement("hr");
                     let operationSpan = document.createElement("span");
                     operationSpan.classList.add("operation", "text-warning");
-                    operationSpan.textContent = results[i][n].operation;
+                    operationSpan.textContent = results[i][n].operation + " - DEL";
                     let contentSpan = document.createElement("span");
                     contentSpan.classList.add("content");
-                    if (results[i][n].oldContent == "") {
-                        contentSpan.textContent = "//"
+                    if (results[i][n].delContent == "") {
+                        operationSpan.textContent = "";
+                        contentSpan.textContent = "";
                     } else {
-                        contentSpan.textContent = results[i][n].oldContent;
+                        contentSpan.textContent = results[i][n].delContent;
                         for (const index in results[i][n].delContent) {
                             let delSpan = document.createElement("span");
                             delSpan.classList.add("delete");
                             delSpan.textContent = results[i][n].delContent[index];
-                            let re = new RegExp(`/${escapeRegExp(delSpan.textContent)}/g`);
-                            let match = re.exec(contentSpan.textContent);
+                            let re = new RegExp(`/[${escapeRegExp(delSpan.textContent)}]/g`);
+                            let old = results[i][n].oldContent;
+                            let match = re.exec(old);
                             console.log(match);
                         }
-                        
-
-                        
                     };
                     p.appendChild(operationSpan);
                     p.appendChild(contentSpan);
@@ -664,7 +663,7 @@
                     let div = document.createElement("div");
                     div.classList.add("faded");
                     div.addEventListener("click", function () {
-                        if (this.style.height == "5.2rem") {
+                        if (this.style.height == "6.1rem") {
                             this.style.height = "auto";
                             this.classList.remove("faded");
                             let prev = this.previousElementSibling;
@@ -677,7 +676,7 @@
                             let oldDiv = document.getElementById("old").children[index];
                             oldDiv.style.height = height + "px";
                         } else {
-                            this.style.height = "5.2rem";
+                            this.style.height = "6.1rem";
                             this.classList.add("faded");
                             let prev = this.previousElementSibling;
                             let index = 0;
@@ -694,13 +693,13 @@
                     let hr = document.createElement("hr");
                     let operationSpan = document.createElement("span");
                     operationSpan.classList.add("operation", "text-warning");
-                    operationSpan.textContent = results[i][n].operation;
+                    operationSpan.textContent = results[i][n].operation + " - INS";
                     let contentSpan = document.createElement("span");
                     contentSpan.classList.add("content");
-                    if (results[i][n].newContent == "") {
-                        contentSpan.textContent = "//"
+                    if (results[i][n].insContent == "") {
+                        contentSpan.textContent = "";
                     } else {
-                        contentSpan.textContent = results[i][n].newContent;
+                        contentSpan.textContent = results[i][n].insContent;
                     };
                     p.appendChild(operationSpan);
                     p.appendChild(contentSpan);
@@ -746,13 +745,21 @@
                     for (const diff of diffs) {
                         for (const index in diff) {
                             let p = document.createElement("p");
-                            p.classList.add("diff-info");
+                            p.classList.add("diff-info", "italic");
                             p.textContent = diff[index].id;
                             let p1 = document.createElement("p");
-                            p1.classList.add("diff-info");
+                            p1.classList.add("diff-info", "italic");
                             p1.textContent = diff[index].operation;
+                            let p_new = document.createElement("p");
+                            p_new.classList.add("diff-info");
+                            p_new.textContent = "new: " + diff[index].new;
+                            let p_old = document.createElement("p");
+                            p_old.classList.add("diff-info");
+                            p_old.textContent = "old: " + diff[index].old;
                             div.append(p);
                             div.append(p1);
+                            div.append(p_new);
+                            div.append(p_old)
                             let hr = document.createElement("hr");
                             div.append(hr);
                         }

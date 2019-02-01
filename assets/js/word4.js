@@ -342,10 +342,36 @@ function differDelStruct(start, content, operation) {       // TODO: aggiungere 
     modifiedText = modText;
 };
 
-function differDelUnwrap(start1, start2, end1, end2, content) {     // va fatto il wrap oppure no?
+function differDelUnwrap(start1, tag1, start2, tag2) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-    
+    let del_content = doc.slice(start1, (start2 + tag2.length-1));
+    let opening_tag = tag1.replace(/[<>/]/g, "");
+    let diff_span = document.createElement("span");
+    let diff_attr = document.createAttribute("data-differ-diff");
+    diff_span.setAttributeNode(diff_attr);
+    for (const index in inline_elements) {
+        if (opening_tag == inline_elements[index]) {
+            let del_span = document.createElement("span");
+            let del_attr = document.createAttribute("data-differ-del");
+            del_attr.value = "structure UNWRAP";
+            del_span.setAttributeNode(del_attr);
+            del_span.innerHTML = del_content;
+
+            diff_span.append(del_span);
+        } else if (opening_tag == block_elements[index]) {
+            let del_span = document.createElement("span");
+            let del_attr = document.createAttribute("data-differ-del");
+            del_attr.value = "structure UNWRAP";
+            del_span.setAttributeNode(del_attr);
+            let content = doc.slice((start1 + tag1.length-1), (start2));
+            del_span.innerHTML = content;
+
+            diff_span.append(del_span);
+        }
+    }
+    let modText = doc.substring(0, start1) + diff_span.outerHTML + doc.substring(start2 + tag2.length);
+    modifiedText = modText;
 };
 
 /**
@@ -479,32 +505,43 @@ function differInsWithoutWrap(pos, content) {
     modifiedText = modText;
 };
 
-function differReplace2(pos, delContent, insContent, operation) {       //TODO: gestire il caso di più di 2 diff
+/**
+ * Handle the case where I need to execute a replace with several DEL and INS
+ * @param {[number]} pos - Array of positions
+ * @param {[String]} delContent - Array of contents of deletions
+ * @param {[String]} insContent - Array of contents of insertions
+ * @param {String} operation - operation of the diff
+ */
+function differReplace2(pos, delContent, insContent, operation) {
     for (const index in pos) {
         let doc = modifiedText;
         doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-        let length = delContent[index].length;
-
-        let del_span = document.createElement("span");
-        let del_attr = document.createAttribute("data-differ-del");
-        del_attr.value = "text " + operation;
-        del_span.setAttributeNode(del_attr);
-        del_span.innerHTML = delContent[index];
-
-        let ins_span = document.createElement("span");
-        let ins_attr = document.createAttribute("data-differ-ins");
-        ins_attr.value = "text " + operation;
-        ins_span.setAttributeNode(ins_attr);
-        ins_span.innerHTML = insContent[index];
-
-        let diff_span = document.createElement("span");
-        let diff_attr = document.createAttribute("data-differ-diff");
-        diff_span.setAttributeNode(diff_attr);
-        diff_span.append(del_span);
-        diff_span.append(ins_span);
-
-        let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index] + length);
-        modifiedText = modText;
+        if (delContent[index] !== "null") {
+            let length = delContent[index].length;
+            let diff_span = document.createElement("span");
+            let diff_attr = document.createAttribute("data-differ-diff");
+            diff_span.setAttributeNode(diff_attr);
+            let del_span = document.createElement("span");
+            let del_attr = document.createAttribute("data-differ-del");
+            del_attr.value = "text " + operation;
+            del_span.setAttributeNode(del_attr);
+            del_span.innerHTML = delContent[index];
+            diff_span.append(del_span);
+            let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index] + length);
+            modifiedText = modText;
+        } else if (insContent[index] !== "null") {
+            let ins_span = document.createElement("span");
+            let ins_attr = document.createAttribute("data-differ-ins");
+            ins_attr.value = "text " + operation;
+            ins_span.setAttributeNode(ins_attr);
+            ins_span.innerHTML = insContent[index];
+            let diff_span = document.createElement("span");
+            let diff_attr = document.createAttribute("data-differ-diff");
+            diff_span.setAttributeNode(diff_attr);
+            diff_span.append(ins_span);
+            let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index]);
+            modifiedText = modText;
+        }
     }
 };
 
@@ -660,11 +697,13 @@ function newVisualize(doc, edits) {
                                 if (mechanical_diff.operation === "DEL") {
                                     trPos.push(mechanical_diff.startPosition);
                                     trDelContent.push(mechanical_diff.content);
-                                }
-                                if (mechanical_diff.operation === "INS") {
+                                    trInsContent.push("null");
+                                } else if (mechanical_diff.operation === "INS") {
+                                    trPos.push(mechanical_diff.position);
                                     trInsContent.push(mechanical_diff.content);
+                                    trDelContent.push("null");
                                 }
-                                if (typeof trPos !== "undefined" && typeof trDelContent !== "undefined" && typeof trInsContent !== "undefined") {
+                                if (trPos.length === item.items.length) {
                                     differReplace2(trPos, trDelContent, trInsContent, operation);
                                     //console.log(getEnclosingTag(doc, trPos, trDelContent));
                                 }
@@ -765,22 +804,20 @@ function newVisualize(doc, edits) {
                         break;
 
                     case "UNWRAP":
-                        let startIndex1, startIndex2, endIndex1, endIndex2, tagContent;
+                        let startIndex1, startIndex2, tagContent1, tagContent2;
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
                                 if (index == 0) {
                                     startIndex1 = mechanical_diff.startPosition;
-                                    endIndex1 = mechanical_diff.endPosition;
-                                    tagContent = mechanical_diff.content;
+                                    tagContent1 = mechanical_diff.content;
                                 } else if (index == 1) {
                                     startIndex2 = mechanical_diff.startPosition;
-                                    endIndex2 = mechanical_diff.endPosition;
+                                    tagContent2 = mechanical_diff.content;
                                 }
-                                //differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
                             };
                         };
-                        differDelUnwrap(startIndex1, startIndex2, endIndex1, endIndex2, tagContent);
+                        differDelUnwrap(startIndex1, tagContent1, startIndex2, tagContent2);
                         unwrapCounter++;
                         break;
 

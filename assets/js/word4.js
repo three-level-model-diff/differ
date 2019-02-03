@@ -305,7 +305,7 @@ function differDel(start, content, operation) {
     attr.value = "text " + operation;
     span.setAttributeNode(attr);
     let end = start + content.length;
-    span.textContent = content;
+    span.innerHTML = content;
 
     let span2 = document.createElement("span");
     let attr2 = document.createAttribute("data-differ-diff");
@@ -381,6 +381,7 @@ function differDelUnwrap(start1, tag1, start2, tag2) {
  */
 function differDelWithoutWrap(pos, content) {
     let doc = modifiedText;
+    doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     let length = pos + content.length;
     let modText = doc.substring(0, pos) + doc.substring(length);
     modifiedText = modText;
@@ -512,7 +513,7 @@ function differInsWithoutWrap(pos, content) {
  * @param {[String]} insContent - Array of contents of insertions
  * @param {String} operation - operation of the diff
  */
-function differReplace2(pos, delContent, insContent, operation) {
+function differReplace(pos, delContent, insContent, operation) {
     for (const index in pos) {
         let doc = modifiedText;
         doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
@@ -540,6 +541,39 @@ function differReplace2(pos, delContent, insContent, operation) {
             diff_span.setAttributeNode(diff_attr);
             diff_span.append(ins_span);
             let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index]);
+            modifiedText = modText;
+        }
+    }
+};
+
+function differReplaceStruct(pos, delContent, insContent, operation) {
+    for (const index in pos) {
+        let doc = modifiedText;
+        doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
+        if (delContent[index] !== "null") {
+            let length = delContent[index].length;
+            let diff_div = document.createElement("divdiff_div");
+            let diff_attr = document.createAttribute("data-differ-diff");
+            diff_div.setAttributeNode(diff_attr);
+            let del_div = document.createElement("div");
+            let del_attr = document.createAttribute("data-differ-del");
+            del_attr.value = "structural " + operation;
+            del_div.setAttributeNode(del_attr);
+            del_div.innerHTML = delContent[index];
+            diff_div.append(del_div);
+            let modText = doc.slice(0, pos[index]) + diff_div.outerHTML + doc.slice(pos[index] + length);
+            modifiedText = modText;
+        } else if (insContent[index] !== "null") {
+            let ins_div = document.createElement("div");
+            let ins_attr = document.createAttribute("data-differ-ins");
+            ins_attr.value = "structural " + operation;
+            ins_div.setAttributeNode(ins_attr);
+            ins_div.innerHTML = insContent[index];
+            let diff_div = document.createElement("div");
+            let diff_attr = document.createAttribute("data-differ-diff");
+            diff_div.setAttributeNode(diff_attr);
+            diff_div.append(ins_div);
+            let modText = doc.slice(0, pos[index]) + diff_div.outerHTML + doc.slice(pos[index]);
             modifiedText = modText;
         }
     }
@@ -598,13 +632,16 @@ function newVisualize(doc, edits) {
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    pPos.push(mechanical_diff.startPosition);
+                                    pPos.push(mechanical_diff.startPosition); //TODO modify in .position
                                     pDelContent.push(mechanical_diff.content);
+                                    pInsContent.push("null");
                                 } else if (mechanical_diff.operation === "INS") {
+                                    pPos.push(mechanical_diff.position);
                                     pInsContent.push(mechanical_diff.content);
+                                    pDelContent.push("null");
                                 }
-                                if (typeof pPos !== "undefined" && typeof pDelContent !== "undefined" && typeof pInsContent !== "undefined") {
-                                    differReplace2(pPos, pDelContent, pInsContent, operation);
+                                if (pPos.length === item.items.length) {
+                                    differReplace(pPos, pDelContent, pInsContent, operation);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -623,14 +660,17 @@ function newVisualize(doc, edits) {
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    wcPos.push(mechanical_diff.startPosition);
+                                    wcPos.push(mechanical_diff.startPosition); //TODO modify in .position
                                     wcDelContent.push(mechanical_diff.content);
+                                    wcInsContent.push("null");
                                 }
                                 if (mechanical_diff.operation === "INS") {
+                                    wcPos.push(mechanical_diff.position);
                                     wcInsContent.push(mechanical_diff.content);
+                                    wcDelContent.push("null");
                                 }
-                                if (typeof wcPos !== "undefined" && typeof wcEndContent !== "undefined" && typeof wcInsContent !== "undefined") {
-                                    differReplace2(wcPos, wcEndContent, wcInsContent, operation);
+                                if (wcPos.length === item.items.length) {
+                                    differReplace(wcPos, wcDelContent, wcInsContent, operation);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -649,14 +689,17 @@ function newVisualize(doc, edits) {
                             let mechanical_diff = item.items[index];
                             if (item.items.length > 1) {
                                 if (mechanical_diff.operation === "DEL") {
-                                    wrPos.push(mechanical_diff.startPosition);
+                                    wrPos.push(mechanical_diff.startPosition); //TODO modify in .position
                                     wrDelContent.push(mechanical_diff.content);
+                                    wrInsContent.push("null");
                                 }
                                 if (mechanical_diff.operation === "INS") {
+                                    wrPos.push(mechanical_diff.position);
                                     wrInsContent.push(mechanical_diff.content);
+                                    wrDelContent.push("null");
                                 }
-                                if (typeof wrPos !== "undefined" && typeof wrDelContent !== "undefined" && typeof wrInsContent !== "undefined") {
-                                    differReplace2(wrPos, wrDelContent, wrInsContent, operation);
+                                if (wrPos.length === item.items.length) {
+                                    differReplace(wrPos, wrDelContent, wrInsContent, operation);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -704,7 +747,7 @@ function newVisualize(doc, edits) {
                                     trDelContent.push("null");
                                 }
                                 if (trPos.length === item.items.length) {
-                                    differReplace2(trPos, trDelContent, trInsContent, operation);
+                                    differReplace(trPos, trDelContent, trInsContent, operation);
                                     //console.log(getEnclosingTag(doc, trPos, trDelContent));
                                 }
                             } else {
@@ -756,7 +799,7 @@ function newVisualize(doc, edits) {
                         deleteCounter++;
                         break;
 
-                    case "MOVE":    // da guardare meglio se va bene chiamare quelle funzioni
+                    case "MOVE":    // modificare: creare funz apposita da chiamare una volta aver checkato tutte le mech. Eseguire il del del nodo e l'ins del nodo nella nuova pos
                         let mvDelPos = [], mvInsPos = [], mvDelContent = [], mvInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
@@ -821,7 +864,7 @@ function newVisualize(doc, edits) {
                         unwrapCounter++;
                         break;
 
-                    case "JOIN": //TODO
+                    case "JOIN": //I can't leave a track of the edit
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
@@ -842,20 +885,29 @@ function newVisualize(doc, edits) {
                         break;
 
                     case "REPLACE":
+                        let rPos = [], rDelContent = [], rInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
-                            /*
-                            if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
-                            } else if (mechanical_diff.operation === "INS") {
-                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation);
-                            };
-                            */
-                           if (mechanical_diff.operation === "DEL") {
-                               differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
-                           } else if (mechanical_diff.operation === "INS") {
-                               differIns(mechanical_diff.position, mechanical_diff.content, operation);
-                           }
+                            if (item.items.length > 1) {
+                                if (mechanical_diff.operation === "DEL") {
+                                    rPos.push(mechanical_diff.startPosition); //TODO modify in .position
+                                    rDelContent.push(mechanical_diff.content);
+                                    rInsContent.push("null");
+                                } else if (mechanical_diff.operation === "INS") {
+                                    rPos.push(mechanical_diff.position);
+                                    rDelContent.push("null");
+                                    rInsContent.push(mechanical_diff.content);
+                                };
+                                if (rPos.length === item.items.length) {
+                                    differReplaceStruct(rPos, rDelContent, rInsContent, operation);
+                                }
+                            } else {
+                                if (mechanical_diff.operation === "DEL") {
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                } else if (mechanical_diff.operation === "INS") {
+                                    differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                }
+                            }
                         };
                         replaceCounter++;
                         break;

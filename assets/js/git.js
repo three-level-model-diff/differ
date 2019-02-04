@@ -7,17 +7,20 @@ function showGitStyle(edits) {
    let map = new Map();
    for (const diff of edits) {
        let timestamp = diff.timestamp;
+
        let date = new Date(timestamp);
        let year = date.getFullYear();
        let month = date.getMonth() + 1;
        let day = date.getDate();
        let fullDate = year + "-" + month + "-" + day;
-       if (map.get(fullDate) == null) {
-           map.set(fullDate, [diff]);
+
+       // use fullDate instead of timestamp if you want to return a daily-based diffs Array
+       if (map.get(timestamp) == null) {
+           map.set(timestamp, [diff]);
        } else {
-          let temp_value = map.get(fullDate);
+          let temp_value = map.get(timestamp);
           temp_value.push(diff);
-          map.set(fullDate, temp_value);
+          map.set(timestamp, temp_value);
        }
    }
 

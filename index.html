@@ -737,37 +737,33 @@
             
             for (const key in ts) {
                 if (ts.hasOwnProperty(key)) {
-                    diffs.push(ts[key]);
+                    diffs = ts[key];
                     let h5 = document.createElement("h5");
                     h5.classList.add("text-primary");
                     h5.textContent = key;
                     $("#git").append(h5);
                     let div = document.createElement("div");
                     for (const diff of diffs) {
-                        for (const index in diff) {
-                            let p = document.createElement("p");
-                            p.classList.add("diff-info", "italic");
-                            p.textContent = diff[index].id;
-                            let p1 = document.createElement("p");
-                            p1.classList.add("diff-info", "italic");
-                            p1.textContent = diff[index].operation;
-                            let p_new = document.createElement("p");
-                            p_new.classList.add("diff-info");
-                            p_new.textContent = "new: " + diff[index].new;
-                            let p_old = document.createElement("p");
-                            p_old.classList.add("diff-info");
-                            p_old.textContent = "old: " + diff[index].old;
-                            div.append(p);
-                            div.append(p1);
-                            div.append(p_new);
-                            div.append(p_old)
-                            let hr = document.createElement("hr");
-                            div.append(hr);
-                        }
+                        let p = document.createElement("p");
+                        p.classList.add("diff-info", "italic");
+                        p.textContent = diff.id;
+                        let p1 = document.createElement("p");
+                        p1.classList.add("diff-info", "italic");
+                        p1.textContent = diff.operation;
+                        let p_new = document.createElement("p");
+                        p_new.classList.add("diff-info");
+                        p_new.textContent = "new: " + diff.new;
+                        let p_old = document.createElement("p");
+                        p_old.classList.add("diff-info");
+                        p_old.textContent = "old: " + diff.old;
+                        div.append(p);
+                        div.append(p1);
+                        div.append(p_new);
+                        div.append(p_old)
+                        let hr = document.createElement("hr");
+                        div.append(hr);
                     }
                     $("#git").append(div);
-                    //let hr = document.createElement("hr");
-                    //$("#git").append(hr);
                 }
             }
         };

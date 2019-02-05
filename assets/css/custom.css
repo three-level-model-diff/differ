@@ -101,9 +101,18 @@
 
 .content {
     display: block;
+    padding-left: 1rem;
 }
 
 .diff-info {
     padding: 0.5rem;
     margin: 1rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.fw-500 {
+    font-weight: 500;
 }

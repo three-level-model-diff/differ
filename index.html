@@ -241,7 +241,14 @@
                         </section>`;
 
         // template HTML per i tabs di selezione tra visualizzazione orizzontale e verticale
-        let tabs = `<div class="nav-wrapper">
+        let tabs = `<div class="container">
+                        <p style="font-weight: 500;">Legenda:</p>
+                        <p><span style="color: #2eb82e;">abc</span> textual insert</p>
+                        <p><span style="color: red; text-decoration: line-through;">abc</span> textual delete</p>
+                        <p><span style="border: 1px solid #2eb82e;">abc</span> structural insert</p>
+                        <p><span style="border: 1px solid red; color: red;">abc</span> structural delete</p>
+                    </div>
+                    <div class="nav-wrapper">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-4 mb-md-0 active" id="tabs-icons-text-1-tab" onclick="loadHorizontalCSS();" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Horizontal</a>
@@ -745,10 +752,10 @@
                     let div = document.createElement("div");
                     for (const diff of diffs) {
                         let p = document.createElement("p");
-                        p.classList.add("diff-info", "italic");
+                        p.classList.add("diff-info", "fw-500");
                         p.textContent = diff.id;
                         let p1 = document.createElement("p");
-                        p1.classList.add("diff-info", "italic");
+                        p1.classList.add("diff-info", "fw-500");
                         p1.textContent = diff.operation;
                         let p_new = document.createElement("p");
                         p_new.classList.add("diff-info");

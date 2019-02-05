@@ -296,7 +296,7 @@ let modifiedText = "";
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
  */
-function differDel(start, content, operation) {
+function differDel(start, content, operation, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
@@ -310,6 +310,19 @@ function differDel(start, content, operation) {
     let span2 = document.createElement("span");
     let attr2 = document.createAttribute("data-differ-diff");
     span2.setAttributeNode(attr2);
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    data_placement.value = "top";
+    let data_title = document.createAttribute("title");
+    if (typeof author !== "undefined") {
+        data_title.value = author;
+    } else {
+        data_title.value = "unknown";
+    }
+    span2.setAttributeNode(data_toggle);
+    span2.setAttributeNode(data_placement);
+    span2.setAttributeNode(data_title);
     span2.append(span);
 
     let modText = doc.substring(0, start) + span2.outerHTML + doc.substring(end);
@@ -322,13 +335,26 @@ function differDel(start, content, operation) {
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
  */
-function differDelStruct(start, content, operation) {       // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
+function differDelStruct(start, content, operation, author) {       // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
     var doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
     let diff_span = document.createElement("span");
     let diff_attr = document.createAttribute("data-differ-diff");
     diff_span.setAttributeNode(diff_attr);
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    data_placement.value = "top";
+    let data_title = document.createAttribute("title");
+    if (typeof author !== "undefined") {
+        data_title.value = author;
+    } else {
+        data_title.value = "unknown";
+    }
+    diff_span.setAttributeNode(data_toggle);
+    diff_span.setAttributeNode(data_placement);
+    diff_span.setAttributeNode(data_title);
 
     let del_span = document.createElement("span");
     let del_attr = document.createAttribute("data-differ-del");
@@ -342,7 +368,7 @@ function differDelStruct(start, content, operation) {       // TODO: aggiungere 
     modifiedText = modText;
 };
 
-function differDelUnwrap(start1, tag1, start2, tag2) {
+function differDelUnwrap(start1, tag1, start2, tag2, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     let del_content = doc.slice(start1, (start2 + tag2.length-1));
@@ -350,6 +376,19 @@ function differDelUnwrap(start1, tag1, start2, tag2) {
     let diff_span = document.createElement("span");
     let diff_attr = document.createAttribute("data-differ-diff");
     diff_span.setAttributeNode(diff_attr);
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    data_placement.value = "top";
+    let data_title = document.createAttribute("title");
+    if (typeof author !== "undefined") {
+        data_title.value = author;
+    } else {
+        data_title.value = "unknown";
+    }
+    diff_span.setAttributeNode(data_toggle);
+    diff_span.setAttributeNode(data_placement);
+    diff_span.setAttributeNode(data_title);
     for (const index in inline_elements) {
         if (opening_tag == inline_elements[index]) {
             let del_span = document.createElement("span");
@@ -393,7 +432,7 @@ function differDelWithoutWrap(pos, content) {
  * @param {String} content - content of the insert
  * @param {String} operation - String representing the operation
  */
-function differIns(pos, content, operation) {
+function differIns(pos, content, operation, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
@@ -406,6 +445,19 @@ function differIns(pos, content, operation) {
     let span2 = document.createElement("span");
     let attr2 = document.createAttribute("data-differ-diff");
     span2.setAttributeNode(attr2);
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    data_placement.value = "top";
+    let data_title = document.createAttribute("title");
+    if (typeof author !== "undefined") {
+        data_title.value = author;
+    } else {
+        data_title.value = "unknown";
+    }
+    span2.setAttributeNode(data_toggle);
+    span2.setAttributeNode(data_placement);
+    span2.setAttributeNode(data_title);
     span2.append(span);
     
     let modText = doc.substring(0, pos) + span2.outerHTML + doc.substring(pos);
@@ -418,13 +470,26 @@ function differIns(pos, content, operation) {
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
  */
-function differInsStruct(pos, content, operation) {    // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
+function differInsStruct(pos, content, operation, author) {    // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
     let diff_div = document.createElement("div");
     let diff_attr = document.createAttribute("data-differ-diff");
     diff_div.setAttributeNode(diff_attr);
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    data_placement.value = "top";
+    let data_title = document.createAttribute("title");
+    if (typeof author !== "undefined") {
+        data_title.value = author;
+    } else {
+        data_title.value = "unknown";
+    }
+    diff_div.setAttributeNode(data_toggle);
+    diff_div.setAttributeNode(data_placement);
+    diff_div.setAttributeNode(data_title);
 
     let ins_div = document.createElement("div");
     let ins_attr = document.createAttribute("data-differ-ins");
@@ -444,7 +509,7 @@ function differInsStruct(pos, content, operation) {    // TODO: aggiungere ciclo
  * @param {number} pos2 - end index of the diff
  * @param {String} content2 - closing tag of the diff
  */
-function differInsWrap(pos1, content1, pos2, content2) {
+function differInsWrap(pos1, content1, pos2, content2, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     let txt = doc.slice(pos1, pos2);
@@ -455,6 +520,19 @@ function differInsWrap(pos1, content1, pos2, content2) {
             let diff_span = document.createElement("span");
             let diff_attr = document.createAttribute("data-differ-diff");
             diff_span.setAttributeNode(diff_attr);
+            let data_toggle = document.createAttribute("data-toggle");
+            data_toggle.value = "tooltip";
+            let data_placement = document.createAttribute("data-placement");
+            data_placement.value = "top";
+            let data_title = document.createAttribute("title");
+            if (typeof author !== "undefined") {
+                data_title.value = author;
+            } else {
+                data_title.value = "unknown";
+            }
+            diff_span.setAttributeNode(data_toggle);
+            diff_span.setAttributeNode(data_placement);
+            diff_span.setAttributeNode(data_title);
 
             let ins_span = document.createElement("span");
             let ins_attr = document.createAttribute("data-differ-ins");
@@ -469,6 +547,19 @@ function differInsWrap(pos1, content1, pos2, content2) {
             let diff_div = document.createElement("div");
             let diff_attr = document.createAttribute("data-differ-diff");
             diff_div.setAttributeNode(diff_attr);
+            let data_toggle = document.createAttribute("data-toggle");
+            data_toggle.value = "tooltip";
+            let data_placement = document.createAttribute("data-placement");
+            data_placement.value = "top";
+            let data_title = document.createAttribute("title");
+            if (typeof author !== "undefined") {
+                data_title.value = author;
+            } else {
+                data_title.value = "unknown";
+            }
+            diff_div.setAttributeNode(data_toggle);
+            diff_div.setAttributeNode(data_placement);
+            diff_div.setAttributeNode(data_title);
 
             let ins_div = document.createElement("div");
             let ins_attr = document.createAttribute("data-differ-ins");
@@ -488,7 +579,7 @@ function differInsWrap(pos1, content1, pos2, content2) {
  * @param {number} pos - index of the split
  * @param {String} content - content of the split
  */
-function differInsSplit(pos, content) {
+function differInsSplit(pos, content, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     let char = content.indexOf(">");    // position of the first opening tag
@@ -499,7 +590,7 @@ function differInsSplit(pos, content) {
     modifiedText = modText;
 };
 
-function differInsWithoutWrap(pos, content) {
+function differInsWithoutWrap(pos, content, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
     let modText = doc.substring(0, pos) + content + doc.substring(pos);
@@ -513,7 +604,7 @@ function differInsWithoutWrap(pos, content) {
  * @param {[String]} insContent - Array of contents of insertions
  * @param {String} operation - operation of the diff
  */
-function differReplace(pos, delContent, insContent, operation) {
+function differReplace(pos, delContent, insContent, operation, author) {
     for (const index in pos) {
         let doc = modifiedText;
         doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
@@ -522,6 +613,19 @@ function differReplace(pos, delContent, insContent, operation) {
             let diff_span = document.createElement("span");
             let diff_attr = document.createAttribute("data-differ-diff");
             diff_span.setAttributeNode(diff_attr);
+            let data_toggle = document.createAttribute("data-toggle");
+            data_toggle.value = "tooltip";
+            let data_placement = document.createAttribute("data-placement");
+            data_placement.value = "top";
+            let data_title = document.createAttribute("title");
+            if (typeof author !== "undefined") {
+                data_title.value = author;
+            } else {
+                data_title.value = "unknown";
+            }
+            diff_span.setAttributeNode(data_toggle);
+            diff_span.setAttributeNode(data_placement);
+            diff_span.setAttributeNode(data_title);
             let del_span = document.createElement("span");
             let del_attr = document.createAttribute("data-differ-del");
             del_attr.value = "text " + operation;
@@ -539,6 +643,19 @@ function differReplace(pos, delContent, insContent, operation) {
             let diff_span = document.createElement("span");
             let diff_attr = document.createAttribute("data-differ-diff");
             diff_span.setAttributeNode(diff_attr);
+            let data_toggle = document.createAttribute("data-toggle");
+            data_toggle.value = "tooltip";
+            let data_placement = document.createAttribute("data-placement");
+            data_placement.value = "top";
+            let data_title = document.createAttribute("title");
+            if (typeof author !== "undefined") {
+                data_title.value = author;
+            } else {
+                data_title.value = "unknown";
+            }
+            diff_span.setAttributeNode(data_toggle);
+            diff_span.setAttributeNode(data_placement);
+            diff_span.setAttributeNode(data_title);
             diff_span.append(ins_span);
             let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index]);
             modifiedText = modText;
@@ -546,14 +663,27 @@ function differReplace(pos, delContent, insContent, operation) {
     }
 };
 
-function differReplaceStruct(pos, delContent, insContent, operation) {
+function differReplaceStruct(pos, delContent, insContent, operation, author) {
     for (const index in pos) {
         let doc = modifiedText;
         doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
         if (delContent[index] !== "null") {
             let length = delContent[index].length;
-            let diff_div = document.createElement("divdiff_div");
+            let diff_div = document.createElement("div");
             let diff_attr = document.createAttribute("data-differ-diff");
+            let data_toggle = document.createAttribute("data-toggle");
+            data_toggle.value = "tooltip";
+            let data_placement = document.createAttribute("data-placement");
+            data_placement.value = "top";
+            let data_title = document.createAttribute("title");
+            if (typeof author !== "undefined") {
+                data_title.value = author;
+            } else {
+                data_title.value = "unknown";
+            }
+            diff_div.setAttributeNode(data_toggle);
+            diff_div.setAttributeNode(data_placement);
+            diff_div.setAttributeNode(data_title);
             diff_div.setAttributeNode(diff_attr);
             let del_div = document.createElement("div");
             let del_attr = document.createAttribute("data-differ-del");
@@ -572,6 +702,19 @@ function differReplaceStruct(pos, delContent, insContent, operation) {
             let diff_div = document.createElement("div");
             let diff_attr = document.createAttribute("data-differ-diff");
             diff_div.setAttributeNode(diff_attr);
+            let data_toggle = document.createAttribute("data-toggle");
+            data_toggle.value = "tooltip";
+            let data_placement = document.createAttribute("data-placement");
+            data_placement.value = "top";
+            let data_title = document.createAttribute("title");
+            if (typeof author !== "undefined") {
+                data_title.value = author;
+            } else {
+                data_title.value = "unknown";
+            }
+            diff_div.setAttributeNode(data_toggle);
+            diff_div.setAttributeNode(data_placement);
+            diff_div.setAttributeNode(data_title);
             diff_div.append(ins_div);
             let modText = doc.slice(0, pos[index]) + diff_div.outerHTML + doc.slice(pos[index]);
             modifiedText = modText;
@@ -620,6 +763,8 @@ function newVisualize(doc, edits) {
 
     for (let index = edits.length -1; index >= 0; index--) {
 
+        let author = edits[index].by;
+
         for (item of edits[index].items) {
             if (item.type === "TEXT") {
 
@@ -641,13 +786,13 @@ function newVisualize(doc, edits) {
                                     pDelContent.push("null");
                                 }
                                 if (pPos.length === item.items.length) {
-                                    differReplace(pPos, pDelContent, pInsContent, operation);
+                                    differReplace(pPos, pDelContent, pInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
                                 };
                             }
                         }; 
@@ -670,13 +815,13 @@ function newVisualize(doc, edits) {
                                     wcDelContent.push("null");
                                 }
                                 if (wcPos.length === item.items.length) {
-                                    differReplace(wcPos, wcDelContent, wcInsContent, operation);
+                                    differReplace(wcPos, wcDelContent, wcInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
                                 };
                             }
                         };
@@ -699,13 +844,13 @@ function newVisualize(doc, edits) {
                                     wrDelContent.push("null");
                                 }
                                 if (wrPos.length === item.items.length) {
-                                    differReplace(wrPos, wrDelContent, wrInsContent, operation);
+                                    differReplace(wrPos, wrDelContent, wrInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
                                 };
                             }
                         };
@@ -716,7 +861,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "INS") {
-                                differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
                             };
                         };
                         textinsertCounter++;
@@ -726,7 +871,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                             };
                         };
                         textdeleteCounter++;
@@ -747,14 +892,14 @@ function newVisualize(doc, edits) {
                                     trDelContent.push("null");
                                 }
                                 if (trPos.length === item.items.length) {
-                                    differReplace(trPos, trDelContent, trInsContent, operation);
+                                    differReplace(trPos, trDelContent, trInsContent, operation, author);
                                     //console.log(getEnclosingTag(doc, trPos, trDelContent));
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
                                 };
                             }
                         };
@@ -774,7 +919,7 @@ function newVisualize(doc, edits) {
                             if (mechanical_diff.operation === "DEL") {
                                 differDelWithoutWrap(mechanical_diff.startPosition, mechanical_diff.content);
                             } else if (echanical_diff.operation === "INS") {
-                                differInsWithoutWrap(mechanical_diff.position, mechanical_diff.content);
+                                differInsWithoutWrap(mechanical_diff.position, mechanical_diff.content, author);
                             };
                         };
                         noopCounter++;
@@ -783,7 +928,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "INS") {
-                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation);
+                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation, author);
                             };
                         };
                         insertCounter++;
@@ -793,7 +938,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                             };
                         };
                         deleteCounter++;
@@ -813,16 +958,16 @@ function newVisualize(doc, edits) {
                                     mvInsContent.push(mechanical_diff.content);
                                 };
                                 if (typeof mvDelPos !== "undefined" && typeof mvDelContent !== "undefined") {
-                                    differDelStruct(mvDelPos, mvDelContent, operation);
+                                    differDelStruct(mvDelPos, mvDelContent, operation, author);
                                 };
                                 if (typeof mvInsPos !== "undefined" && typeof mvInsContent !== "undefined") {
-                                    differInsStruct(mvDelPos, mvDelContent, operation);
+                                    differInsStruct(mvDelPos, mvDelContent, operation, author);
                                 };
                             }
                             if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                             } else if (mechanical_diff.operation === "INS") {
-                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation);
+                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation, author);
                             };
                         };
                         moveCounter++;
@@ -842,7 +987,7 @@ function newVisualize(doc, edits) {
                                 }
                             };
                         };
-                        differInsWrap(pos1, content1, pos2, content2);
+                        differInsWrap(pos1, content1, pos2, content2, author);
                         wrapCounter++;
                         break;
 
@@ -860,7 +1005,7 @@ function newVisualize(doc, edits) {
                                 }
                             };
                         };
-                        differDelUnwrap(startIndex1, tagContent1, startIndex2, tagContent2);
+                        differDelUnwrap(startIndex1, tagContent1, startIndex2, tagContent2, author);
                         unwrapCounter++;
                         break;
 
@@ -868,7 +1013,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                             };
                         };
                         joinCounter++;
@@ -878,7 +1023,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "INS") {
-                                differInsSplit(mechanical_diff.position, mechanical_diff.content);
+                                differInsSplit(mechanical_diff.position, mechanical_diff.content, author);
                             };
                         };
                         splitCounter++;
@@ -899,13 +1044,13 @@ function newVisualize(doc, edits) {
                                     rInsContent.push(mechanical_diff.content);
                                 };
                                 if (rPos.length === item.items.length) {
-                                    differReplaceStruct(rPos, rDelContent, rInsContent, operation);
+                                    differReplaceStruct(rPos, rDelContent, rInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation);
+                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation);
+                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
                                 }
                             }
                         };
@@ -947,7 +1092,7 @@ function newVisualize(doc, edits) {
                     "color": "#2eb82e"
                 }
             }, {
-                "selector": "[data-differ-ins^='structure']",
+                "selector": "[data-differ-ins^='structure'] *",
                 "rules": {
                     "color": "#2eb82e !important",
                     "border": "1px solid #2eb82e"
@@ -959,7 +1104,7 @@ function newVisualize(doc, edits) {
                     "text-decoration": "line-through"
                 }
             }, {
-                "selector": "[data-differ-del^='structure']",
+                "selector": "[data-differ-del^='structure'] *",
                 "rules": {
                     "color": "red",
                     "border": "1px solid red"

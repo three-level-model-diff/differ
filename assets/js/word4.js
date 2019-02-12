@@ -914,11 +914,11 @@ function newVisualize(doc, edits) {
                 let operation = item.operation;
                 switch (operation) {
                     case "NOOP":
-                        for (let index = iten.items.length -1; index >= 0; index--) {
+                        for (let index = item.items.length -1; index >= 0; index--) {
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
                                 differDelWithoutWrap(mechanical_diff.startPosition, mechanical_diff.content);
-                            } else if (echanical_diff.operation === "INS") {
+                            } else if (mechanical_diff.operation === "INS") {
                                 differInsWithoutWrap(mechanical_diff.position, mechanical_diff.content, author);
                             };
                         };

@@ -5,7 +5,7 @@
     "old": "informatica",
     "timestamp": "2019-01-28T14:12:30.151Z",
     "items": [{
-        "id": "STRUCTURAL",
+        "id": "STRUCTURAL-0001",
         "type": "TEXT",
         "operation": "TEXTREPLACE",
         "items": [{
@@ -1607,7 +1607,8 @@
             "id": "EDIT",
             "operation": "DEL",
             "startPosition": 18837,
-            "endPosition": 18873
+            "endPosition": 18873,
+            "content": " legislativo 28 febbraio 2005, n. 42"
         }]
     }]
 }, {
@@ -3326,6 +3327,3110 @@
             "operation": "INS",
             "position": 46102,
             "content": "elettronica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0180",
+    "operation": "MEANING",
+    "new": ", anche mediante l’acquisizione digitale della sottoscrizione autografa,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 46102,
+            "content": ", anche mediante l’acquisizione digitale della sottoscrizione autografa,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0181",
+    "operation": "MEANING",
+    "new": "qualsiasi ",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 46107,
+            "content": "qualsiasi "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0182",
+    "operation": "MEANING",
+    "new": "avanzata",
+    "old": "qualificata",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 46140,
+            "endPosition": 46151,
+            "content": "qualificata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 46151,
+            "content": "avanzata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0183",
+    "operation": "MEANING",
+    "new": "l’eventuale",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 46340,
+            "content": "l’eventuale"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0184",
+    "operation": "MEANING",
+    "new": "",
+    "old": " o di altro tipo di firma elettronica qualificata",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 46529,
+            "endPosition": 46578,
+            "content": " o di altro tipo di firma elettronica qualificata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0185",
+    "operation": "MEANING",
+    "new": ", qualora emettano certificati qualificati,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 47402,
+            "content": ", qualora emettano certificati qualificati,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0186",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 50329,
+            "endPosition": 50334,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 50334,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0187",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 50453,
+            "endPosition": 50458,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 50458,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0188",
+    "operation": "MEANING",
+    "new": "",
+    "old": " qualificata",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 52304,
+            "endPosition": 52316,
+            "content": " qualificata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0189",
+    "operation": "MEANING",
+    "new": ", realizzata in conformità alle regole tecniche ed idonea a garantire l’integrità e la veridicità di tutte le informazioni contenute nel certificato medesimo",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 52367,
+            "content": ", realizzata in conformità alle regole tecniche ed idonea a garantire l’integrità e la veridicità di tutte le informazioni contenute nel certificato medesimo"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0190",
+    "operation": "MEANING",
+    "new": "può contenere",
+    "old": "contiene",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 52931,
+            "endPosition": 52939,
+            "content": "contiene"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 52939,
+            "content": "può contenere"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0191",
+    "operation": "MEANING",
+    "new": " la qualifica di pubblico ufficiale,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 53277,
+            "content": " la qualifica di pubblico ufficiale,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0192",
+    "operation": "MEANING",
+    "new": "i ",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 53420,
+            "content": "i "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0193",
+    "operation": "MEANING",
+    "new": " inclusi quelli derivanti dalla titolarità delle qualifiche e dai poteri di rappresentanza di cui alla lettera a)",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 53449,
+            "content": " inclusi quelli derivanti dalla titolarità delle qualifiche e dai poteri di rappresentanza di cui alla lettera a)"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0194",
+    "operation": "MEANING",
+    "new": "<p>3-bis. Le informazioni di cui al comma 3 possono essere contenute in un separato certificato elettronico e possono essere rese disponibili anche in rete. Con decreto del Presidente del Consiglio dei Ministri sono definite le modalità di attuazione del presente comma, anche in riferimento alle pubbliche amministrazioni e agli ordini professionali.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 53641,
+            "content": "<p>3-bis. Le informazioni di cui al comma 3 possono essere contenute in un separato certificato elettronico e possono essere rese disponibili anche in rete. Con decreto del Presidente del Consiglio dei Ministri sono definite le modalità di attuazione del presente comma, anche in riferimento alle pubbliche amministrazioni e agli ordini professionali.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0195",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 54339,
+            "endPosition": 54344,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 54344,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0196",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 56304,
+            "endPosition": 56309,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 56309,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0197",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 56537,
+            "endPosition": 56542,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 56542,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0198",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 56623,
+            "endPosition": 56628,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 56628,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0199",
+    "operation": "MEANING",
+    "new": "Il valore giuridico delle firme elettroniche qualificate e delle firme digitali basate su certificati qualificati rilasciati da certificatori accreditati in altri Stati membri dell’Unione europea ai sensi dell’articolo 3, paragrafo 2, della direttiva 1999/93/CE è equiparato a quello previsto per le firme elettroniche qualificate e per le firme digitali basate su certificati qualificati emessi dai certificatori accreditati ai sensi del presente articolo",
+    "old": "Sono equiparati ai certificatori accreditati ai sensi del presente articolo i certificatori accreditati in altri Stati membri dell’Unione europea ai sensi dell’articolo 3, paragrafo 2, della direttiva 1999/93/CE",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 56908,
+            "endPosition": 57119,
+            "content": "Sono equiparati ai certificatori accreditati ai sensi del presente articolo i certificatori accreditati in altri Stati membri dell’Unione europea ai sensi dell’articolo 3, paragrafo 2, della direttiva 1999/93/CE"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 57119,
+            "content": "Il valore giuridico delle firme elettroniche qualificate e delle firme digitali basate su certificati qualificati rilasciati da certificatori accreditati in altri Stati membri dell’Unione europea ai sensi dell’articolo 3, paragrafo 2, della direttiva 1999/93/CE è equiparato a quello previsto per le firme elettroniche qualificate e per le firme digitali basate su certificati qualificati emessi dai certificatori accreditati ai sensi del presente articolo"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0200",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 57238,
+            "endPosition": 57243,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 57243,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0201",
+    "operation": "MEANING",
+    "new": "certificato",
+    "old": "processo di verifica della firma ",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 59444,
+            "endPosition": 59476,
+            "content": "processo di verifica della firma "
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 59476,
+            "content": "certificato"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0202",
+    "operation": "MEANING",
+    "new": "dei certificatori e dei gestori di posta elettronica certificata",
+    "old": "di certificazione",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 59926,
+            "endPosition": 59943,
+            "content": "di certificazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 59943,
+            "content": "dei certificatori e dei gestori di posta elettronica certificata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0203",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 59977,
+            "endPosition": 59982,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 59982,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0204",
+    "operation": "MEANING",
+    "new": "dei gestori di posta elettronica certificata",
+    "old": "accreditati",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 60070,
+            "endPosition": 60081,
+            "content": "accreditati"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 60081,
+            "content": "dei gestori di posta elettronica certificata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0205",
+    "operation": "MEANING",
+    "new": "ad assicurare la custodia del dispositivo di firma e ",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 60378,
+            "content": "ad assicurare la custodia del dispositivo di firma e "
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0206",
+    "operation": "MEANING",
+    "new": "; è altresì tenuto ad utilizzare personalmente il dispositivo di firma",
+    "old": " ed a custodire e utilizzare il dispositivo di firma con la diligenza del buon padre di famiglia",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 60464,
+            "endPosition": 60560,
+            "content": " ed a custodire e utilizzare il dispositivo di firma con la diligenza del buon padre di famiglia"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 60560,
+            "content": "; è altresì tenuto ad utilizzare personalmente il dispositivo di firma"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0207",
+    "operation": "MEANING",
+    "new": "a terzi",
+    "old": "ad altri, ivi incluso il titolare del certificato",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 60694,
+            "endPosition": 60743,
+            "content": "ad altri, ivi incluso il titolare del certificato"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 60743,
+            "content": "a terzi"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0208",
+    "operation": "MEANING",
+    "new": "LETTERA SOPPRESSA DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "non rendersi depositario di dati per la creazione della firma del titolare",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 62088,
+            "endPosition": 62162,
+            "content": "non rendersi depositario di dati per la creazione della firma del titolare"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 62162,
+            "content": "LETTERA SOPPRESSA DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0209",
+    "operation": "MEANING",
+    "new": "venti",
+    "old": "dieci",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 63310,
+            "endPosition": 63315,
+            "content": "dieci"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 63315,
+            "content": "venti"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0210",
+    "operation": "MEANING",
+    "new": "<p>m-bis) garantire il corretto funzionamento e la continuità del sistema e comunicare immediatamente a DigitPA e agli utenti eventuali malfunzionamenti che determinano disservizio, sospensione o interruzione del servizio stesso.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 64831,
+            "content": "<p>m-bis) garantire il corretto funzionamento e la continuità del sistema e comunicare immediatamente a DigitPA e agli utenti eventuali malfunzionamenti che determinano disservizio, sospensione o interruzione del servizio stesso.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0211",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-32-bis-sanzioni-per-i-certificatori-qualificati-e-per-i-gestori-di-posta-elettronica-certificata'><span id='art32bis'></span><h4>Art. 32-bis. Sanzioni per i certificatori qualificati e per i gestori di posta elettronica certificata</h4><p>1. Qualora si verifichi, salvi i casi di forza maggiore o caso fortuito, un malfunzionamento nel sistema che determini un disservizio, ovvero la mancata o intempestiva comunicazione dello stesso disservizio a DigitPA o agli utenti, ai sensi dell’articolo 32, comma 3, lettera m-bis), DigitPA diffida il certificatore qualificato o il gestore di posta elettronica certificata a ripristinare la regolarità del servizio o ad effettuare le comunicazioni ivi previste. Se il disservizio ovvero la mancata o intempestiva comunicazione sono reiterati per due volte nel corso di un biennio, successivamente alla seconda diffida si applica la sanzione della cancellazione dall’elenco pubblico.</p><p>2. Qualora si verifichi, fatti salvi i casi di forza maggiore o di caso fortuito, un malfunzionamento nel sistema che determini l’interruzione del servizio, ovvero la mancata o intempestiva comunicazione dello stesso disservizio a DigitPA o agli utenti, ai sensi dell’articolo 32, comma 3, lettera m-bis), DigitPA diffida il certificatore qualificato o il gestore di posta elettronica certificata a ripristinare la regolarità del servizio o ad effettuare le comunicazioni ivi previste. Se l’interruzione del servizio ovvero la mancata o intempestiva comunicazione sono reiterati nel corso di un biennio, successivamente alla prima diffida si applica la sanzione della cancellazione dall’elenco pubblico.</p><p>3. Nei casi di cui ai commi 1 e 2 può essere applicata la sanzione amministrativa accessoria della pubblicazione dei provvedimenti di diffida o di cancellazione secondo la legislazione vigente in materia di pubblicità legale.</p><p>4. Qualora un certificatore qualificato o un gestore di posta elettronica certificata non ottemperi, nei tempi previsti, a quanto prescritto da DigitPA nell’esercizio delle attività di vigilanza di cui all’articolo 31 si applica la disposizione di cui al comma 2.</p></div>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 65518,
+            "content": "<div class='section' id='art-32-bis-sanzioni-per-i-certificatori-qualificati-e-per-i-gestori-di-posta-elettronica-certificata'><span id='art32bis'></span><h4>Art. 32-bis. Sanzioni per i certificatori qualificati e per i gestori di posta elettronica certificata</h4><p>1. Qualora si verifichi, salvi i casi di forza maggiore o caso fortuito, un malfunzionamento nel sistema che determini un disservizio, ovvero la mancata o intempestiva comunicazione dello stesso disservizio a DigitPA o agli utenti, ai sensi dell’articolo 32, comma 3, lettera m-bis), DigitPA diffida il certificatore qualificato o il gestore di posta elettronica certificata a ripristinare la regolarità del servizio o ad effettuare le comunicazioni ivi previste. Se il disservizio ovvero la mancata o intempestiva comunicazione sono reiterati per due volte nel corso di un biennio, successivamente alla seconda diffida si applica la sanzione della cancellazione dall’elenco pubblico.</p><p>2. Qualora si verifichi, fatti salvi i casi di forza maggiore o di caso fortuito, un malfunzionamento nel sistema che determini l’interruzione del servizio, ovvero la mancata o intempestiva comunicazione dello stesso disservizio a DigitPA o agli utenti, ai sensi dell’articolo 32, comma 3, lettera m-bis), DigitPA diffida il certificatore qualificato o il gestore di posta elettronica certificata a ripristinare la regolarità del servizio o ad effettuare le comunicazioni ivi previste. Se l’interruzione del servizio ovvero la mancata o intempestiva comunicazione sono reiterati nel corso di un biennio, successivamente alla prima diffida si applica la sanzione della cancellazione dall’elenco pubblico.</p><p>3. Nei casi di cui ai commi 1 e 2 può essere applicata la sanzione amministrativa accessoria della pubblicazione dei provvedimenti di diffida o di cancellazione secondo la legislazione vigente in materia di pubblicità legale.</p><p>4. Qualora un certificatore qualificato o un gestore di posta elettronica certificata non ottemperi, nei tempi previsti, a quanto prescritto da DigitPA nell’esercizio delle attività di vigilanza di cui all’articolo 31 si applica la disposizione di cui al comma 2.</p></div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0212",
+    "operation": "MEANING",
+    "new": "venti",
+    "old": "dieci",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 66020,
+            "endPosition": 66025,
+            "content": "dieci"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 66025,
+            "content": "venti"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0213",
+    "operation": "MEANING",
+    "new": " ad esclusione di quelli rilasciati da collegi e ordini professionali e relativi organi agli iscritti nei rispettivi albi e registri",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 67114,
+            "content": " ad esclusione di quelli rilasciati da collegi e ordini professionali e relativi organi agli iscritti nei rispettivi albi e registri"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0214",
+    "operation": "MEANING",
+    "new": "71",
+    "old": "72",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDCHANGE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 67935,
+            "endPosition": 67937,
+            "content": "72"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 67937,
+            "content": "71"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0215",
+    "operation": "MEANING",
+    "new": "La firma con procedura automatica è valida se apposta previo consenso del titolare all’adozione della procedura medesima",
+    "old": "L’apposizione di firme con procedura automatica è valida se l’attivazione della procedura medesima è chiaramente riconducibile alla volontà del titolare e lo stesso renda palese la sua adozione in relazione al singolo documento firmato automaticamente",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 70301,
+            "endPosition": 70552,
+            "content": "L’apposizione di firme con procedura automatica è valida se l’attivazione della procedura medesima è chiaramente riconducibile alla volontà del titolare e lo stesso renda palese la sua adozione in relazione al singolo documento firmato automaticamente"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 70552,
+            "content": "La firma con procedura automatica è valida se apposta previo consenso del titolare all’adozione della procedura medesima"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0216",
+    "operation": "MEANING",
+    "new": "devono essere dotati di certificazione di sicurezza ai sensi dello schema nazionale di cui al comma 5",
+    "old": "sono sottoposti alla valutazione e certificazione di sicurezza ai sensi dello schema nazionale per la valutazione e certificazione di sicurezza nel settore della tecnologia dell’informazione di cui al comma 5",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 70613,
+            "endPosition": 70821,
+            "content": "sono sottoposti alla valutazione e certificazione di sicurezza ai sensi dello schema nazionale per la valutazione e certificazione di sicurezza nel settore della tecnologia dell’informazione di cui al comma 5"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 70821,
+            "content": "devono essere dotati di certificazione di sicurezza ai sensi dello schema nazionale di cui al comma 5"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0217",
+    "operation": "MEANING",
+    "new": " dall’Organismo di certificazione della sicurezza informatica",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 71030,
+            "content": " dall’Organismo di certificazione della sicurezza informatica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0218",
+    "operation": "MEANING",
+    "new": "L’attuazione dello schema nazionale non deve determinare nuovi o maggiori oneri per il bilancio dello Stato. Lo schema nazionale può prevedere altresì la valutazione e la certificazione relativamente ad ulteriori criteri europei ed internazionali, anche riguardanti altri sistemi e prodotti afferenti al settore suddetto. La valutazione della conformità del sistema e degli strumenti di autenticazione utilizzati dal titolare delle chiavi di firma è effettuata dall’Agenzia per l’Italia digitale in conformità ad apposite linee guida da questa emanate, acquisito il parere obbligatorio dell’Organismo di certificazione della sicurezza informatica",
+    "old": "Lo schema nazionale la cui attuazione non deve determinare nuovi o maggiori oneri per il bilancio dello Stato ed individua l’organismo pubblico incaricato di accreditare i centri di valutazione e di certificare le valutazioni di sicurezza. Lo schema nazionale può prevedere altresì la valutazione e la certificazione relativamente ad ulteriori criteri europei ed internazionali, anche riguardanti altri sistemi e prodotti afferenti al settore suddetto",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 71395,
+            "endPosition": 71846,
+            "content": "Lo schema nazionale la cui attuazione non deve determinare nuovi o maggiori oneri per il bilancio dello Stato ed individua l’organismo pubblico incaricato di accreditare i centri di valutazione e di certificare le valutazioni di sicurezza. Lo schema nazionale può prevedere altresì la valutazione e la certificazione relativamente ad ulteriori criteri europei ed internazionali, anche riguardanti altri sistemi e prodotti afferenti al settore suddetto"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 71846,
+            "content": "L’attuazione dello schema nazionale non deve determinare nuovi o maggiori oneri per il bilancio dello Stato. Lo schema nazionale può prevedere altresì la valutazione e la certificazione relativamente ad ulteriori criteri europei ed internazionali, anche riguardanti altri sistemi e prodotti afferenti al settore suddetto. La valutazione della conformità del sistema e degli strumenti di autenticazione utilizzati dal titolare delle chiavi di firma è effettuata dall’Agenzia per l’Italia digitale in conformità ad apposite linee guida da questa emanate, acquisito il parere obbligatorio dell’Organismo di certificazione della sicurezza informatica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0219",
+    "operation": "MEANING",
+    "new": "di cui al comma 5 è inoltre riconosciuta se accertata da un organismo all’uopo designato da un altro Stato membro e notificato ai sensi dell’articolo 11, paragrafo 1, lettera b), della direttiva 1999/93/CE",
+    "old": "ai requisiti di sicurezza dei dispositivi sicuri per la creazione di una firma qualificata a quanto prescritto dall’allegato III della direttiva 1999/93/CE è inoltre riconosciuta se certificata da un organismo all’uopo designato da un altro Stato membro e notificato ai sensi dell’articolo 11, paragrafo 1, lettera b), della direttiva stessa",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 71891,
+            "endPosition": 72232,
+            "content": "ai requisiti di sicurezza dei dispositivi sicuri per la creazione di una firma qualificata a quanto prescritto dall’allegato III della direttiva 1999/93/CE è inoltre riconosciuta se certificata da un organismo all’uopo designato da un altro Stato membro e notificato ai sensi dell’articolo 11, paragrafo 1, lettera b), della direttiva stessa"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 72232,
+            "content": "di cui al comma 5 è inoltre riconosciuta se accertata da un organismo all’uopo designato da un altro Stato membro e notificato ai sensi dell’articolo 11, paragrafo 1, lettera b), della direttiva 1999/93/CE"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0220",
+    "operation": "MEANING",
+    "new": " dell’articolo 37",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 72752,
+            "content": " dell’articolo 37"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0221",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 74190,
+            "endPosition": 74195,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 74195,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0222",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 74855,
+            "endPosition": 74860,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 74860,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0223",
+    "operation": "MEANING",
+    "new": "<p>4-bis. Qualora il certificatore qualificato cessi la propria attività senza indicare, ai sensi del comma 2, un certificatore sostitutivo e non si impegni a garantire la conservazione e la disponibilità della documentazione prevista dagli articoli 33 e 32, comma 3, lettera j) e delle ultime liste di revoca emesse, deve provvedere al deposito presso DigitPA che ne garantisce la conservazione e la disponibilità.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 74987,
+            "content": "<p>4-bis. Qualora il certificatore qualificato cessi la propria attività senza indicare, ai sensi del comma 2, un certificatore sostitutivo e non si impegni a garantire la conservazione e la disponibilità della documentazione prevista dagli articoli 33 e 32, comma 3, lettera j) e delle ultime liste di revoca emesse, deve provvedere al deposito presso DigitPA che ne garantisce la conservazione e la disponibilità.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0224",
+    "operation": "MEANING",
+    "new": "Trasferimenti di fondi",
+    "old": "Contratti, pagamenti",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 75152,
+            "endPosition": 75172,
+            "content": "Contratti, pagamenti"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 75172,
+            "content": "Trasferimenti di fondi"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0225",
+    "operation": "MEANING",
+    "new": "Trasferimenti di fondi",
+    "old": "Pagamenti informatici",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 75324,
+            "endPosition": 75345,
+            "content": "Pagamenti informatici"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 75345,
+            "content": "Trasferimenti di fondi"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0226",
+    "operation": "MEANING",
+    "new": "formano gli originali dei propri documenti con mezzi informatici secondo le disposizioni di cui al presente codice e le regole tecniche di cui all’articolo 71",
+    "old": "che dispongono di idonee risorse tecnologiche formano gli originali dei propri documenti con mezzi informatici secondo le disposizioni di cui al presente codice e le regole tecniche di cui all’articolo 71",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 76764,
+            "endPosition": 76968,
+            "content": "che dispongono di idonee risorse tecnologiche formano gli originali dei propri documenti con mezzi informatici secondo le disposizioni di cui al presente codice e le regole tecniche di cui all’articolo 71"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 76968,
+            "content": "formano gli originali dei propri documenti con mezzi informatici secondo le disposizioni di cui al presente codice e le regole tecniche di cui all’articolo 71"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0227",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "Fermo restando quanto previsto dal comma 1, la redazione di documenti originali su supporto cartaceo, nonché la copia di documenti informatici sul medesimo supporto è consentita solo ove risulti necessaria e comunque nel rispetto del principio dell’economicità",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 76995,
+            "endPosition": 77255,
+            "content": "Fermo restando quanto previsto dal comma 1, la redazione di documenti originali su supporto cartaceo, nonché la copia di documenti informatici sul medesimo supporto è consentita solo ove risulti necessaria e comunque nel rispetto del principio dell’economicità"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 77255,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0228",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-40-bis-protocollo-informatico'><span id='art40bis'></span><h4>Art. 40-bis. Protocollo informatico</h4><p>1. Formano comunque oggetto di registrazione di protocollo ai sensi dell’articolo 53 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, le comunicazioni che pervengono o sono inviate dalle caselle di posta elettronica di cui agli articoli 47, commi 1 e 3, 54, comma 2-ter e 57-bis, comma 1, nonché le istanze e le dichiarazioni di cui all’articolo 65 in conformità alle regole tecniche di cui all’articolo 71.</p></div>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<div class='section' id='art-40-bis-protocollo-informatico'><span id='art40bis'></span><h4>Art. 40-bis. Protocollo informatico</h4><p>1. Formano comunque oggetto di registrazione di protocollo ai sensi dell’articolo 53 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, le comunicazioni che pervengono o sono inviate dalle caselle di posta elettronica di cui agli articoli 47, commi 1 e 3, 54, comma 2-ter e 57-bis, comma 1, nonché le istanze e le dichiarazioni di cui all’articolo 65 in conformità alle regole tecniche di cui all’articolo 71.</p></div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0229",
+    "operation": "MEANING",
+    "new": "<p>1-bis. La gestione dei procedimenti amministrativi è attuata in modo da consentire, mediante strumenti automatici, il rispetto di quanto previsto all’articolo 54, commi 2-ter e 2-quater.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 78608,
+            "content": "<p>1-bis. La gestione dei procedimenti amministrativi è attuata in modo da consentire, mediante strumenti automatici, il rispetto di quanto previsto all’articolo 54, commi 2-ter e 2-quater.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0230",
+    "operation": "MEANING",
+    "new": "raccoglie",
+    "old": "può raccogliere",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 78688,
+            "endPosition": 78703,
+            "content": "può raccogliere"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 78703,
+            "content": "raccoglie"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0231",
+    "operation": "MEANING",
+    "new": "<p>2-bis. Il fascicolo informatico è realizzato garantendo la possibilità di essere direttamente consultato ed alimentato da tutte le amministrazioni coinvolte nel procedimento. Le regole per la costituzione, l’identificazione e l’utilizzo del fascicolo sono conformi ai principi di una corretta gestione documentale ed alla disciplina della formazione, gestione, conservazione e trasmissione del documento informatico, ivi comprese le regole concernenti il protocollo informatico ed il sistema pubblico di connettività, e comunque rispettano i criteri dell’interoperabilità e della cooperazione applicativa; regole tecniche specifiche possono essere dettate ai sensi dell’articolo 71, di concerto con il Ministro della funzione pubblica.</p><p>2-ter. Il fascicolo informatico reca l’indicazione:<p>a) dell’amministrazione titolare del procedimento, che cura la costituzione e la gestione del fascicolo medesimo;</p><p>b) delle altre amministrazioni partecipanti;</p><p>c) del responsabile del procedimento;</p><p>d) dell’oggetto del procedimento;</p><p>e) dell’elenco dei documenti contenuti, salvo quanto disposto dal comma 2-quater.</p><p>e-bis) dell’identificativo del fascicolo medesimo.</p><p>2-quater. Il fascicolo informatico può contenere aree a cui hanno accesso solo l’amministrazione titolare e gli altri soggetti da essa individuati; esso è formato in modo da garantire la corretta collocazione, la facile reperibilità e la collegabilità, in relazione al contenuto ed alle finalità, dei singoli documenti; è inoltre costituito in modo da garantire l’esercizio in via telematica dei diritti previsti dalla citata legge n. 241 del 1990.</p></p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 79072,
+            "content": "<p>2-bis. Il fascicolo informatico è realizzato garantendo la possibilità di essere direttamente consultato ed alimentato da tutte le amministrazioni coinvolte nel procedimento. Le regole per la costituzione, l’identificazione e l’utilizzo del fascicolo sono conformi ai principi di una corretta gestione documentale ed alla disciplina della formazione, gestione, conservazione e trasmissione del documento informatico, ivi comprese le regole concernenti il protocollo informatico ed il sistema pubblico di connettività, e comunque rispettano i criteri dell’interoperabilità e della cooperazione applicativa; regole tecniche specifiche possono essere dettate ai sensi dell’articolo 71, di concerto con il Ministro della funzione pubblica.</p><p>2-ter. Il fascicolo informatico reca l’indicazione:<p>a) dell’amministrazione titolare del procedimento, che cura la costituzione e la gestione del fascicolo medesimo;</p><p>b) delle altre amministrazioni partecipanti;</p><p>c) del responsabile del procedimento;</p><p>d) dell’oggetto del procedimento;</p><p>e) dell’elenco dei documenti contenuti, salvo quanto disposto dal comma 2-quater.</p><p>e-bis) dell’identificativo del fascicolo medesimo.</p><p>2-quater. Il fascicolo informatico può contenere aree a cui hanno accesso solo l’amministrazione titolare e gli altri soggetti da essa individuati; esso è formato in modo da garantire la corretta collocazione, la facile reperibilità e la collegabilità, in relazione al contenuto ed alle finalità, dei singoli documenti; è inoltre costituito in modo da garantire l’esercizio in via telematica dei diritti previsti dalla citata legge n. 241 del 1990.</p></p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0232",
+    "operation": "MEANING",
+    "new": "e la conservazione nel tempo sono effettuate",
+    "old": "sia effettuata",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 80582,
+            "endPosition": 80596,
+            "content": "sia effettuata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 80596,
+            "content": "e la conservazione nel tempo sono effettuate"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0233",
+    "operation": "MEANING",
+    "new": ", nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 81322,
+            "content": ", nel rispetto delle regole tecniche stabilite ai sensi dell’articolo 71"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0234",
+    "operation": "MEANING",
+    "new": "assicura",
+    "old": "garantisce",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 81937,
+            "endPosition": 81947,
+            "content": "garantisce"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 81947,
+            "content": "assicura"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0235",
+    "operation": "MEANING",
+    "new": "<p>1-bis. Il sistema di conservazione dei documenti informatici è gestito da un responsabile che opera d’intesa con il responsabile del trattamento dei dati personali di cui all’articolo 29 del decreto legislativo 30 giugno 2003, n. 196, e, ove previsto, con il responsabile del servizio per la tenuta del protocollo informatico, della gestione dei flussi documentali e degli archivi di cui all’articolo 61 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, nella definizione e gestione delle attività di rispettiva competenza.</p><p>1-ter. Il responsabile della conservazione può chiedere la conservazione dei documenti informatici o la certificazione della conformità del relativo processo di conservazione a quanto stabilito dall’articolo 43 e dalle regole tecniche ivi previste, nonché dal comma 1 ad altri soggetti, pubblici o privati, che offrono idonee garanzie organizzative e tecnologiche.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 79072,
+            "content": "<p>1-bis. Il sistema di conservazione dei documenti informatici è gestito da un responsabile che opera d’intesa con il responsabile del trattamento dei dati personali di cui all’articolo 29 del decreto legislativo 30 giugno 2003, n. 196, e, ove previsto, con il responsabile del servizio per la tenuta del protocollo informatico, della gestione dei flussi documentali e degli archivi di cui all’articolo 61 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, nella definizione e gestione delle attività di rispettiva competenza.</p><p>1-ter. Il responsabile della conservazione può chiedere la conservazione dei documenti informatici o la certificazione della conformità del relativo processo di conservazione a quanto stabilito dall’articolo 43 e dalle regole tecniche ivi previste, nonché dal comma 1 ad altri soggetti, pubblici o privati, che offrono idonee garanzie organizzative e tecnologiche.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0236",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-44-bis-conservatori-accreditati'><span id='art44bis'></span><h4>Art. 44-bis. Conservatori accreditati</h4><p>1. I soggetti pubblici e privati che svolgono attività di conservazione dei documenti informatici e di certificazione dei relativi processi anche per conto di terzi ed intendono conseguire il riconoscimento del possesso dei requisiti del livello più elevato, in termini di qualità e di sicurezza, chiedono l’accreditamento presso DigitPA.</p><p>2. Si applicano, in quanto compatibili, gli articoli 26, 27, 29, ad eccezione del comma 3, lettera a) e 31.</p><p>3. I soggetti privati di cui al comma 1 sono costituiti in società di capitali con capitale sociale non inferiore a euro 200.000.</p></div>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 44408,
+            "content": "<div class='section' id='art-44-bis-conservatori-accreditati'><span id='art44bis'></span><h4>Art. 44-bis. Conservatori accreditati</h4><p>1. I soggetti pubblici e privati che svolgono attività di conservazione dei documenti informatici e di certificazione dei relativi processi anche per conto di terzi ed intendono conseguire il riconoscimento del possesso dei requisiti del livello più elevato, in termini di qualità e di sicurezza, chiedono l’accreditamento presso DigitPA.</p><p>2. Si applicano, in quanto compatibili, gli articoli 26, 27, 29, ad eccezione del comma 3, lettera a) e 31.</p><p>3. I soggetti privati di cui al comma 1 sono costituiti in società di capitali con capitale sociale non inferiore a euro 200.000.</p></div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0237",
+    "operation": "MEANING",
+    "new": "",
+    "old": " ivi compreso il fax,",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 83292,
+            "endPosition": 83313,
+            "content": " ivi compreso il fax,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0238",
+    "operation": "MEANING",
+    "new": "",
+    "old": " di norma",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 84931,
+            "endPosition": 84940,
+            "content": " di norma"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0239",
+    "operation": "MEANING",
+    "new": " o in cooperazione applicativa",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 84984,
+            "content": " o in cooperazione applicativa"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0240",
+    "operation": "MEANING",
+    "new": "<p>1-bis. L’inosservanza della disposizione di cui al comma 1, ferma restando l’eventuale responsabilità per danno erariale, comporta responsabilità dirigenziale e responsabilità disciplinare.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 85090,
+            "content": "<p>1-bis. L’inosservanza della disposizione di cui al comma 1, ferma restando l’eventuale responsabilità per danno erariale, comporta responsabilità dirigenziale e responsabilità disciplinare.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0241",
+    "operation": "MEANING",
+    "new": "segnatura di protocollo di cui all’articolo 55 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445",
+    "old": "protocollo informatizzato",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 85415,
+            "endPosition": 85440,
+            "content": "protocollo informatizzato"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 85440,
+            "content": "segnatura di protocollo di cui all’articolo 55 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0241",
+    "operation": "MEANING",
+    "new": "Le pubbliche amministrazioni e gli altri soggetti di cui all’articolo 2, comma 2, provvedono ad istituire e pubblicare nell’Indice PA almeno una casella di posta elettronica certificata per ciascun registro di protocollo. La pubbliche amministrazioni utilizzano per le comunicazioni tra l’amministrazione ed i propri dipendenti la posta elettronica o altri strumenti informatici di comunicazione nel rispetto delle norme in materia di protezione dei dati personali e previa informativa agli interessati in merito al grado di riservatezza degli strumenti utilizzati.",
+    "old": "Entro ventiquattro mesi dalla data di entrata in vigore del presente codice le pubbliche amministrazioni centrali provvedono a:",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 85894,
+            "endPosition": 86021,
+            "content": "Entro ventiquattro mesi dalla data di entrata in vigore del presente codice le pubbliche amministrazioni centrali provvedono a:"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 86021,
+            "content": "Le pubbliche amministrazioni e gli altri soggetti di cui all’articolo 2, comma 2, provvedono ad istituire e pubblicare nell’Indice PA almeno una casella di posta elettronica certificata per ciascun registro di protocollo. La pubbliche amministrazioni utilizzano per le comunicazioni tra l’amministrazione ed i propri dipendenti la posta elettronica o altri strumenti informatici di comunicazione nel rispetto delle norme in materia di protezione dei dati personali e previa informativa agli interessati in merito al grado di riservatezza degli strumenti utilizzati."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0242",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>a) istituire almeno una casella di posta elettronica istituzionale ed una casella di posta elettronica certificata ai sensi del decreto del Presidente della Repubblica 11 febbraio 2005, n. 68, per ciascun registro di protocollo;</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 86102,
+            "endPosition": 86337,
+            "content": "<p>a) istituire almeno una casella di posta elettronica istituzionale ed una casella di posta elettronica certificata ai sensi del decreto del Presidente della Repubblica 11 febbraio 2005, n. 68, per ciascun registro di protocollo;</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0243",
+    "operation": "MEANING",
+    "new": "",
+    "old": "<p>b) utilizzare la posta elettronica per le comunicazioni tra l’amministrazione ed i propri dipendenti, nel rispetto delle norme in materia di protezione dei dati personali e previa informativa agli interessati in merito al grado di riservatezza degli strumenti utilizzati.</p>",
+    "timestamp": "1000",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "DELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 86361,
+            "endPosition": 86639,
+            "content": "<p>b) utilizzare la posta elettronica per le comunicazioni tra l’amministrazione ed i propri dipendenti, nel rispetto delle norme in materia di protezione dei dati personali e previa informativa agli interessati in merito al grado di riservatezza degli strumenti utilizzati.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0244",
+    "operation": "MEANING",
+    "new": ", o mediante altre soluzioni tecnologiche individuate con decreto del Presidente del Consiglio dei Ministri, sentito DigitPA",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 87137,
+            "content": ", o mediante altre soluzioni tecnologiche individuate con decreto del Presidente del Consiglio dei Ministri, sentito DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0245",
+    "operation": "MEANING",
+    "new": "ai sensi del comma 1, equivale, salvo che la legge disponga diversamente, alla notificazione per mezzo della posta",
+    "old": "mediante la posta elettronica certificata, equivale, nei casi consentiti dalla legge, alla notificazione per mezzo della posta",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 87237,
+            "endPosition": 87363,
+            "content": "mediante la posta elettronica certificata, equivale, nei casi consentiti dalla legge, alla notificazione per mezzo della posta"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 87363,
+            "content": "ai sensi del comma 1, equivale, salvo che la legge disponga diversamente, alla notificazione per mezzo della posta"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0246",
+    "operation": "MEANING",
+    "new": "ai sensi del comma 1",
+    "old": "mediante posta elettronica certificata",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 87475,
+            "endPosition": 87513,
+            "content": "mediante posta elettronica certificata"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 87513,
+            "content": "ai sensi del comma 1"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0247",
+    "operation": "MEANING",
+    "new": ", ovvero conformi al decreto del Presidente del Consiglio dei Ministri di cui al comma 1",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 87676,
+            "content": ", ovvero conformi al decreto del Presidente del Consiglio dei Ministri di cui al comma 1"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0248",
+    "operation": "MEANING",
+    "new": "per la prestazione di elaborazioni aggiuntive",
+    "old": "il riconoscimento di eventuali costi eccezionali sostenuti dall’amministrazione cedente",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 90484,
+            "endPosition": 90571,
+            "content": "il riconoscimento di eventuali costi eccezionali sostenuti dall’amministrazione cedente"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 90571,
+            "content": "per la prestazione di elaborazioni aggiuntive"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0249",
+    "operation": "MEANING",
+    "new": "presente decreto",
+    "old": "decreto legislativo 28 febbraio 2005, n. 42",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 91075,
+            "endPosition": 91118,
+            "content": "decreto legislativo 28 febbraio 2005, n. 42"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91118,
+            "content": "presente decreto"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0250",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-50-bis-continuità-operativa'><span id='art50bis'></span><h4>Art. 50-bis. Continuità operativa</h4><p>1. In relazione ai nuovi scenari di rischio, alla crescente complessità dell’attività istituzionale caratterizzata da un intenso utilizzo della tecnologia dell’informazione, le pubbliche amministrazioni predispongono i piani di emergenza in grado di assicurare la continuità delle operazioni indispensabili per il servizio e il ritorno alla normale operatività.</p><p>2. Il Ministro per la pubblica amministrazione e l’innovazione assicura l’omogeneità delle soluzioni di continuità operativa definite dalle diverse Amministrazioni e ne informa con cadenza almeno annuale il Parlamento.</p><p>3. A tali fini, le pubbliche amministrazioni definiscono:<p>a) il piano di continuità operativa, che fissa gli obiettivi e i principi da perseguire, descrive le procedure per la gestione della continuità operativa, anche affidate a soggetti esterni. Il piano tiene conto delle potenziali criticità relative a risorse umane, strutturali, tecnologiche e contiene idonee misure preventive. Le amministrazioni pubbliche verificano la funzionalità del piano di continuità operativa con cadenza biennale;</p><p>b) il piano di disaster recovery, che costituisce parte integrante di quello di continuità operativa di cui alla lettera a) e stabilisce le misure tecniche e organizzative per garantire il funzionamento dei centri di elaborazione dati e delle procedure informatiche rilevanti in siti alternativi a quelli di produzione. DigitPA, sentito il Garante per la protezione dei dati personali, definisce le linee guida per le soluzioni tecniche idonee a garantire la salvaguardia dei dati e delle applicazioni informatiche, verifica annualmente il costante aggiornamento dei piani di disaster recovery delle amministrazioni interessate e ne informa annualmente il Ministro per la pubblica amministrazione e l’innovazione.</p></p><p>4. I piani di cui al comma 3 sono adottati da ciascuna amministrazione sulla base di appositi e dettagliati studi di fattibilità tecnica; su tali studi è obbligatoriamente acquisito il parere di DigitPA.</p></div>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91119,
+            "content": "<div class='section' id='art-50-bis-continuità-operativa'><span id='art50bis'></span><h4>Art. 50-bis. Continuità operativa</h4><p>1. In relazione ai nuovi scenari di rischio, alla crescente complessità dell’attività istituzionale caratterizzata da un intenso utilizzo della tecnologia dell’informazione, le pubbliche amministrazioni predispongono i piani di emergenza in grado di assicurare la continuità delle operazioni indispensabili per il servizio e il ritorno alla normale operatività.</p><p>2. Il Ministro per la pubblica amministrazione e l’innovazione assicura l’omogeneità delle soluzioni di continuità operativa definite dalle diverse Amministrazioni e ne informa con cadenza almeno annuale il Parlamento.</p><p>3. A tali fini, le pubbliche amministrazioni definiscono:<p>a) il piano di continuità operativa, che fissa gli obiettivi e i principi da perseguire, descrive le procedure per la gestione della continuità operativa, anche affidate a soggetti esterni. Il piano tiene conto delle potenziali criticità relative a risorse umane, strutturali, tecnologiche e contiene idonee misure preventive. Le amministrazioni pubbliche verificano la funzionalità del piano di continuità operativa con cadenza biennale;</p><p>b) il piano di disaster recovery, che costituisce parte integrante di quello di continuità operativa di cui alla lettera a) e stabilisce le misure tecniche e organizzative per garantire il funzionamento dei centri di elaborazione dati e delle procedure informatiche rilevanti in siti alternativi a quelli di produzione. DigitPA, sentito il Garante per la protezione dei dati personali, definisce le linee guida per le soluzioni tecniche idonee a garantire la salvaguardia dei dati e delle applicazioni informatiche, verifica annualmente il costante aggiornamento dei piani di disaster recovery delle amministrazioni interessate e ne informa annualmente il Ministro per la pubblica amministrazione e l’innovazione.</p></p><p>4. I piani di cui al comma 3 sono adottati da ciascuna amministrazione sulla base di appositi e dettagliati studi di fattibilità tecnica; su tali studi è obbligatoriamente acquisito il parere di DigitPA.</p></div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0251",
+    "operation": "MEANING",
+    "new": ", dei sistemi e delle infrastrutture delle pubbliche amministrazioni",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91288,
+            "content": ", dei sistemi e delle infrastrutture delle pubbliche amministrazioni"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0252",
+    "operation": "MEANING",
+    "new": "Con le regole tecniche adottate ai sensi dell’articolo 71 sono individuate le modalità",
+    "old": "Le norme di sicurezza definite nelle regole tecniche di cui all’articolo 71",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 91319,
+            "endPosition": 91394,
+            "content": "Le norme di sicurezza definite nelle regole tecniche di cui all’articolo 71"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91394,
+            "content": "Con le regole tecniche adottate ai sensi dell’articolo 71 sono individuate le modalità"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0253",
+    "operation": "MEANING",
+    "new": ", dei sistemi e delle infrastrutture",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91494,
+            "content": ", dei sistemi e delle infrastrutture"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0254",
+    "operation": "MEANING",
+    "new": "<p>1-bis. DigitPA, ai fini dell’attuazione del comma 1:<p>a) raccorda le iniziative di prevenzione e gestione degli incidenti di sicurezza informatici;</p><p>b) promuove intese con le analoghe strutture internazionali;</p><p>c) segnala al Ministro per la pubblica amministrazione e l’innovazione il mancato rispetto delle regole tecniche di cui al comma 1 da parte delle pubbliche amministrazioni.</p></p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91495,
+            "content": "<p>1-bis. DigitPA, ai fini dell’attuazione del comma 1:<p>a) raccorda le iniziative di prevenzione e gestione degli incidenti di sicurezza informatici;</p><p>b) promuove intese con le analoghe strutture internazionali;</p><p>c) segnala al Ministro per la pubblica amministrazione e l’innovazione il mancato rispetto delle regole tecniche di cui al comma 1 da parte delle pubbliche amministrazioni.</p></p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0255",
+    "operation": "MEANING",
+    "new": "<p>2-bis. Le amministrazioni hanno l’obbligo di aggiornare tempestivamente i dati nei propri archivi, non appena vengano a conoscenza dell’inesattezza degli stessi.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91777,
+            "content": "<p>2-bis. Le amministrazioni hanno l’obbligo di aggiornare tempestivamente i dati nei propri archivi, non appena vengano a conoscenza dell’inesattezza degli stessi.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0256",
+    "operation": "MEANING",
+    "new": "e riutilizzazione dei",
+    "old": "ai",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 91999,
+            "endPosition": 92001,
+            "content": "ai"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 92001,
+            "content": "e riutilizzazione dei"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0257",
+    "operation": "MEANING",
+    "new": "e il riutilizzo dei dati e documenti è disciplinato dai soggetti di cui all’articolo 2, comma 2, secondo le disposizioni del presente codice e nel rispetto della normativa vigente. Le pubbliche amministrazioni pubblicano nel proprio sito web, all’interno della sezione «Trasparenza, valutazione e merito», il catalogo dei dati, dei metadati e delle relative banche dati in loro possesso ed i regolamenti che ne disciplinano l’esercizio della facoltà di accesso telematico e il riutilizzo, fatti salvi i dati presenti in Anagrafe tributaria",
+    "old": "è disciplinato dalle pubbliche amministrazioni secondo le disposizioni del presente codice e nel rispetto delle disposizioni di legge e di regolamento in materia di protezione dei dati personali, di accesso ai documenti amministrativi, di tutela del segreto e di divieto di divulgazione. I regolamenti che disciplinano l’esercizio del diritto di accesso sono pubblicati su siti pubblici accessibili per via telematica",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 92135,
+            "endPosition": 92552,
+            "content": "è disciplinato dalle pubbliche amministrazioni secondo le disposizioni del presente codice e nel rispetto delle disposizioni di legge e di regolamento in materia di protezione dei dati personali, di accesso ai documenti amministrativi, di tutela del segreto e di divieto di divulgazione. I regolamenti che disciplinano l’esercizio del diritto di accesso sono pubblicati su siti pubblici accessibili per via telematica"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 92552,
+            "content": "e il riutilizzo dei dati e documenti è disciplinato dai soggetti di cui all’articolo 2, comma 2, secondo le disposizioni del presente codice e nel rispetto della normativa vigente. Le pubbliche amministrazioni pubblicano nel proprio sito web, all’interno della sezione «Trasparenza, valutazione e merito», il catalogo dei dati, dei metadati e delle relative banche dati in loro possesso ed i regolamenti che ne disciplinano l’esercizio della facoltà di accesso telematico e il riutilizzo, fatti salvi i dati presenti in Anagrafe tributaria"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0258",
+    "operation": "MEANING",
+    "new": "<p>1. L’accesso telematico a dati, documenti e procedimenti e il riutilizzo dei dati e documenti è disciplinato dai soggetti di cui all’articolo 2, comma 2, secondo le disposizioni del presente codice e nel rispetto della normativa vigente. Le pubbliche amministrazioni pubblicano nel proprio sito web, all’interno della sezione «Trasparenza, valutazione e merito», il catalogo dei dati, dei metadati e delle relative banche dati in loro possesso ed i regolamenti che ne disciplinano l’esercizio della facoltà di accesso telematico e il riutilizzo, fatti salvi i dati presenti in Anagrafe tributaria.2. I dati e i documenti che le amministrazioni titolari pubblicano, con qualsiasi modalità, senza l’espressa adozione di una licenza di cui all’articolo 2, comma 1, lettera h), del decreto legislativo 24 gennaio 2006, n. 36, si intendono rilasciati come dati di tipo aperto ai sensi all’articolo 68, comma 3, del presente Codice. L’eventuale adozione di una licenza di cui al citato articolo 2, comma 1, lettera h), è motivata ai sensi delle linee guida nazionali di cui al comma 7.</p><p>3. Nella definizione dei capitolati o degli schemi dei contratti di appalto relativi a prodotti e servizi che comportino la raccolta e la gestione di dati pubblici, le pubbliche amministrazioni di cui all’articolo 2, comma 2, prevedono clausole idonee a consentire l’accesso telematico e il riutilizzo, da parte di persone fisiche e giuridiche, di tali dati, dei metadati, degli schemi delle strutture di dati e delle relative banche dati.</p><p>4. Le attività volte a garantire l’accesso telematico e il riutilizzo dei dati delle pubbliche amministrazioni rientrano tra i parametri di valutazione della performance dirigenziale ai sensi dell’articolo 11, comma 9, del decreto legislativo 27 ottobre 2009, n. 150.</p><p>5. L’Agenzia per l’Italia digitale promuove le politiche di valorizzazione del patrimonio informativo pubblico nazionale e attua le disposizioni di cui al capo V del presente Codice.</p><p>6. Entro il mese di febbraio di ogni anno l’Agenzia trasmette al Presidente del Consiglio dei Ministri o al Ministro delegato per l’innovazione tecnologica, che li approva entro il mese successivo, un’Agenda nazionale in cui definisce contenuti e gli obiettivi delle politiche di valorizzazione del patrimonio informativo pubblico e un rapporto annuale sullo stato del processo di valorizzazione in Italia; tale rapporto è pubblicato in formato aperto sul sito istituzionale della Presidenza del Consiglio dei Ministri.</p><p>7. L’Agenzia definisce e aggiorna annualmente le linee guida nazionali che individuano gli standard tecnici, compresa la determinazione delle ontologie dei servizi e dei dati, le procedure e le modalità di attuazione delle disposizioni del Capo V del presente Codice con l’obiettivo di rendere il processo omogeneo a livello nazionale, efficiente ed efficace. Le pubbliche amministrazioni di cui all’articolo 2, comma 2, del presente Codice si uniformano alle suddette linee guida.</p><p>8. Il Presidente del Consiglio o il Ministro delegato per l’innovazione tecnologica riferisce annualmente al Parlamento sullo stato di attuazione delle disposizioni del presente articolo.</p><p>9. L’Agenzia svolge le attività indicate dal presente articolo con le risorse umane, strumentali, e finanziarie previste a legislazione vigente. (19)</p><p>AGGIORNAMENTO (19) Il D.L. 18 ottobre 2012, n. 179, convertito con modificazioni dalla L. 17 dicembre 2012, n. 221, ha disposto (con l’art. 9, comma 3) che «In sede di prima applicazione, i regolamenti di cui all’articolo 52, comma 1, del citato decreto legislativo n. 82 del 2005, come sostituito dal comma 1 del presente articolo, sono pubblicati entro 120 giorni dalla data di entrata in vigore della legge di conversione del presente decreto-legge. Con riferimento ai documenti e ai dati già pubblicati, la disposizione di cui all’articolo 52, comma 2, del citato decreto legislativo n. 82 del 2005, trova applicazione entro novanta giorni dalla data di entrata in vigore della legge di conversione del presente decreto.»</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 92553,
+            "content": "<p>1. L’accesso telematico a dati, documenti e procedimenti e il riutilizzo dei dati e documenti è disciplinato dai soggetti di cui all’articolo 2, comma 2, secondo le disposizioni del presente codice e nel rispetto della normativa vigente. Le pubbliche amministrazioni pubblicano nel proprio sito web, all’interno della sezione «Trasparenza, valutazione e merito», il catalogo dei dati, dei metadati e delle relative banche dati in loro possesso ed i regolamenti che ne disciplinano l’esercizio della facoltà di accesso telematico e il riutilizzo, fatti salvi i dati presenti in Anagrafe tributaria.2. I dati e i documenti che le amministrazioni titolari pubblicano, con qualsiasi modalità, senza l’espressa adozione di una licenza di cui all’articolo 2, comma 1, lettera h), del decreto legislativo 24 gennaio 2006, n. 36, si intendono rilasciati come dati di tipo aperto ai sensi all’articolo 68, comma 3, del presente Codice. L’eventuale adozione di una licenza di cui al citato articolo 2, comma 1, lettera h), è motivata ai sensi delle linee guida nazionali di cui al comma 7.</p><p>3. Nella definizione dei capitolati o degli schemi dei contratti di appalto relativi a prodotti e servizi che comportino la raccolta e la gestione di dati pubblici, le pubbliche amministrazioni di cui all’articolo 2, comma 2, prevedono clausole idonee a consentire l’accesso telematico e il riutilizzo, da parte di persone fisiche e giuridiche, di tali dati, dei metadati, degli schemi delle strutture di dati e delle relative banche dati.</p><p>4. Le attività volte a garantire l’accesso telematico e il riutilizzo dei dati delle pubbliche amministrazioni rientrano tra i parametri di valutazione della performance dirigenziale ai sensi dell’articolo 11, comma 9, del decreto legislativo 27 ottobre 2009, n. 150.</p><p>5. L’Agenzia per l’Italia digitale promuove le politiche di valorizzazione del patrimonio informativo pubblico nazionale e attua le disposizioni di cui al capo V del presente Codice.</p><p>6. Entro il mese di febbraio di ogni anno l’Agenzia trasmette al Presidente del Consiglio dei Ministri o al Ministro delegato per l’innovazione tecnologica, che li approva entro il mese successivo, un’Agenda nazionale in cui definisce contenuti e gli obiettivi delle politiche di valorizzazione del patrimonio informativo pubblico e un rapporto annuale sullo stato del processo di valorizzazione in Italia; tale rapporto è pubblicato in formato aperto sul sito istituzionale della Presidenza del Consiglio dei Ministri.</p><p>7. L’Agenzia definisce e aggiorna annualmente le linee guida nazionali che individuano gli standard tecnici, compresa la determinazione delle ontologie dei servizi e dei dati, le procedure e le modalità di attuazione delle disposizioni del Capo V del presente Codice con l’obiettivo di rendere il processo omogeneo a livello nazionale, efficiente ed efficace. Le pubbliche amministrazioni di cui all’articolo 2, comma 2, del presente Codice si uniformano alle suddette linee guida.</p><p>8. Il Presidente del Consiglio o il Ministro delegato per l’innovazione tecnologica riferisce annualmente al Parlamento sullo stato di attuazione delle disposizioni del presente articolo.</p><p>9. L’Agenzia svolge le attività indicate dal presente articolo con le risorse umane, strumentali, e finanziarie previste a legislazione vigente. (19)</p><p>AGGIORNAMENTO (19) Il D.L. 18 ottobre 2012, n. 179, convertito con modificazioni dalla L. 17 dicembre 2012, n. 221, ha disposto (con l’art. 9, comma 3) che «In sede di prima applicazione, i regolamenti di cui all’articolo 52, comma 1, del citato decreto legislativo n. 82 del 2005, come sostituito dal comma 1 del presente articolo, sono pubblicati entro 120 giorni dalla data di entrata in vigore della legge di conversione del presente decreto-legge. Con riferimento ai documenti e ai dati già pubblicati, la disposizione di cui all’articolo 52, comma 2, del citato decreto legislativo n. 82 del 2005, trova applicazione entro novanta giorni dalla data di entrata in vigore della legge di conversione del presente decreto.»</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0259",
+    "operation": "MEANING",
+    "new": " Sono in particolare resi facilmente reperibili e consultabili i dati di cui all’articolo 54.",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 93117,
+            "content": " Sono in particolare resi facilmente reperibili e consultabili i dati di cui all’articolo 54."
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0260",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 93150,
+            "endPosition": 93155,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 93155,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0261",
+    "operation": "MEANING",
+    "new": "",
+    "old": " centrali",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 93769,
+            "endPosition": 93778,
+            "content": " centrali"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0262",
+    "operation": "MEANING",
+    "new": " i nomi dei dirigenti responsabili dei singoli uffici,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 94073,
+            "content": " i nomi dei dirigenti responsabili dei singoli uffici,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0263",
+    "operation": "MEANING",
+    "new": "",
+    "old": " e di concorso",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 95422,
+            "endPosition": 95436,
+            "content": " e di concorso"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0264",
+    "operation": "MEANING",
+    "new": "<p>g-bis) i bandi di concorso.</p><p>1-bis. Le pubbliche amministrazioni centrali comunicano in via telematica alla Presidenza del Consiglio dei Ministri - Dipartimento della funzione pubblica i dati di cui alle lettere b), c) , g) e g-bis) del comma 1, secondo i criteri e le modalità di trasmissione e aggiornamento individuati con circolare del Ministro per la pubblica amministrazione e l’innovazione. I dati di cui al periodo precedente sono pubblicati sul sito istituzionale del Dipartimento della funzione pubblica. La mancata comunicazione o aggiornamento dei dati è comunque rilevante ai fini della misurazione e valutazione della performance individuale dei dirigenti.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 95619,
+            "content": "<p>g-bis) i bandi di concorso.</p><p>1-bis. Le pubbliche amministrazioni centrali comunicano in via telematica alla Presidenza del Consiglio dei Ministri - Dipartimento della funzione pubblica i dati di cui alle lettere b), c) , g) e g-bis) del comma 1, secondo i criteri e le modalità di trasmissione e aggiornamento individuati con circolare del Ministro per la pubblica amministrazione e l’innovazione. I dati di cui al periodo precedente sono pubblicati sul sito istituzionale del Dipartimento della funzione pubblica. La mancata comunicazione o aggiornamento dei dati è comunque rilevante ai fini della misurazione e valutazione della performance individuale dei dirigenti.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0265",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "old": "Le amministrazioni che già dispongono di propri siti realizzano quanto previsto dal comma 1 entro ventiquattro mesi dalla data di entrata in vigore del presente codice",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 95712,
+            "endPosition": 95879,
+            "content": "Le amministrazioni che già dispongono di propri siti realizzano quanto previsto dal comma 1 entro ventiquattro mesi dalla data di entrata in vigore del presente codice"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 95879,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0266",
+    "operation": "MEANING",
+    "new": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p><p>2-ter. Le amministrazioni pubbliche e i gestori di servizi pubblici pubblicano nei propri siti un indirizzo istituzionale di posta elettronica certificata a cui il cittadino possa rivolgersi per qualsiasi richiesta ai sensi del presente codice. Le amministrazioni devono altresì assicurare un servizio che renda noti al pubblico i tempi di risposta.</p><p>2-quater. Le amministrazioni pubbliche che già dispongono di propri siti devono pubblicare il registro dei processi automatizzati rivolti al pubblico. Tali processi devono essere dotati di appositi strumenti per la verifica a distanza da parte del cittadino dell’avanzamento delle pratiche che lo riguardano.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 95880,
+            "content": "<p>2-bis. COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235.</p><p>2-ter. Le amministrazioni pubbliche e i gestori di servizi pubblici pubblicano nei propri siti un indirizzo istituzionale di posta elettronica certificata a cui il cittadino possa rivolgersi per qualsiasi richiesta ai sensi del presente codice. Le amministrazioni devono altresì assicurare un servizio che renda noti al pubblico i tempi di risposta.</p><p>2-quater. Le amministrazioni pubbliche che già dispongono di propri siti devono pubblicare il registro dei processi automatizzati rivolti al pubblico. Tali processi devono essere dotati di appositi strumenti per la verifica a distanza da parte del cittadino dell’avanzamento delle pratiche che lo riguardano.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0267",
+    "operation": "MEANING",
+    "new": "identificazione",
+    "old": "autenticazione",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 96034,
+            "endPosition": 96048,
+            "content": "autenticazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 96048,
+            "content": "identificazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0268",
+    "operation": "MEANING",
+    "new": " accessibili,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 96177,
+            "content": " accessibili,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0269",
+    "operation": "MEANING",
+    "new": "<p>4-bis. La pubblicazione telematica produce effetti di pubblicità legale nei casi e nei modi espressamente previsti dall’ordinamento.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 96327,
+            "content": "<p>4-bis. La pubblicazione telematica produce effetti di pubblicità legale nei casi e nei modi espressamente previsti dall’ordinamento.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0270",
+    "operation": "MEANING",
+    "new": "autorità giudiziaria di ogni ordine e grado",
+    "old": "al giudice amministrativo e contabile",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 97600,
+            "endPosition": 97637,
+            "content": "al giudice amministrativo e contabile"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 97637,
+            "content": "autorità giudiziaria di ogni ordine e grado"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0271",
+    "operation": "MEANING",
+    "new": "delle autorità emananti",
+    "old": "della rete Internet delle autorità emananti",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 97888,
+            "endPosition": 97931,
+            "content": "della rete Internet delle autorità emananti"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 97931,
+            "content": "delle autorità emananti"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0272",
+    "operation": "MEANING",
+    "new": "",
+    "old": " della rete Internet",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 98169,
+            "endPosition": 98189,
+            "content": " della rete Internet"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0273",
+    "operation": "MEANING",
+    "new": "<p>2-bis. I dati identificativi delle questioni pendenti, le sentenze e le altre decisioni depositate in cancelleria o segreteria dell’autorità giudiziaria di ogni ordine e grado sono, comunque, rese accessibili ai sensi dell’articolo 51 del codice in materia di protezione dei dati personali approvato con decreto legislativo n. 196 del 2003.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 98278,
+            "content": "<p>2-bis. I dati identificativi delle questioni pendenti, le sentenze e le altre decisioni depositate in cancelleria o segreteria dell’autorità giudiziaria di ogni ordine e grado sono, comunque, rese accessibili ai sensi dell’articolo 51 del codice in materia di protezione dei dati personali approvato con decreto legislativo n. 196 del 2003.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0274",
+    "operation": "MEANING",
+    "new": "",
+    "old": " anche",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTDELETE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 98552,
+            "endPosition": 98558,
+            "content": " anche"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0275",
+    "operation": "MEANING",
+    "new": ", nel rispetto dei requisiti tecnici di accessibilità di cui all’articolo 11 della legge 9 gennaio 2004, n. 4,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 98577,
+            "content": ", nel rispetto dei requisiti tecnici di accessibilità di cui all’articolo 11 della legge 9 gennaio 2004, n. 4,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0276",
+    "operation": "MEANING",
+    "new": "Le pubbliche amministrazioni non possono richiedere l’uso di moduli e formulari che non siano stati pubblicati; in caso di omessa pubblicazione, i relativi procedimenti possono essere avviati anche in assenza dei suddetti moduli o formulari. La mancata pubblicazione è altresì rilevante ai fini della misurazione e valutazione della performance individuale dei dirigenti responsabili",
+    "old": "Trascorsi ventiquattro mesi dalla data di entrata in vigore del presente codice, i moduli o i formulari che non siano stati pubblicati sul sito non possono essere richiesti ed i relativi procedimenti possono essere conclusi anche in assenza dei suddetti moduli o formulari",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 98843,
+            "endPosition": 99115,
+            "content": "Trascorsi ventiquattro mesi dalla data di entrata in vigore del presente codice, i moduli o i formulari che non siano stati pubblicati sul sito non possono essere richiesti ed i relativi procedimenti possono essere conclusi anche in assenza dei suddetti moduli o formulari"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 99115,
+            "content": "Le pubbliche amministrazioni non possono richiedere l’uso di moduli e formulari che non siano stati pubblicati; in caso di omessa pubblicazione, i relativi procedimenti possono essere avviati anche in assenza dei suddetti moduli o formulari. La mancata pubblicazione è altresì rilevante ai fini della misurazione e valutazione della performance individuale dei dirigenti responsabili"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0277",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-57-bis-indice-degli-indirizzi-delle-pubbliche-amministrazioni'><span id='art57bis'></span><h4>Art. 57-bis. Indice degli indirizzi delle pubbliche amministrazioni</h4><p>1. Al fine di assicurare la pubblicità dei riferimenti telematici delle pubbliche amministrazioni e dei gestori dei pubblici servizi è istituito l’indice degli indirizzi della pubblica amministrazione e dei gestori di pubblici servizi, nel quale sono indicati gli indirizzi di posta elettronica certificata da utilizzare per le comunicazioni e per lo scambio di informazioni e per l’invio di documenti a tutti gli effetti di legge tra le pubbliche amministrazioni, i gestori di pubblici servizi ed i privati.</p><p>2. La realizzazione e la gestione dell’indice sono affidate a DigitPA, che può utilizzare a tal fine elenchi e repertori già formati dalle amministrazioni pubbliche.</p><p>3. Le amministrazioni aggiornano gli indirizzi e i contenuti dell’indice tempestivamente e comunque con cadenza almeno semestrale secondo le indicazioni di DigitPA. La mancata comunicazione degli elementi necessari al completamento dell’indice e del loro aggiornamento è valutata ai fini della responsabilità dirigenziale e dell’attribuzione della retribuzione di risultato ai dirigenti responsabili.</p></div>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 91119,
+            "content": "<div class='section' id='art-57-bis-indice-degli-indirizzi-delle-pubbliche-amministrazioni'><span id='art57bis'></span><h4>Art. 57-bis. Indice degli indirizzi delle pubbliche amministrazioni</h4><p>1. Al fine di assicurare la pubblicità dei riferimenti telematici delle pubbliche amministrazioni e dei gestori dei pubblici servizi è istituito l’indice degli indirizzi della pubblica amministrazione e dei gestori di pubblici servizi, nel quale sono indicati gli indirizzi di posta elettronica certificata da utilizzare per le comunicazioni e per lo scambio di informazioni e per l’invio di documenti a tutti gli effetti di legge tra le pubbliche amministrazioni, i gestori di pubblici servizi ed i privati.</p><p>2. La realizzazione e la gestione dell’indice sono affidate a DigitPA, che può utilizzare a tal fine elenchi e repertori già formati dalle amministrazioni pubbliche.</p><p>3. Le amministrazioni aggiornano gli indirizzi e i contenuti dell’indice tempestivamente e comunque con cadenza almeno semestrale secondo le indicazioni di DigitPA. La mancata comunicazione degli elementi necessari al completamento dell’indice e del loro aggiornamento è valutata ai fini della responsabilità dirigenziale e dell’attribuzione della retribuzione di risultato ai dirigenti responsabili.</p></div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0278",
+    "operation": "MEANING",
+    "new": "Ai sensi dell’articolo 50, comma 2, nonché al fine di agevolare l’acquisizione d’ufficio ed il controllo sulle dichiarazioni sostitutive riguardanti informazioni e dati relativi a stati, qualità personali e fatti di cui agli articoli 46 e 47 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, le Amministrazioni titolari di banche dati accessibili per via telematica predispongono, sulla base delle linee guida redatte da DigitPA, sentito il Garante per la protezione dei dati personali, apposite convenzioni aperte all’adesione di tutte le amministrazioni interessate volte a disciplinare le modalità di accesso ai dati da parte delle stesse amministrazioni procedenti, senza oneri a loro carico. Le convenzioni valgono anche quale autorizzazione ai sensi dell’articolo 43, comma 2, del citato decreto del Presidente della Repubblica n. 445 del 2000",
+    "old": "Le pubbliche amministrazioni possono stipulare tra loro convenzioni finalizzate alla fruibilità informatica dei dati di cui siano titolari",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 99623,
+            "endPosition": 99761,
+            "content": "Le pubbliche amministrazioni possono stipulare tra loro convenzioni finalizzate alla fruibilità informatica dei dati di cui siano titolari"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 99761,
+            "content": "Ai sensi dell’articolo 50, comma 2, nonché al fine di agevolare l’acquisizione d’ufficio ed il controllo sulle dichiarazioni sostitutive riguardanti informazioni e dati relativi a stati, qualità personali e fatti di cui agli articoli 46 e 47 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, le Amministrazioni titolari di banche dati accessibili per via telematica predispongono, sulla base delle linee guida redatte da DigitPA, sentito il Garante per la protezione dei dati personali, apposite convenzioni aperte all’adesione di tutte le amministrazioni interessate volte a disciplinare le modalità di accesso ai dati da parte delle stesse amministrazioni procedenti, senza oneri a loro carico. Le convenzioni valgono anche quale autorizzazione ai sensi dell’articolo 43, comma 2, del citato decreto del Presidente della Repubblica n. 445 del 2000"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0279",
+    "operation": "MEANING",
+    "new": "DigitPA provvede al monitoraggio dell’attuazione del presente articolo, riferendo annualmente con apposita relazione al Ministro per la pubblica amministrazione e l’innovazione e alla Commissione per la valutazione, la trasparenza e l’integrità delle amministrazione pubbliche di cui all’articolo 13 del decreto legislativo 27 ottobre 2009, n. 150",
+    "old": "Il CNIPA definisce schemi generali di convenzioni finalizzate a favorire la fruibilità informatica dei dati tra le pubbliche amministrazioni centrali e, d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, tra le amministrazioni centrali medesime e le regioni e le autonomie locali",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 99792,
+            "endPosition": 100127,
+            "content": "Il CNIPA definisce schemi generali di convenzioni finalizzate a favorire la fruibilità informatica dei dati tra le pubbliche amministrazioni centrali e, d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, tra le amministrazioni centrali medesime e le regioni e le autonomie locali"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 100127,
+            "content": "DigitPA provvede al monitoraggio dell’attuazione del presente articolo, riferendo annualmente con apposita relazione al Ministro per la pubblica amministrazione e l’innovazione e alla Commissione per la valutazione, la trasparenza e l’integrità delle amministrazione pubbliche di cui all’articolo 13 del decreto legislativo 27 ottobre 2009, n. 150"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0280",
+    "operation": "MEANING",
+    "new": "<p>3-bis. In caso di mancata predisposizione delle convenzioni di cui al comma 2, il Presidente del Consiglio dei Ministri stabilisce un termine entro il quale le amministrazioni interessate devono provvedere. Decorso inutilmente il termine, il Presidente del Consiglio dei Ministri può nominare un commissario ad acta incaricato di predisporre le predette convenzioni. Al Commissario non spettano compensi, indennità o rimborsi.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 100128,
+            "content": "<p>3-bis. In caso di mancata predisposizione delle convenzioni di cui al comma 2, il Presidente del Consiglio dei Ministri stabilisce un termine entro il quale le amministrazioni interessate devono provvedere. Decorso inutilmente il termine, il Presidente del Consiglio dei Ministri può nominare un commissario ad acta incaricato di predisporre le predette convenzioni. Al Commissario non spettano compensi, indennità o rimborsi.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0281",
+    "operation": "MEANING",
+    "new": "<p>3-ter. Resta ferma la speciale disciplina dettata in materia di dati territoriali.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 100128,
+            "content": "<p>3-ter. Resta ferma la speciale disciplina dettata in materia di dati territoriali.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0282",
+    "operation": "MEANING",
+    "new": "presente decreto che disciplinano il sistema pubblico di connettività",
+    "old": "sistema pubblico di connettività di cui al decreto legislativo 28 febbraio 2005, n. 42",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 100792,
+            "endPosition": 100878,
+            "content": "sistema pubblico di connettività di cui al decreto legislativo 28 febbraio 2005, n. 42"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 100878,
+            "content": "presente decreto che disciplinano il sistema pubblico di connettività"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0283",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 101068,
+            "endPosition": 101073,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 101073,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0284",
+    "operation": "MEANING",
+    "new": "Con decreti del Presidente del Consiglio dei Ministri o del Ministro delegato per la pubblica amministrazione e l’innovazione, di concerto con il Ministro dell’ambiente e della tutela del territorio e del mare, per i profili relativi ai dati ambientali, sentito il Comitato per le regole tecniche sui dati territoriali delle pubbliche amministrazioni, e sentita la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 luglio 1998, n. 281, sono definite le regole tecniche per la definizione del contenuto del repertorio nazionale dei dati territoriali, nonché delle modalità di prima costituzione e di successivo aggiornamento dello stesso, per la formazione, la documentazione e lo scambio dei dati territoriali detenuti dalle singole amministrazioni competenti, nonché le regole ed i costi per l’utilizzo dei dati stessi tra le pubbliche amministrazioni centrali e locali e da parte dei privati",
+    "old": "Ai sensi dell’articolo 17, comma 3, della legge 23 agosto 1988, n. 400, con uno o più decreti sulla proposta del Presidente del Consiglio dei Ministri o, per sua delega, del Ministro per l’innovazione e le tecnologie, sentito il Comitato per le regole tecniche sui dati territoriali delle pubbliche amministrazioni, e sentita la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 luglio 1998, n. 281, sono definite le regole tecniche per la definizione del contenuto del repertorio nazionale dei dati territoriali, nonché delle modalità di prima costituzione e di successivo aggiornamento dello stesso, per la formazione, la documentazione e lo scambio dei dati territoriali detenuti dalle singole amministrazioni competenti, nonché le regole ed i costi per l’utilizzo dei dati stessi tra le pubbliche amministrazioni centrali e locali e da parte dei privati",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 101614,
+            "endPosition": 102491,
+            "content": "Ai sensi dell’articolo 17, comma 3, della legge 23 agosto 1988, n. 400, con uno o più decreti sulla proposta del Presidente del Consiglio dei Ministri o, per sua delega, del Ministro per l’innovazione e le tecnologie, sentito il Comitato per le regole tecniche sui dati territoriali delle pubbliche amministrazioni, e sentita la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 luglio 1998, n. 281, sono definite le regole tecniche per la definizione del contenuto del repertorio nazionale dei dati territoriali, nonché delle modalità di prima costituzione e di successivo aggiornamento dello stesso, per la formazione, la documentazione e lo scambio dei dati territoriali detenuti dalle singole amministrazioni competenti, nonché le regole ed i costi per l’utilizzo dei dati stessi tra le pubbliche amministrazioni centrali e locali e da parte dei privati"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 102491,
+            "content": "Con decreti del Presidente del Consiglio dei Ministri o del Ministro delegato per la pubblica amministrazione e l’innovazione, di concerto con il Ministro dell’ambiente e della tutela del territorio e del mare, per i profili relativi ai dati ambientali, sentito il Comitato per le regole tecniche sui dati territoriali delle pubbliche amministrazioni, e sentita la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 luglio 1998, n. 281, sono definite le regole tecniche per la definizione del contenuto del repertorio nazionale dei dati territoriali, nonché delle modalità di prima costituzione e di successivo aggiornamento dello stesso, per la formazione, la documentazione e lo scambio dei dati territoriali detenuti dalle singole amministrazioni competenti, nonché le regole ed i costi per l’utilizzo dei dati stessi tra le pubbliche amministrazioni centrali e locali e da parte dei privati"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0285",
+    "operation": "MEANING",
+    "new": "<p>7-bis. Nell’ambito dei dati territoriali di interesse nazionale rientra la base dei dati catastali gestita dall’Agenzia del territorio. Per garantire la circolazione e la fruizione dei dati catastali conformemente alle finalità ed alle condizioni stabilite dall’articolo 50, il direttore dell’Agenzia del territorio, di concerto con il Comitato per le regole tecniche sui dati territoriali delle pubbliche amministrazioni e previa intesa con la Conferenza unificata, definisce con proprio decreto entro la data del 30 giugno 2006, in coerenza con le disposizioni che disciplinano il sistema pubblico di connettività, le regole tecnico economiche per l’utilizzo dei dati catastali per via telematica da parte dei sistemi informatici di altre amministrazioni.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 103043,
+            "content": "<p>7-bis. Nell’ambito dei dati territoriali di interesse nazionale rientra la base dei dati catastali gestita dall’Agenzia del territorio. Per garantire la circolazione e la fruizione dei dati catastali conformemente alle finalità ed alle condizioni stabilite dall’articolo 50, il direttore dell’Agenzia del territorio, di concerto con il Comitato per le regole tecniche sui dati territoriali delle pubbliche amministrazioni e previa intesa con la Conferenza unificata, definisce con proprio decreto entro la data del 30 giugno 2006, in coerenza con le disposizioni che disciplinano il sistema pubblico di connettività, le regole tecnico economiche per l’utilizzo dei dati catastali per via telematica da parte dei sistemi informatici di altre amministrazioni.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0286",
+    "operation": "MEANING",
+    "new": ", anche per fini statistici,",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 103521,
+            "content": ", anche per fini statistici,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0287",
+    "operation": "MEANING",
+    "new": "73 e secondo le vigenti regole del Sistema statistico nazionale di cui al decreto legislativo 6 settembre 1989, n. 322, e successive modificazioni",
+    "old": "16 del decreto legislativo 28 febbraio 2005, n. 42",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 104194,
+            "endPosition": 104244,
+            "content": "16 del decreto legislativo 28 febbraio 2005, n. 42"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 104244,
+            "content": "73 e secondo le vigenti regole del Sistema statistico nazionale di cui al decreto legislativo 6 settembre 1989, n. 322, e successive modificazioni"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0288",
+    "operation": "MEANING",
+    "new": " e l’Istituto nazionale di statistica",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 104749,
+            "content": " e l’Istituto nazionale di statistica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0289",
+    "operation": "MEANING",
+    "new": "<p>3-bis. In sede di prima applicazione e fino all’adozione del decreto di cui al comma 3, sono individuate le seguenti basi di dati di interesse nazionale:<p>a) repertorio nazionale dei dati territoriali;</p><p>b) anagrafe nazionale della popolazione residente;</p><p>c) banca dati nazionale dei contratti pubblici di cui all’articolo 62-bis;</p><p>d) casellario giudiziale;</p><p>e) registro delle imprese;</p><p>f) gli archivi automatizzati in materia di immigrazione e di asilo di cui all’articolo 2, comma 2, del decreto del Presidente della Repubblica 27 luglio 2004, n. 242.</p></p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 103043,
+            "content": "<p>3-bis. In sede di prima applicazione e fino all’adozione del decreto di cui al comma 3, sono individuate le seguenti basi di dati di interesse nazionale:<p>a) repertorio nazionale dei dati territoriali;</p><p>b) anagrafe nazionale della popolazione residente;</p><p>c) banca dati nazionale dei contratti pubblici di cui all’articolo 62-bis;</p><p>d) casellario giudiziale;</p><p>e) registro delle imprese;</p><p>f) gli archivi automatizzati in materia di immigrazione e di asilo di cui all’articolo 2, comma 2, del decreto del Presidente della Repubblica 27 luglio 2004, n. 242.</p></p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0290",
+    "operation": "MEANING",
+    "new": "Anagrafe nazionale della popolazione residente - ANPR",
+    "old": "Indice nazionale delle anagrafi",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 106056,
+            "endPosition": 106087,
+            "content": "Indice nazionale delle anagrafi"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 106087,
+            "content": "Anagrafe nazionale della popolazione residente - ANPR"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0291",
+    "operation": "MEANING",
+    "new": "È istituita presso il Ministero dell’interno l’Anagrafe nazionale della popolazione residente (ANPR), quale base di dati di interesse nazionale, ai sensi dell’articolo 60, che subentra all’Indice nazionale delle anagrafi (INA), istituito ai sensi del quinto comma dell’articolo 1 della legge 24 dicembre 1954, n. 1228, recante «Ordinamento delle anagrafi della popolazione residente» e all’Anagrafe della popolazione italiana residente all’estero (AIRE), istituita ai sensi della legge 27 ottobre 1988, n. 470, recante «Anagrafe e censimento degli italiani all’estero» Tale base di dati è sottoposta ad un audit di sicurezza con cadenza annuale in conformità alle regole tecniche di cui all’articolo 51. I risultati dell’audit sono inseriti nella relazione annuale del Garante per la protezione dei dati personali",
+    "old": "L’Indice nazionale delle anagrafi (INA), di cui all’articolo 1 della legge 24 dicembre 1954, n. 1228, è realizzato con strumenti informatici",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 106118,
+            "endPosition": 106258,
+            "content": "L’Indice nazionale delle anagrafi (INA), di cui all’articolo 1 della legge 24 dicembre 1954, n. 1228, è realizzato con strumenti informatici"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 106258,
+            "content": "È istituita presso il Ministero dell’interno l’Anagrafe nazionale della popolazione residente (ANPR), quale base di dati di interesse nazionale, ai sensi dell’articolo 60, che subentra all’Indice nazionale delle anagrafi (INA), istituito ai sensi del quinto comma dell’articolo 1 della legge 24 dicembre 1954, n. 1228, recante «Ordinamento delle anagrafi della popolazione residente» e all’Anagrafe della popolazione italiana residente all’estero (AIRE), istituita ai sensi della legge 27 ottobre 1988, n. 470, recante «Anagrafe e censimento degli italiani all’estero» Tale base di dati è sottoposta ad un audit di sicurezza con cadenza annuale in conformità alle regole tecniche di cui all’articolo 51. I risultati dell’audit sono inseriti nella relazione annuale del Garante per la protezione dei dati personali"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0292",
+    "operation": "MEANING",
+    "new": "<p>2. Ferme restando le attribuzioni del sindaco di cui all’articolo 54, comma 3, del testo unico delle leggi sull’ordinamento degli enti locali, approvato con il decreto legislativo 18 agosto 2000, n. 267, l’ANPR subentra altresì alle anagrafi della popolazione residente e dei cittadini italiani residenti all’estero tenute dai comuni. Con il decreto di cui al comma 6 è definito un piano per il graduale subentro dell’ANPR alle citate anagrafi, da completare entro il 31 dicembre 2014. Fino alla completa attuazione di detto piano, l’ANPR acquisisce automaticamente in via telematica i dati contenuti nelle anagrafi tenute dai comuni per i quali non è ancora avvenuto il subentro. L’ANPR è organizzata secondo modalità funzionali e operative che garantiscono la univocità dei dati stessi.</p><p>3. L’ANPR assicura al singolo comune la disponibilità dei dati anagrafici della popolazione residente e degli strumenti per lo svolgimento delle funzioni di competenza statale attribuite al sindaco ai sensi dell’articolo 54, comma 3, del testo unico delle leggi sull’ordinamento degli enti locali di cui al decreto legislativo 18 agosto 2000, n. 267, nonché la disponibilità dei dati anagrafici e dei servizi per l’interoperabilità con le banche dati tenute dai comuni per lo svolgimento delle funzioni di competenza. L’ANPR consente esclusivamente ai comuni la certificazione dei dati anagrafici nel rispetto di quanto previsto dall’articolo 33 del decreto del Presidente della Repubblica 30 maggio 1989, n. 223, anche in modalità telematica. I comuni inoltre possono consentire, anche mediante apposite convenzioni, la fruizione dei dati anagrafici da parte dei soggetti aventi diritto. L’ANPR assicura alle pubbliche amministrazioni e agli organismi che erogano pubblici servizi l’accesso ai dati contenuti nell’ANPR.</p><p>4. Con il decreto di cui al comma 6 sono disciplinate le modalità di integrazione nell’ANPR dei dati dei cittadini attualmente registrati in anagrafi istituite presso altre amministrazioni nonché dei dati relativi al numero e alla data di emissione e di scadenza della carta di identità della popolazione residente.</p><p>5. Ai fini della gestione e della raccolta informatizzata di dati dei cittadini, le pubbliche amministrazioni di cui all’articolo 2, comma 2, del presente Codice si avvalgono esclusivamente dell’ANPR, che viene integrata con gli ulteriori dati a tal fine necessari.</p><p>6. Con uno o più decreti del Presidente del Consiglio dei Ministri, su proposta del Ministro dell’interno, del Ministro per la pubblica amministrazione e la semplificazione e del Ministro delegato all’innovazione tecnologica, di concerto con il Ministro dell’economia e delle finanze, d’intesa con l’Agenzia per l’Italia digitale, la Conferenza permanente per i rapporti tra lo Stato, le regioni e le province autonome di Trento e di Bolzano nonché con la Conferenza Stato - città, di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, per gli aspetti d’interesse dei comuni, sentita l’ISTAT e acquisito il parere del Garante per la protezione dei dati personali, sono stabiliti i tempi e le modalità di attuazione delle disposizioni del presente articolo, anche con riferimento:</p><p>a) alle garanzie e alle misure di sicurezza da adottare nel trattamento dei dati personali, alle modalità e ai tempi di conservazione dei dati e all’accesso ai dati da parte delle pubbliche amministrazioni per le proprie finalità istituzionali secondo le modalità di cui all’articolo 58;</p><p>b) ai criteri per l’interoperabilità dell’ANPR con le altre banche dati di rilevanza nazionale e regionale, secondo le regole tecniche del sistema pubblico di connettività di cui al capo VIII del presente decreto, in modo che le informazioni di anagrafe, una volta rese dai cittadini, si intendano acquisite dalle pubbliche amministrazioni senza necessità di ulteriori adempimenti o duplicazioni da parte degli stessi;</p><p>c) all’erogazione di altri servizi resi disponibili dall’ANPR, tra i quali il servizio di invio telematico delle attestazioni e delle dichiarazioni di nascita e dei certificati di cui all’articolo 74 del decreto del Presidente della Repubblica 3 novembre 2000, n. 396, compatibile con il sistema di trasmissione di cui al decreto del Ministro della salute in data 26 febbraio 2010, pubblicato nella Gazzetta Ufficiale n. 65 del 19 marzo 2010.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 106259,
+            "content": "<p>2. Ferme restando le attribuzioni del sindaco di cui all’articolo 54, comma 3, del testo unico delle leggi sull’ordinamento degli enti locali, approvato con il decreto legislativo 18 agosto 2000, n. 267, l’ANPR subentra altresì alle anagrafi della popolazione residente e dei cittadini italiani residenti all’estero tenute dai comuni. Con il decreto di cui al comma 6 è definito un piano per il graduale subentro dell’ANPR alle citate anagrafi, da completare entro il 31 dicembre 2014. Fino alla completa attuazione di detto piano, l’ANPR acquisisce automaticamente in via telematica i dati contenuti nelle anagrafi tenute dai comuni per i quali non è ancora avvenuto il subentro. L’ANPR è organizzata secondo modalità funzionali e operative che garantiscono la univocità dei dati stessi.</p><p>3. L’ANPR assicura al singolo comune la disponibilità dei dati anagrafici della popolazione residente e degli strumenti per lo svolgimento delle funzioni di competenza statale attribuite al sindaco ai sensi dell’articolo 54, comma 3, del testo unico delle leggi sull’ordinamento degli enti locali di cui al decreto legislativo 18 agosto 2000, n. 267, nonché la disponibilità dei dati anagrafici e dei servizi per l’interoperabilità con le banche dati tenute dai comuni per lo svolgimento delle funzioni di competenza. L’ANPR consente esclusivamente ai comuni la certificazione dei dati anagrafici nel rispetto di quanto previsto dall’articolo 33 del decreto del Presidente della Repubblica 30 maggio 1989, n. 223, anche in modalità telematica. I comuni inoltre possono consentire, anche mediante apposite convenzioni, la fruizione dei dati anagrafici da parte dei soggetti aventi diritto. L’ANPR assicura alle pubbliche amministrazioni e agli organismi che erogano pubblici servizi l’accesso ai dati contenuti nell’ANPR.</p><p>4. Con il decreto di cui al comma 6 sono disciplinate le modalità di integrazione nell’ANPR dei dati dei cittadini attualmente registrati in anagrafi istituite presso altre amministrazioni nonché dei dati relativi al numero e alla data di emissione e di scadenza della carta di identità della popolazione residente.</p><p>5. Ai fini della gestione e della raccolta informatizzata di dati dei cittadini, le pubbliche amministrazioni di cui all’articolo 2, comma 2, del presente Codice si avvalgono esclusivamente dell’ANPR, che viene integrata con gli ulteriori dati a tal fine necessari.</p><p>6. Con uno o più decreti del Presidente del Consiglio dei Ministri, su proposta del Ministro dell’interno, del Ministro per la pubblica amministrazione e la semplificazione e del Ministro delegato all’innovazione tecnologica, di concerto con il Ministro dell’economia e delle finanze, d’intesa con l’Agenzia per l’Italia digitale, la Conferenza permanente per i rapporti tra lo Stato, le regioni e le province autonome di Trento e di Bolzano nonché con la Conferenza Stato - città, di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, per gli aspetti d’interesse dei comuni, sentita l’ISTAT e acquisito il parere del Garante per la protezione dei dati personali, sono stabiliti i tempi e le modalità di attuazione delle disposizioni del presente articolo, anche con riferimento:</p><p>a) alle garanzie e alle misure di sicurezza da adottare nel trattamento dei dati personali, alle modalità e ai tempi di conservazione dei dati e all’accesso ai dati da parte delle pubbliche amministrazioni per le proprie finalità istituzionali secondo le modalità di cui all’articolo 58;</p><p>b) ai criteri per l’interoperabilità dell’ANPR con le altre banche dati di rilevanza nazionale e regionale, secondo le regole tecniche del sistema pubblico di connettività di cui al capo VIII del presente decreto, in modo che le informazioni di anagrafe, una volta rese dai cittadini, si intendano acquisite dalle pubbliche amministrazioni senza necessità di ulteriori adempimenti o duplicazioni da parte degli stessi;</p><p>c) all’erogazione di altri servizi resi disponibili dall’ANPR, tra i quali il servizio di invio telematico delle attestazioni e delle dichiarazioni di nascita e dei certificati di cui all’articolo 74 del decreto del Presidente della Repubblica 3 novembre 2000, n. 396, compatibile con il sistema di trasmissione di cui al decreto del Ministro della salute in data 26 febbraio 2010, pubblicato nella Gazzetta Ufficiale n. 65 del 19 marzo 2010.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0293",
+    "operation": "MEANING",
+    "new": "<div class='section' id='art-62-bis-banca-dati-nazionale-dei-contratti-pubblici'><span id='art62bis'></span><h4>Art. 62-bis. Banca dati nazionale dei contratti pubblici</h4><p>1. Per favorire la riduzione degli oneri amministrativi derivanti dagli obblighi informativi ed assicurare l’efficacia, la trasparenza e il controllo in tempo reale dell’azione amministrativa per l’allocazione della spesa pubblica in lavori, servizi e forniture, anche al fine del rispetto della legalità e del corretto agire della pubblica amministrazione e prevenire fenomeni di corruzione, si utilizza la «Banca dati nazionale dei contratti pubblici» (BDNCP) istituita, presso l’Autorità per la vigilanza sui contratti pubblici di lavori, servizi e forniture, della quale fanno parte i dati previsti dall’articolo 7 del decreto legislativo 12 aprile 2006, n. 163, e disciplinata, ai sensi del medesimo decreto legislativo, dal relativo regolamento attuativo.</p></div>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 106259,
+            "content": "<div class='section' id='art-62-bis-banca-dati-nazionale-dei-contratti-pubblici'><span id='art62bis'></span><h4>Art. 62-bis. Banca dati nazionale dei contratti pubblici</h4><p>1. Per favorire la riduzione degli oneri amministrativi derivanti dagli obblighi informativi ed assicurare l’efficacia, la trasparenza e il controllo in tempo reale dell’azione amministrativa per l’allocazione della spesa pubblica in lavori, servizi e forniture, anche al fine del rispetto della legalità e del corretto agire della pubblica amministrazione e prevenire fenomeni di corruzione, si utilizza la «Banca dati nazionale dei contratti pubblici» (BDNCP) istituita, presso l’Autorità per la vigilanza sui contratti pubblici di lavori, servizi e forniture, della quale fanno parte i dati previsti dall’articolo 7 del decreto legislativo 12 aprile 2006, n. 163, e disciplinata, ai sensi del medesimo decreto legislativo, dal relativo regolamento attuativo.</p></div>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0294",
+    "operation": "MEANING",
+    "new": "e i gestori di servizi pubblici",
+    "old": "centrali",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 107108,
+            "endPosition": 107116,
+            "content": "centrali"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 107116,
+            "content": "e i gestori di servizi pubblici"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0295",
+    "operation": "MEANING",
+    "new": "<p>3-bis. A partire dal 1º gennaio 2014, allo scopo di incentivare e favorire il processo di informatizzazione e di potenziare ed estendere i servizi telematici, i soggetti di cui all’articolo 2, comma 2, utilizzano esclusivamente i canali e i servizi telematici, ivi inclusa la posta elettronica certificata, per l’utilizzo dei propri servizi, anche a mezzo di intermediari abilitati, per la presentazione da parte degli interessati di denunce, istanze e atti e garanzie fideiussorie, per l’esecuzione di versamenti fiscali, contributivi, previdenziali, assistenziali e assicurativi, nonché per la richiesta di attestazioni e certificazioni.</p><p>3-ter. A partire dal 1º gennaio 2014 i soggetti indicati al comma 3-bis utilizzano esclusivamente servizi telematici o la posta elettronica certificata anche per gli atti, le comunicazioni o i servizi dagli stessi resi.</p><p>3-quater. I soggetti indicati al comma 3-bis, almeno sessanta giorni prima della data della loro entrata in vigore, pubblicano nel sito web istituzionale l’elenco dei provvedimenti adottati ai sensi dei commi 3-bis e 3-ter, nonché termini e modalità di utilizzo dei servizi e dei canali telematici e della posta elettronica certificata.</p><p>3-quinquies. Con decreto del Presidente del Consiglio dei Ministri, sentita la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n.281, e successive modificazioni, da emanare entro sei mesi dalla data di entrata in vigore della presente disposizione, sono stabilite le deroghe e le eventuali limitazioni al principio di esclusività indicato dal comma 3-bis, anche al fine di escludere l’insorgenza di nuovi o maggiori oneri per la finanza pubblica.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 107673,
+            "content": "<p>3-bis. A partire dal 1º gennaio 2014, allo scopo di incentivare e favorire il processo di informatizzazione e di potenziare ed estendere i servizi telematici, i soggetti di cui all’articolo 2, comma 2, utilizzano esclusivamente i canali e i servizi telematici, ivi inclusa la posta elettronica certificata, per l’utilizzo dei propri servizi, anche a mezzo di intermediari abilitati, per la presentazione da parte degli interessati di denunce, istanze e atti e garanzie fideiussorie, per l’esecuzione di versamenti fiscali, contributivi, previdenziali, assistenziali e assicurativi, nonché per la richiesta di attestazioni e certificazioni.</p><p>3-ter. A partire dal 1º gennaio 2014 i soggetti indicati al comma 3-bis utilizzano esclusivamente servizi telematici o la posta elettronica certificata anche per gli atti, le comunicazioni o i servizi dagli stessi resi.</p><p>3-quater. I soggetti indicati al comma 3-bis, almeno sessanta giorni prima della data della loro entrata in vigore, pubblicano nel sito web istituzionale l’elenco dei provvedimenti adottati ai sensi dei commi 3-bis e 3-ter, nonché termini e modalità di utilizzo dei servizi e dei canali telematici e della posta elettronica certificata.</p><p>3-quinquies. Con decreto del Presidente del Consiglio dei Ministri, sentita la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n.281, e successive modificazioni, da emanare entro sei mesi dalla data di entrata in vigore della presente disposizione, sono stabilite le deroghe e le eventuali limitazioni al principio di esclusività indicato dal comma 3-bis, anche al fine di escludere l’insorgenza di nuovi o maggiori oneri per la finanza pubblica.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0296",
+    "operation": "MEANING",
+    "new": "identificazione",
+    "old": "autenticazione",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 108184,
+            "endPosition": 108198,
+            "content": "autenticazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 108198,
+            "content": "identificazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0297",
+    "operation": "MEANING",
+    "new": "identificazione",
+    "old": "autenticazione",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 108351,
+            "endPosition": 108365,
+            "content": "autenticazione"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 108365,
+            "content": "identificazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0298",
+    "operation": "MEANING",
+    "new": "identificazione",
+    "old": "accertare l’identità",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 108514,
+            "endPosition": 108534,
+            "content": "accertare l’identità"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 108534,
+            "content": "identificazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0299",
+    "operation": "MEANING",
+    "new": "il servizio",
+    "old": "l’accesso",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 108561,
+            "endPosition": 108570,
+            "content": "l’accesso"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 108570,
+            "content": "il servizio"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0300",
+    "operation": "MEANING",
+    "new": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235. (11)",
+    "old": "Ferma restando la disciplina riguardante le trasmissioni telematiche gestite dal Ministero dell’economia e delle finanze e dalle agenzie fiscali, con decreto del Presidente del Consiglio dei Ministri o del Ministro delegato per l’innovazione e le tecnologie, di concerto con il Ministro per la funzione pubblica e d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, è fissata la data, comunque non successiva al 31 dicembre 2007, a decorrere dalla quale non è più consentito l’accesso ai servizi erogati in rete dalle pubbliche amministrazioni, con strumenti diversi dalla carta d’identità elettronica e dalla carta nazionale dei servizi.",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 108783,
+            "endPosition": 109476,
+            "content": "Ferma restando la disciplina riguardante le trasmissioni telematiche gestite dal Ministero dell’economia e delle finanze e dalle agenzie fiscali, con decreto del Presidente del Consiglio dei Ministri o del Ministro delegato per l’innovazione e le tecnologie, di concerto con il Ministro per la funzione pubblica e d’intesa con la Conferenza unificata di cui all’articolo 8 del decreto legislativo 28 agosto 1997, n. 281, è fissata la data, comunque non successiva al 31 dicembre 2007, a decorrere dalla quale non è più consentito l’accesso ai servizi erogati in rete dalle pubbliche amministrazioni, con strumenti diversi dalla carta d’identità elettronica e dalla carta nazionale dei servizi."
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 109476,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235. (11)"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0301",
+    "operation": "MEANING",
+    "new": "<p>AGGIORNAMENTO (11) Il D.L. 29 dicembre 2010, n. 225, convertito con modificazioni dalla L. 26 febbraio 2011, n. 10, ha disposto (con l’art. 1, comma 1), in relazione al comma 3 del presente articolo, che «È fissato al 31 marzo 2011 il termine di scadenza dei termini e dei regimi giuridici indicati nella tabella 1 allegata con scadenza in data anteriore al 15 marzo 2011».</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 109476,
+            "content": "<p>AGGIORNAMENTO (11) Il D.L. 29 dicembre 2010, n. 225, convertito con modificazioni dalla L. 26 febbraio 2011, n. 10, ha disposto (con l’art. 1, comma 1), in relazione al comma 3 del presente articolo, che «È fissato al 31 marzo 2011 il termine di scadenza dei termini e dei regimi giuridici indicati nella tabella 1 allegata con scadenza in data anteriore al 15 marzo 2011».</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0302",
+    "operation": "MEANING",
+    "new": "per via telematica alle pubbliche amministrazioni",
+    "old": "alle pubbliche amministrazioni per via telematica",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 109849,
+            "endPosition": 109898,
+            "content": "alle pubbliche amministrazioni per via telematica"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 109898,
+            "content": "per via telematica alle pubbliche amministrazioni"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0303",
+    "operation": "MEANING",
+    "new": " e ai gestori dei servizi pubblici",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 109898,
+            "content": " e ai gestori dei servizi pubblici"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0304",
+    "operation": "MEANING",
+    "new": " o la firma elettronica qualificata",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 110162,
+            "content": " o la firma elettronica qualificata"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0305",
+    "operation": "MEANING",
+    "new": "nonché quando le istanze e le dichiarazioni sono inviate con le modalità di cui all’articolo 38, comma 3, del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445",
+    "old": "e fermo restando il disposto dell’articolo 64, comma 3",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 110752,
+            "endPosition": 110806,
+            "content": "e fermo restando il disposto dell’articolo 64, comma 3"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 110806,
+            "content": "nonché quando le istanze e le dichiarazioni sono inviate con le modalità di cui all’articolo 38, comma 3, del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0306",
+    "operation": "MEANING",
+    "new": "<p>c-bis) ovvero se trasmesse dall’autore mediante la propria casella di posta elettronica certificata purché le relative credenziali di accesso siano state rilasciate previa identificazione del titolare, anche per via telematica secondo modalità definite con regole tecniche adottate ai sensi dell’articolo 71, e ciò sia attestato dal gestore del sistema nel messaggio o in un suo allegato. In tal caso, la trasmissione costituisce dichiarazione vincolante ai sensi dell’articolo 6, comma 1, secondo periodo. Sono fatte salve le disposizioni normative che prevedono l’uso di specifici sistemi di trasmissione telematica nel settore tributario;</p><p>1-bis. Con decreto del Ministro per la pubblica amministrazione e l’innovazione e del Ministro per la semplificazione normativa, su proposta dei Ministri competenti per materia, possono essere individuati i casi in cui è richiesta la sottoscrizione mediante firma digitale.</p><p>1-ter. Il mancato avvio del procedimento da parte del titolare dell’ufficio competente a seguito di istanza o dichiarazione inviate ai sensi e con le modalità di cui al comma 1, lettere a), c) e c-bis), comporta responsabilità dirigenziale e responsabilità disciplinare dello stesso.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 110807,
+            "content": "<p>c-bis) ovvero se trasmesse dall’autore mediante la propria casella di posta elettronica certificata purché le relative credenziali di accesso siano state rilasciate previa identificazione del titolare, anche per via telematica secondo modalità definite con regole tecniche adottate ai sensi dell’articolo 71, e ciò sia attestato dal gestore del sistema nel messaggio o in un suo allegato. In tal caso, la trasmissione costituisce dichiarazione vincolante ai sensi dell’articolo 6, comma 1, secondo periodo. Sono fatte salve le disposizioni normative che prevedono l’uso di specifici sistemi di trasmissione telematica nel settore tributario;</p><p>1-bis. Con decreto del Ministro per la pubblica amministrazione e l’innovazione e del Ministro per la semplificazione normativa, su proposta dei Ministri competenti per materia, possono essere individuati i casi in cui è richiesta la sottoscrizione mediante firma digitale.</p><p>1-ter. Il mancato avvio del procedimento da parte del titolare dell’ufficio competente a seguito di istanza o dichiarazione inviate ai sensi e con le modalità di cui al comma 1, lettere a), c) e c-bis), comporta responsabilità dirigenziale e responsabilità disciplinare dello stesso.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0307",
+    "operation": "MEANING",
+    "new": " o compilate su sito",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTINSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 110937,
+            "content": " o compilate su sito"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0308",
+    "operation": "MEANING",
+    "new": "Dalla data di cui all’articolo 64, comma 3, non è più consentito l’invio di istanze e dichiarazioni con le modalità di cui al comma 1, lettera c)",
+    "old": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 111152,
+            "endPosition": 111297,
+            "content": "COMMA ABROGATO DAL D.LGS. 30 DICEMBRE 2010, N. 235"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 111297,
+            "content": "Dalla data di cui all’articolo 64, comma 3, non è più consentito l’invio di istanze e dichiarazioni con le modalità di cui al comma 1, lettera c)"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0309",
+    "operation": "MEANING",
+    "new": "l’età prevista dalla legge per il rilascio della carta d’identità elettronica",
+    "old": "quindicesimo anno di età",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 112233,
+            "endPosition": 112257,
+            "content": "quindicesimo anno di età"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 112257,
+            "content": "l’età prevista dalla legge per il rilascio della carta d’identità elettronica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0310",
+    "operation": "MEANING",
+    "new": "l’età prevista dalla legge per il rilascio della carta d’identità elettronica",
+    "old": "quindicesimo anno di età",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 114643,
+            "endPosition": 114667,
+            "content": "quindicesimo anno di età"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 114667,
+            "content": "l’età prevista dalla legge per il rilascio della carta d’identità elettronica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0311",
+    "operation": "MEANING",
+    "new": "l’età prevista dalla legge per il rilascio della carta d’identità elettronica",
+    "old": "quindicesimo anno di età",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 115099,
+            "endPosition": 115123,
+            "content": "quindicesimo anno di età"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 115123,
+            "content": "l’età prevista dalla legge per il rilascio della carta d’identità elettronica"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0312",
+    "operation": "MEANING",
+    "new": "<p>8-bis. Fino al 31 dicembre 2011, la carta nazionale dei servizi e le altre carte elettroniche ad essa conformi possono essere rilasciate anche ai titolari di carta di identità elettronica.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 117883,
+            "content": "<p>8-bis. Fino al 31 dicembre 2011, la carta nazionale dei servizi e le altre carte elettroniche ad essa conformi possono essere rilasciate anche ai titolari di carta di identità elettronica.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0313",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 118964,
+            "endPosition": 118969,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 118969,
+            "content": "DigitPA"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0314",
+    "operation": "MEANING",
+    "new": " acquisiscono programmi informatici o parti di essi nel rispetto dei principi di economicità e di efficienza, tutela degli investimenti, riuso e neutralità tecnologica,",
+    "old": ", nel rispetto della legge 7 agosto 1990, n. 241, e del decreto legislativo 12 febbraio 1993, n. 39, acquisiscono, secondo le procedure previste dall’ordinamento, programmi informatici",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 119482,
+            "endPosition": 119666,
+            "content": ", nel rispetto della legge 7 agosto 1990, n. 241, e del decreto legislativo 12 febbraio 1993, n. 39, acquisiscono, secondo le procedure previste dall’ordinamento, programmi informatici"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 119666,
+            "content": " acquisiscono programmi informatici o parti di essi nel rispetto dei principi di economicità e di efficienza, tutela degli investimenti, riuso e neutralità tecnologica,"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0315",
+    "operation": "MEANING",
+    "new": "software sviluppato per conto della pubblica amministrazione",
+    "old": "sviluppo di programmi informatici per conto e a spese dell’amministrazione sulla scorta dei requisiti indicati dalla stessa amministrazione committente",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 119874,
+            "endPosition": 120025,
+            "content": "sviluppo di programmi informatici per conto e a spese dell’amministrazione sulla scorta dei requisiti indicati dalla stessa amministrazione committente"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 120025,
+            "content": "software sviluppato per conto della pubblica amministrazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0316",
+    "operation": "MEANING",
+    "new": "riutilizzo di software o parti di esso sviluppati per conto della pubblica amministrazione",
+    "old": "riuso di programmi informatici sviluppati per conto e a spese della medesima o di altre amministrazioni",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 120060,
+            "endPosition": 120163,
+            "content": "riuso di programmi informatici sviluppati per conto e a spese della medesima o di altre amministrazioni"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 120163,
+            "content": "riutilizzo di software o parti di esso sviluppati per conto della pubblica amministrazione"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0317",
+    "operation": "MEANING",
+    "new": "software libero o a codice sorgente aperto",
+    "old": "acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d’uso",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 120198,
+            "endPosition": 120289,
+            "content": "acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d’uso"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 120289,
+            "content": "software libero o a codice sorgente aperto"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0318",
+    "operation": "MEANING",
+    "new": "software fruibile in modalità cloud computing",
+    "old": "acquisizione di programmi informatici a codice sorgente aperto",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 120324,
+            "endPosition": 120386,
+            "content": "acquisizione di programmi informatici a codice sorgente aperto"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 120386,
+            "content": "software fruibile in modalità cloud computing"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0319",
+    "operation": "MEANING",
+    "new": "software di tipo proprietario mediante ricorso a licenza d’uso",
+    "old": "acquisizione mediante combinazione delle modalità di cui alle lettere da a) a d)",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 120421,
+            "endPosition": 120501,
+            "content": "acquisizione mediante combinazione delle modalità di cui alle lettere da a) a d)"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 120501,
+            "content": "software di tipo proprietario mediante ricorso a licenza d’uso"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0320",
+    "operation": "MEANING",
+    "new": "<p>1-bis. A tal fine, le pubbliche amministrazioni prima di procedere all’acquisto, secondo le procedure di cui al codice di cui al decreto legislativo 12 aprile 2006 n. 163, effettuano una valutazione comparativa delle diverse soluzioni disponibili sulla base dei seguenti criteri:<p></p>a) costo complessivo del programma o soluzione quale costo di acquisto, di implementazione, di mantenimento e supporto;</p><p>b) livello di utilizzo di formati di dati e di interfacce di tipo aperto nonché di standard in grado di assicurare l’interoperabilità e la cooperazione applicativa tra i diversi sistemi informatici della pubblica amministrazione;</p><p>c) garanzie del fornitore in materia di livelli di sicurezza, conformità alla normativa in materia di protezione dei dati personali, livelli di servizio tenuto conto della tipologia di software acquisito.</p></p><p>1-ter. Ove dalla valutazione comparativa di tipo tecnico ed economico, secondo i criteri di cui al comma 1-bis, risulti motivatamente l’impossibilità di accedere a soluzioni già disponibili all’interno della pubblica amministrazione, o a software liberi o a codici sorgente aperto, adeguati alle esigenze da soddisfare, è consentita l’acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d’uso. La valutazione di cui al presente comma è effettuata secondo le modalità e i criteri definiti dall’Agenzia per l’Italia digitale, che, a richiesta di soggetti interessati, esprime altresì parere circa il loro rispetto.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 120502,
+            "content": "<p>1-bis. A tal fine, le pubbliche amministrazioni prima di procedere all’acquisto, secondo le procedure di cui al codice di cui al decreto legislativo 12 aprile 2006 n. 163, effettuano una valutazione comparativa delle diverse soluzioni disponibili sulla base dei seguenti criteri:<p></p>a) costo complessivo del programma o soluzione quale costo di acquisto, di implementazione, di mantenimento e supporto;</p><p>b) livello di utilizzo di formati di dati e di interfacce di tipo aperto nonché di standard in grado di assicurare l’interoperabilità e la cooperazione applicativa tra i diversi sistemi informatici della pubblica amministrazione;</p><p>c) garanzie del fornitore in materia di livelli di sicurezza, conformità alla normativa in materia di protezione dei dati personali, livelli di servizio tenuto conto della tipologia di software acquisito.</p></p><p>1-ter. Ove dalla valutazione comparativa di tipo tecnico ed economico, secondo i criteri di cui al comma 1-bis, risulti motivatamente l’impossibilità di accedere a soluzioni già disponibili all’interno della pubblica amministrazione, o a software liberi o a codici sorgente aperto, adeguati alle esigenze da soddisfare, è consentita l’acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d’uso. La valutazione di cui al presente comma è effettuata secondo le modalità e i criteri definiti dall’Agenzia per l’Italia digitale, che, a richiesta di soggetti interessati, esprime altresì parere circa il loro rispetto.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0321",
+    "operation": "MEANING",
+    "new": ", quando possibile modulari, basate sui sistemi funzionali resi noti ai sensi dell’articolo 70, che assicurino l’interoperabilità e la cooperazione applicativa e consentano la rappresentazione dei dati e documenti in più formati, di cui almeno uno di tipo aperto, salvo che ricorrano motivate ed eccezionali esigenze",
+    "old": " che assicurino l’interoperabilità e la cooperazione applicativa, secondo quanto previsto dal decreto legislativo 28 febbraio 2005, n. 42, e che consentano la rappresentazione dei dati e documenti in più formati, di cui almeno uno di tipo aperto, salvo che ricorrano peculiari ed eccezionali esigenze",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "TEXTREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 120712,
+            "endPosition": 121012,
+            "content": " che assicurino l’interoperabilità e la cooperazione applicativa, secondo quanto previsto dal decreto legislativo 28 febbraio 2005, n. 42, e che consentano la rappresentazione dei dati e documenti in più formati, di cui almeno uno di tipo aperto, salvo che ricorrano peculiari ed eccezionali esigenze"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 121012,
+            "content": ", quando possibile modulari, basate sui sistemi funzionali resi noti ai sensi dell’articolo 70, che assicurino l’interoperabilità e la cooperazione applicativa e consentano la rappresentazione dei dati e documenti in più formati, di cui almeno uno di tipo aperto, salvo che ricorrano motivate ed eccezionali esigenze"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0322",
+    "operation": "MEANING",
+    "new": "<p>2-bis. Le amministrazioni pubbliche comunicano tempestivamente al DigitPA l’adozione delle applicazioni informatiche e delle pratiche tecnologiche, e organizzative,adottate, fornendo ogni utile informazione ai fini della piena conoscibilità delle soluzioni adottate e dei risultati ottenuti, anche per favorire il riuso e la più ampia diffusione delle migliori pratiche.</p>",
+    "old": "",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "INSERT",
+        "items": [{
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 121013,
+            "content": "<p>2-bis. Le amministrazioni pubbliche comunicano tempestivamente al DigitPA l’adozione delle applicazioni informatiche e delle pratiche tecnologiche, e organizzative,adottate, fornendo ogni utile informazione ai fini della piena conoscibilità delle soluzioni adottate e dei risultati ottenuti, anche per favorire il riuso e la più ampia diffusione delle migliori pratiche.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0323",
+    "operation": "MEANING",
+    "new": "Agli effetti del presente decreto legislativo si intende per:<p>a) formato dei dati di tipo aperto, un formato di dati reso pubblico, documentato esaustivamente e neutro rispetto agli strumenti tecnologici necessari per la fruizione dei dati stessi;</p><p>b) dati di tipo aperto, i dati che presentano le seguenti caratteristiche:</p><p>1) sono disponibili secondo i termini di una licenza che ne permetta l’utilizzo da parte di chiunque, anche per finalità commerciali, in formato disaggregato;</p><p>2) sono accessibili attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, in formati aperti ai sensi della lettera a), sono adatti all’utilizzo automatico da parte di programmi per elaboratori e sono provvisti dei relativi metadati;</p><p>3) sono resi disponibili gratuitamente attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, oppure sono resi disponibili ai costi marginali sostenuti per la loro riproduzione e divulgazione. L’Agenzia per l’Italia digitale deve stabilire, con propria deliberazione, i casi eccezionali, individuati secondo criteri oggettivi, trasparenti e verificabili, in cui essi sono resi disponibili a tariffe superiori ai costi marginali. In ogni caso, l’Agenzia, nel trattamento dei casi eccezionali individuati, si attiene alle indicazioni fornite dalla direttiva 2003/98/CE del Parlamento europeo e del Consiglio, del 17 novembre 2003, sul riutilizzo dell’informazione del settore pubblico, recepita con il decreto legislativo 24 gennaio 2006, n. 36.</p>",
+    "old": "Per formato dei dati di tipo aperto si intende un formato dati reso pubblico e documentato esaustivamente.",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "STRUCTURE",
+        "operation": "REPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 121039,
+            "endPosition": 121145,
+            "content": "Per formato dei dati di tipo aperto si intende un formato dati reso pubblico e documentato esaustivamente."
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 121145,
+            "content": "Agli effetti del presente decreto legislativo si intende per:<p>a) formato dei dati di tipo aperto, un formato di dati reso pubblico, documentato esaustivamente e neutro rispetto agli strumenti tecnologici necessari per la fruizione dei dati stessi;</p><p>b) dati di tipo aperto, i dati che presentano le seguenti caratteristiche:</p><p>1) sono disponibili secondo i termini di una licenza che ne permetta l’utilizzo da parte di chiunque, anche per finalità commerciali, in formato disaggregato;</p><p>2) sono accessibili attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, in formati aperti ai sensi della lettera a), sono adatti all’utilizzo automatico da parte di programmi per elaboratori e sono provvisti dei relativi metadati;</p><p>3) sono resi disponibili gratuitamente attraverso le tecnologie dell’informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, oppure sono resi disponibili ai costi marginali sostenuti per la loro riproduzione e divulgazione. L’Agenzia per l’Italia digitale deve stabilire, con propria deliberazione, i casi eccezionali, individuati secondo criteri oggettivi, trasparenti e verificabili, in cui essi sono resi disponibili a tariffe superiori ai costi marginali. In ogni caso, l’Agenzia, nel trattamento dei casi eccezionali individuati, si attiene alle indicazioni fornite dalla direttiva 2003/98/CE del Parlamento europeo e del Consiglio, del 17 novembre 2003, sul riutilizzo dell’informazione del settore pubblico, recepita con il decreto legislativo 24 gennaio 2006, n. 36.</p>"
+        }]
+    }]
+}, {
+    "id": "SEMANTIC-0324",
+    "operation": "MEANING",
+    "new": "DigitPA",
+    "old": "CNIPA",
+    "timestamp": "2019-01-28T14:12:30.151Z",
+    "by": "USER-001",
+    "items": [{
+        "id": "STRUCTURAL",
+        "type": "TEXT",
+        "operation": "WORDREPLACE",
+        "items": [{
+            "id": "EDIT",
+            "operation": "DEL",
+            "startPosition": 121174,
+            "endPosition": 121179,
+            "content": "CNIPA"
+        }, {
+            "id": "EDIT",
+            "operation": "INS",
+            "position": 121179,
+            "content": "DigitPA"
         }]
     }]
 }]

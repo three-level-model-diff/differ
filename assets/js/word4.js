@@ -42,6 +42,9 @@ var str2DOMElement = function(html) {
     return element;
 };
 
+/**
+ * Array of strings representing all the possible inline HTML elements
+ */
 const inline_elements = [
     "a",
     "abbr",
@@ -100,6 +103,9 @@ const inline_elements = [
     "wbr"
 ];
 
+/**
+ * Array of strings representing all the possible block HTML elements
+ */
 const block_elements = [
     "address",
     "article",
@@ -129,69 +135,76 @@ const block_elements = [
     "section",
     "table",
     "ul"
-]
+];
 
 RegExp.escape = function (string) {
     return string.replace(/[-\\/\\^$*+?.()|[\]{}#&;,]/g, '\\$&')
-}
+};
 
 RegExp.prototype.execGlobal = function (text) {
     // Save matches
-    let matches = []
-    let match
+    let matches = [];
+    let match;
   
     // Return all matches
-    let tagSelectorRegexp = RegExp(this.source, this.flags)
+    let tagSelectorRegexp = RegExp(this.source, this.flags);
     while ((match = tagSelectorRegexp.exec(text)) !== null) {
-      matches.push(match)
-    }
+      matches.push(match);
+    };
   
-    return matches
-}
+    return matches;
+};
 
+/**
+ * Function to return if the edits is inside tags of an element
+ * @param {String} text - the entire document
+ * @param {number} pos - position of the edit
+ * @param {String} content - content of the edit
+ * @param {String} op - INS or DEL
+ */
 function getEnclosingTag (text, pos, content, op) {
     // Get the correct context
     // Normally, the position is calculated over the NEWTEXT. The regexp must be executed over it.
     // The algorithm needs to create a pattern with the text at the position, in the
     //old
-    let newContent = text.substring(pos, pos + content.length)
+    let newContent = text.substring(pos, pos + content.length);
     //new
-    let oldContent = text.substring(pos, pos + content.length)
+    let oldContent = text.substring(pos, pos + content.length);
 
     // If the new content is a sequence of open and close tags
     if (/^[<>]+/.test(newContent)) {
-      newContent = text.substring(pos - content.length, pos).split(/[<>]/).splice(-1).pop()
-    }
+      newContent = text.substring(pos - content.length, pos).split(/[<>]/).splice(-1).pop();
+    };
     if (/[<>]+$/.test(newContent)) {
-      newContent = text.substring(pos - content.length, pos).split(/[<>]/).splice(-1).pop()
-    }
+      newContent = text.substring(pos - content.length, pos).split(/[<>]/).splice(-1).pop();
+    };
 
     // Set left and right selector
-    const left = '<[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*'
-    const right = '[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*>'
+    const left = '<[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*';
+    const right = '[A-z\\/\\-\\d\\=\\"\\s\\:\\%\\.\\,\\(\\)\\#]*>';
 
     // Get list of matching patterns
-    let matches = RegExp(`${left}${RegExp.escape(oldContent)}${right}`, 'g').execGlobal(text)
+    let matches = RegExp(`${left}${RegExp.escape(oldContent)}${right}`, 'g').execGlobal(text);
 
     // Check each matching tag
     for (const match of matches) {
       // Save upper vars
-      const regexUpperIndex = match.index + match[0].length
-      let diffUpperIndex = pos + content.length
+      const regexUpperIndex = match.index + match[0].length;
+      let diffUpperIndex = pos + content.length;
 
       // If the DIFF is a DEL, then add its length to the regexUpperIndex
-      if (op === diffType.mechanical.del) diffUpperIndex -= content.length
+      if (op === diffType.mechanical.del) diffUpperIndex -= content.length;
 
       // The regex result must contain the entire diff content MUST start before and end after
       if (match.index < pos && regexUpperIndex > diffUpperIndex) {
         // Retrieve XPATH and character position proper of the tag
-        let tag = getCssSelector(text, match, pos)
+        let tag = getCssSelector(text, match, pos);
 
         // TODO CHANGE
-        if (tag === null) return null
+        if (tag === null) return null;
 
         // Add a more specific selector
-        tag.path = `#newTextTemplate${tag.path}`
+        tag.path = `#newTextTemplate${tag.path}`;
 
         return {
           tag: document.querySelector(tag.path),
@@ -200,7 +213,7 @@ function getEnclosingTag (text, pos, content, op) {
       }
     }
 
-    return null
+    return null;
 }
 
 function getCssSelector (text, tagString, pos) {
@@ -300,6 +313,7 @@ function differDel(start, content, operation, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
+    // create span element for mech edit
     let span = document.createElement("span");
     let attr = document.createAttribute("data-differ-del");
     attr.value = "text " + operation;
@@ -307,6 +321,7 @@ function differDel(start, content, operation, author) {
     let end = start + content.length;
     span.innerHTML = content;
 
+    // create span element for struct diff
     let span2 = document.createElement("span");
     let attr2 = document.createAttribute("data-differ-diff");
     span2.setAttributeNode(attr2);
@@ -881,26 +896,18 @@ function newVisualize(doc, edits) {
                         let trPos = [], trDelContent = [], trInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
-                            if (item.items.length > 1) {
-                                if (mechanical_diff.operation === "DEL") {
-                                    trPos.push(mechanical_diff.startPosition);
-                                    trDelContent.push(mechanical_diff.content);
-                                    trInsContent.push("null");
-                                } else if (mechanical_diff.operation === "INS") {
-                                    trPos.push(mechanical_diff.position);
-                                    trInsContent.push(mechanical_diff.content);
-                                    trDelContent.push("null");
-                                }
-                                if (trPos.length === item.items.length) {
-                                    differReplace(trPos, trDelContent, trInsContent, operation, author);
-                                    //console.log(getEnclosingTag(doc, trPos, trDelContent));
-                                }
-                            } else {
-                                if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
-                                } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
-                                };
+                            if (mechanical_diff.operation === "DEL") {
+                                trPos.push(mechanical_diff.startPosition);
+                                trDelContent.push(mechanical_diff.content);
+                                trInsContent.push("null");
+                            } else if (mechanical_diff.operation === "INS") {
+                                trPos.push(mechanical_diff.position);
+                                trInsContent.push(mechanical_diff.content);
+                                trDelContent.push("null");
+                            }
+                            if (trPos.length === item.items.length) {
+                                differReplace(trPos, trDelContent, trInsContent, operation, author);
+                                //console.log(getEnclosingTag(doc, trPos, trDelContent));
                             }
                         };
                         textreplaceCounter++;
@@ -1066,6 +1073,12 @@ function newVisualize(doc, edits) {
     
     cleanHTML();
     
+    /**
+     * Return element: 
+     *  modifiedText: the document with the edits applied
+     *  edits: counters object
+     *  css: CSS rules object
+     */
     return {
         "modifiedText" : modifiedText,
         "edits" : {
@@ -1119,7 +1132,7 @@ function newVisualize(doc, edits) {
                 },
                 "applyToParent": false
             }, {
-                "selector": "[data-differ-diff] [data-differ-del]:not(:only-child)",
+                "selector": "[data-differ-diff] [data-differ-del]",
                 "rules": {
                     "vertical-align": "bottom",
                     "text-align": "center",
@@ -1132,7 +1145,7 @@ function newVisualize(doc, edits) {
                 },
                 "applyToParent": false
             }, {
-                "selector": "[data-differ-diff] [data-differ-ins]:not(:only-child)",
+                "selector": "[data-differ-diff] [data-differ-ins]",
                 "rules": {
                     "display": "table-row",
                     "line-height": "140%",

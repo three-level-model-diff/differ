@@ -42,6 +42,28 @@ var str2DOMElement = function(html) {
     return element;
 };
 
+function bubbleSort(arr, arr2, arr3){
+    var len = arr.length;
+    for (var i = len-1; i>=0; i--){
+      for(var j = 1; j<=i; j++){
+        if(arr[j-1]>arr[j]){
+            var temp = arr[j-1];
+            arr[j-1] = arr[j];
+            arr[j] = temp;
+
+            var temp2 = arr2[j-1];
+            arr2[j-1] = arr2[j];
+            arr2[j] = temp2;
+
+            var temp3 = arr3[j-1];
+            arr3[j-1] = arr3[j];
+            arr3[j] = temp3;
+         }
+      }
+    }
+    return arr;
+};
+
 /**
  * Array of strings representing all the possible inline HTML elements
  */
@@ -308,6 +330,7 @@ let modifiedText = "";
  * @param {number} start - start index of the diff
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
+ * @param {String} author - author of the edit
  */
 function differDel(start, content, operation, author) {
     let doc = modifiedText;
@@ -349,8 +372,9 @@ function differDel(start, content, operation, author) {
  * @param {number} start - start index of the diff
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
+ * @param {String} author - author of the edit
  */
-function differDelStruct(start, content, operation, author) {       // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
+function differDelStruct(start, content, operation, author) {
     var doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
@@ -383,14 +407,27 @@ function differDelStruct(start, content, operation, author) {       // TODO: agg
     modifiedText = modText;
 };
 
+/**
+ * Handle the case of UNWRAP
+ * @param {*} start1 - position of the first tag to remove
+ * @param {*} tag1 - first tag to remove
+ * @param {*} start2 - position of the second tag to remove
+ * @param {*} tag2 - second tag to remove
+ * @param {*} author - author of the edit
+ */
 function differDelUnwrap(start1, tag1, start2, tag2, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
+    // get content to unwrap
     let del_content = doc.slice(start1, (start2 + tag2.length-1));
+    let ins_content = doc.slice((start1 + tag1.length-1), start2);
+    // get tag string
     let opening_tag = tag1.replace(/[<>/]/g, "");
+    // create diff element (span)
     let diff_span = document.createElement("span");
     let diff_attr = document.createAttribute("data-differ-diff");
     diff_span.setAttributeNode(diff_attr);
+    // create tooltip
     let data_toggle = document.createAttribute("data-toggle");
     data_toggle.value = "tooltip";
     let data_placement = document.createAttribute("data-placement");
@@ -404,8 +441,30 @@ function differDelUnwrap(start1, tag1, start2, tag2, author) {
     diff_span.setAttributeNode(data_toggle);
     diff_span.setAttributeNode(data_placement);
     diff_span.setAttributeNode(data_title);
+
+    // create diff element (div)
+    let diff_div = document.createElement("div");
+    let diff_attr = document.createAttribute("data-differ-diff");
+    diff_div.setAttributeNode(diff_attr);
+    // create tooltip
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    data_placement.value = "top";
+    let data_title = document.createAttribute("title");
+    if (typeof author !== "undefined") {
+        data_title.value = author;
+    } else {
+        data_title.value = "unknown";
+    }
+    diff_div.setAttributeNode(data_toggle);
+    diff_div.setAttributeNode(data_placement);
+    diff_div.setAttributeNode(data_title);
+
+    // check tag type
     for (const index in inline_elements) {
         if (opening_tag == inline_elements[index]) {
+            // create del element
             let del_span = document.createElement("span");
             let del_attr = document.createAttribute("data-differ-del");
             del_attr.value = "structure UNWRAP";
@@ -413,19 +472,39 @@ function differDelUnwrap(start1, tag1, start2, tag2, author) {
             del_span.innerHTML = del_content;
 
             diff_span.append(del_span);
+
+            // create ins element
+            let ins_span = document.createElement("span");
+            let ins_attr = document.createAttribute("data-differ-ins");
+            ins_attr.value = "structure UNWRAP";
+            ins_span.setAttributeNode(ins_attr);
+            ins_span.innerHTML = ins_content;
+
+            diff_span.append(ins_span);
         } else if (opening_tag == block_elements[index]) {
-            let del_span = document.createElement("span");
+            // create del element
+            let del_div = document.createElement("div");
             let del_attr = document.createAttribute("data-differ-del");
             del_attr.value = "structure UNWRAP";
-            del_span.setAttributeNode(del_attr);
-            let content = doc.slice((start1 + tag1.length-1), (start2));
-            del_span.innerHTML = content;
+            del_div.setAttributeNode(del_attr);
+            del_div.innerHTML = del_content;
 
-            diff_span.append(del_span);
-        }
-    }
-    let modText = doc.substring(0, start1) + diff_span.outerHTML + doc.substring(start2 + tag2.length);
-    modifiedText = modText;
+            diff_div.append(del_div);
+
+            // create ins element
+            let ins_div = document.createElement("div");
+            let ins_attr = document.createAttribute("data-differ-ins");
+            ins_attr.value = "structure UNWRAP";
+            ins_div.setAttributeNode(ins_attr);
+            ins_div.innerHTML = ins_content;
+
+            diff_div.append(ins_div);
+        };
+    };
+    if (typeof diff_span !== "undefined") {
+        let modText = doc.substring(0, start1) + diff_span.outerHTML + doc.substring(start2 + (tag2.length-1));
+        modifiedText = modText;
+    };
 };
 
 /**
@@ -439,13 +518,14 @@ function differDelWithoutWrap(pos, content) {
     let length = pos + content.length;
     let modText = doc.substring(0, pos) + doc.substring(length);
     modifiedText = modText;
-}
+};
 
 /**
  * Wrap a textual insert in a span element with custom attributes - TEXTUAL INSERT
  * @param {number} pos - index of the insert
  * @param {String} content - content of the insert
  * @param {String} operation - String representing the operation
+ * @param {String} author - edit's author
  */
 function differIns(pos, content, operation, author) {
     let doc = modifiedText;
@@ -484,8 +564,9 @@ function differIns(pos, content, operation, author) {
  * @param {number} pos - index of the diff
  * @param {String} content - content of the diff
  * @param {String} operation - String representing the operation
+ * @param {String} author - edit's author 
  */
-function differInsStruct(pos, content, operation, author) {    // TODO: aggiungere ciclo for e controllo su tag(decidere se quest'ultimo è necessario)
+function differInsStruct(pos, content, operation, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
 
@@ -605,6 +686,12 @@ function differInsSplit(pos, content, author) {
     modifiedText = modText;
 };
 
+/**
+ * Handle the case of a INS which I can't wrap in an HTML elements
+ * @param {*} pos - edit's position
+ * @param {*} content - edit's content
+ * @param {*} author - edit's author
+ */
 function differInsWithoutWrap(pos, content, author) {
     let doc = modifiedText;
     doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
@@ -613,72 +700,172 @@ function differInsWithoutWrap(pos, content, author) {
 };
 
 /**
- * Handle the case where I need to execute a replace with several DEL and INS
+ * Handle the case where I need to execute a replace with several DEL and INS - textual
  * @param {[number]} pos - Array of positions
  * @param {[String]} delContent - Array of contents of deletions
  * @param {[String]} insContent - Array of contents of insertions
  * @param {String} operation - operation of the diff
+ * @param {String} author - edit's author
  */
-function differReplace(pos, delContent, insContent, operation, author) {
-    for (const index in pos) {
+function differReplaceAlt(pos, delContent, insContent, operation, author) {
+    if (pos.length == 2) {
         let doc = modifiedText;
         doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
-        if (delContent[index] !== "null") {
-            let length = delContent[index].length;
-            let diff_span = document.createElement("span");
-            let diff_attr = document.createAttribute("data-differ-diff");
-            diff_span.setAttributeNode(diff_attr);
-            let data_toggle = document.createAttribute("data-toggle");
-            data_toggle.value = "tooltip";
-            let data_placement = document.createAttribute("data-placement");
-            data_placement.value = "top";
-            let data_title = document.createAttribute("title");
-            if (typeof author !== "undefined") {
-                data_title.value = author;
-            } else {
-                data_title.value = "unknown";
+        let length, position;
+        let diff_span = document.createElement("span");
+        let diff_attr = document.createAttribute("data-differ-diff");
+        diff_span.setAttributeNode(diff_attr);
+        let data_toggle = document.createAttribute("data-toggle");
+        data_toggle.value = "tooltip";
+        let data_placement = document.createAttribute("data-placement");
+        data_placement.value = "top";
+        let data_title = document.createAttribute("title");
+        if (typeof author !== "undefined") {
+            data_title.value = author;
+        } else {
+            data_title.value = "unknown";
+        }
+        diff_span.setAttributeNode(data_toggle);
+        diff_span.setAttributeNode(data_placement);
+        diff_span.setAttributeNode(data_title);
+        for (const index in pos) {
+            if (delContent[index] !== "null") {
+                let del_span = document.createElement("span");
+                let del_attr = document.createAttribute("data-differ-del");
+                del_attr.value = "text " + operation;
+                del_span.setAttributeNode(del_attr);
+                del_span.innerHTML = delContent[index];
+                length = delContent[index].length;
+                position = pos[index];
+                diff_span.prepend(del_span);
+            } else if (insContent[index] !== "null") {
+                let ins_span = document.createElement("span");
+                let ins_attr = document.createAttribute("data-differ-ins");
+                ins_attr.value = "text " + operation;
+                ins_span.setAttributeNode(ins_attr);
+                ins_span.innerHTML = insContent[index];
+                diff_span.append(ins_span);
             }
-            diff_span.setAttributeNode(data_toggle);
-            diff_span.setAttributeNode(data_placement);
-            diff_span.setAttributeNode(data_title);
-            let del_span = document.createElement("span");
-            let del_attr = document.createAttribute("data-differ-del");
-            del_attr.value = "text " + operation;
-            del_span.setAttributeNode(del_attr);
-            del_span.innerHTML = delContent[index];
-            diff_span.append(del_span);
-            let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index] + length);
-            modifiedText = modText;
-        } else if (insContent[index] !== "null") {
-            let ins_span = document.createElement("span");
-            let ins_attr = document.createAttribute("data-differ-ins");
-            ins_attr.value = "text " + operation;
-            ins_span.setAttributeNode(ins_attr);
-            ins_span.innerHTML = insContent[index];
-            let diff_span = document.createElement("span");
-            let diff_attr = document.createAttribute("data-differ-diff");
-            diff_span.setAttributeNode(diff_attr);
-            let data_toggle = document.createAttribute("data-toggle");
-            data_toggle.value = "tooltip";
-            let data_placement = document.createAttribute("data-placement");
-            data_placement.value = "top";
-            let data_title = document.createAttribute("title");
-            if (typeof author !== "undefined") {
-                data_title.value = author;
+        }
+        let modText = doc.slice(0, position) + diff_span.outerHTML + doc.slice(position + length);
+        modifiedText = modText;
+    } else {
+        let oldPos, shift;
+        bubbleSort(pos, delContent, insContent);
+        for (const index in pos) {
+            if (index == 0) {
+                oldPos = pos[index];
             } else {
-                data_title.value = "unknown";
+                if (pos[index] == oldPos) {
+                    let length = 0;
+                    let doc = modifiedText;
+                    doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
+                    let diff_span = document.createElement("span");
+                    let diff_attr = document.createAttribute("data-differ-diff");
+                    diff_span.setAttributeNode(diff_attr);
+                    let data_toggle = document.createAttribute("data-toggle");
+                    data_toggle.value = "tooltip";
+                    let data_placement = document.createAttribute("data-placement");
+                    data_placement.value = "top";
+                    let data_title = document.createAttribute("title");
+                    if (typeof author !== "undefined") {
+                        data_title.value = author;
+                    } else {
+                        data_title.value = "unknown";
+                    }
+                    diff_span.setAttributeNode(data_toggle);
+                    diff_span.setAttributeNode(data_placement);
+                    diff_span.setAttributeNode(data_title);
+                    if (delContent[index-1] !== "null") {
+                        let del_span = document.createElement("span");
+                        let del_attr = document.createAttribute("data-differ-del");
+                        del_attr.value = "text " + operation;
+                        del_span.setAttributeNode(del_attr);
+                        del_span.innerHTML = delContent[index-1];
+                        diff_span.prepend(del_span);
+                        length = delContent[index-1].length;
+                    } else if (insContent[index-1] !== "null") {
+                        let ins_span = document.createElement("span");
+                        let ins_attr = document.createAttribute("data-differ-ins");
+                        ins_attr.value = "text " + operation;
+                        ins_span.setAttributeNode(ins_attr);
+                        ins_span.innerHTML = insContent[index-1];
+                        diff_span.append(ins_span);
+                    }
+                    if (delContent[index] !== "null") {
+                        let del_span = document.createElement("span");
+                        let del_attr = document.createAttribute("data-differ-del");
+                        del_attr.value = "text " + operation;
+                        del_span.setAttributeNode(del_attr);
+                        del_span.innerHTML = delContent[index];
+                        diff_span.prepend(del_span);
+                    } else if (insContent[index] !== "null") {
+                        let ins_span = document.createElement("span");
+                        let ins_attr = document.createAttribute("data-differ-ins");
+                        ins_attr.value = "text " + operation;
+                        ins_span.setAttributeNode(ins_attr);
+                        ins_span.innerHTML = insContent[index];
+                        diff_span.append(ins_span);
+                    }
+                    let modText = doc.slice(0, pos[index] + shift) + diff_span.outerHTML + doc.slice(pos[index] + length + shift + 1);  //non ho capito perchè serve il +1, ma altrimenti non funziona
+                    modifiedText = modText;
+                } else {
+                    let length = 0;
+                    let doc = modifiedText;
+                    doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
+                    let diff_span = document.createElement("span");
+                    let diff_attr = document.createAttribute("data-differ-diff");
+                    diff_span.setAttributeNode(diff_attr);
+                    let data_toggle = document.createAttribute("data-toggle");
+                    data_toggle.value = "tooltip";
+                    let data_placement = document.createAttribute("data-placement");
+                    data_placement.value = "top";
+                    let data_title = document.createAttribute("title");
+                    if (typeof author !== "undefined") {
+                        data_title.value = author;
+                    } else {
+                        data_title.value = "unknown";
+                    }
+                    diff_span.setAttributeNode(data_toggle);
+                    diff_span.setAttributeNode(data_placement);
+                    diff_span.setAttributeNode(data_title);
+                    if (delContent[index-1] !== "null") {
+                        let del_span = document.createElement("span");
+                        let del_attr = document.createAttribute("data-differ-del");
+                        del_attr.value = "text " + operation;
+                        del_span.setAttributeNode(del_attr);
+                        del_span.innerHTML = delContent[index-1];
+                        length = delContent[index-1].length;
+                        diff_span.prepend(del_span);
+                        let modText = doc.slice(0, pos[index-1]) + diff_span.outerHTML + doc.slice(pos[index-1] + length);
+                        modifiedText = modText;
+                    } else if (insContent[index-1] !== "null") {
+                        let ins_span = document.createElement("span");
+                        let ins_attr = document.createAttribute("data-differ-ins");
+                        ins_attr.value = "text " + operation;
+                        ins_span.setAttributeNode(ins_attr);
+                        ins_span.innerHTML = insContent[index-1];
+                        diff_span.append(ins_span);
+                        let modText = doc.slice(0, pos[index-1]) + diff_span.outerHTML + doc.slice(pos[index-1] + length);
+                        modifiedText = modText;
+                    }
+                    oldPos = pos[index];
+                    shift = diff_span.outerHTML.length;
+                }
             }
-            diff_span.setAttributeNode(data_toggle);
-            diff_span.setAttributeNode(data_placement);
-            diff_span.setAttributeNode(data_title);
-            diff_span.append(ins_span);
-            let modText = doc.slice(0, pos[index]) + diff_span.outerHTML + doc.slice(pos[index]);
-            modifiedText = modText;
         }
     }
-};
+}
 
-function differReplaceStruct(pos, delContent, insContent, operation, author) {
+/**
+ * Handle the case where I need to execute a replace with several DEL and INS - structural
+ * @param {[number]} pos - Array of positions
+ * @param {[String]} delContent - Array of contents of deletions
+ * @param {[String]} insContent - Array of contents of insertions
+ * @param {String} operation - operation of the diff
+ * @param {String} author - edit's author
+ */
+function differReplaceStruct(pos, delContent, insContent, operation, author) {  // andrebbe modificata e impostata come differReplace
     for (const index in pos) {
         let doc = modifiedText;
         doc = doc.replace(/(?:\r\n|\r|\n)/g, "");
@@ -737,7 +924,6 @@ function differReplaceStruct(pos, delContent, insContent, operation, author) {
     }
 };
 
-// da mettere a posto
 function cleanHTML() {
     var tags = document.querySelector("#doc").querySelectorAll("*");
     for (var i = 0; i < tags.length; i++) {
@@ -801,7 +987,7 @@ function newVisualize(doc, edits) {
                                     pDelContent.push("null");
                                 }
                                 if (pPos.length === item.items.length) {
-                                    differReplace(pPos, pDelContent, pInsContent, operation, author);
+                                    differReplaceAlt(pPos, pDelContent, pInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -830,7 +1016,7 @@ function newVisualize(doc, edits) {
                                     wcDelContent.push("null");
                                 }
                                 if (wcPos.length === item.items.length) {
-                                    differReplace(wcPos, wcDelContent, wcInsContent, operation, author);
+                                    differReplaceAlt(wcPos, wcDelContent, wcInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -859,7 +1045,7 @@ function newVisualize(doc, edits) {
                                     wrDelContent.push("null");
                                 }
                                 if (wrPos.length === item.items.length) {
-                                    differReplace(wrPos, wrDelContent, wrInsContent, operation, author);
+                                    differReplaceAlt(wrPos, wrDelContent, wrInsContent, operation, author);
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
@@ -895,6 +1081,9 @@ function newVisualize(doc, edits) {
                     case "TEXTREPLACE":
                         let trPos = [], trDelContent = [], trInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
+                            if (item.id == "STRUCTURAL-0001") {
+                                console.log("y")
+                            }
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
                                 trPos.push(mechanical_diff.startPosition);
@@ -906,7 +1095,7 @@ function newVisualize(doc, edits) {
                                 trDelContent.push("null");
                             }
                             if (trPos.length === item.items.length) {
-                                differReplace(trPos, trDelContent, trInsContent, operation, author);
+                                differReplaceAlt(trPos, trDelContent, trInsContent, operation, author);
                                 //console.log(getEnclosingTag(doc, trPos, trDelContent));
                             }
                         };
@@ -970,11 +1159,12 @@ function newVisualize(doc, edits) {
                                 if (typeof mvInsPos !== "undefined" && typeof mvInsContent !== "undefined") {
                                     differInsStruct(mvDelPos, mvDelContent, operation, author);
                                 };
-                            }
-                            if (mechanical_diff.operation === "DEL") {
-                                differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
-                            } else if (mechanical_diff.operation === "INS") {
-                                differInsStruct(mechanical_diff.position, mechanical_diff.content, operation, author);
+                            } else {
+                                if (mechanical_diff.operation === "DEL") {
+                                    differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
+                                } else if (mechanical_diff.operation === "INS") {
+                                    differInsStruct(mechanical_diff.position, mechanical_diff.content, operation, author);
+                                };
                             };
                         };
                         moveCounter++;
@@ -1020,7 +1210,7 @@ function newVisualize(doc, edits) {
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
-                                differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
+                                differDelWithoutWrap(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                             };
                         };
                         joinCounter++;
@@ -1055,9 +1245,9 @@ function newVisualize(doc, edits) {
                                 }
                             } else {
                                 if (mechanical_diff.operation === "DEL") {
-                                    differDel(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
+                                    differDelStruct(mechanical_diff.startPosition, mechanical_diff.content, operation, author);
                                 } else if (mechanical_diff.operation === "INS") {
-                                    differIns(mechanical_diff.position, mechanical_diff.content, operation, author);
+                                    differInsStruct(mechanical_diff.position, mechanical_diff.content, operation, author);
                                 }
                             }
                         };

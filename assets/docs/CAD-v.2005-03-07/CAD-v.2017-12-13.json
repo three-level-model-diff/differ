@@ -21,7 +21,7 @@
     "new": "a) LETTERA SOPPRESSA DAL D.LGS. 26 AGOSTO 2016, N. 179;",
     "old": "a) allineamento dei dati: il processo di coordinamento dei dati presenti in più archivi finalizzato alla verifica della corrispondenza delle informazioni in essi contenute;",
     "items": [{
-        "id": "STRUCTURAL",
+        "id": "STRUCTURAL-0002",
         "operation": "TEXTREPLACE",
         "type": "TEXT",
         "items": [{

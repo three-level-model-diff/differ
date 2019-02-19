@@ -1,4 +1,3 @@
-// TODO: spostarsi sulle strutturali perchè il timestamp si trova li
 function showGitStyle(edits) {
     let json = {
         timestamps: []

@@ -381,7 +381,7 @@ function loadWikiStyle() {
     } else {
         
     };
-
+    
     showOldContentsAlt(results);
     showNewContentsAlt(results);
 };
@@ -528,6 +528,7 @@ function loadGitStyle() {
 
     // calls Differ library for Git style
     let res = showGitStyle(CADedits2012.responseJSON);
+    console.log(res)
     // stores the timestamps
     let ts = res.timestamps[0];
     let diffs = [];

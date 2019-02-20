@@ -939,7 +939,7 @@ function cleanHTML() {
  * @param {JSON} edits - JSON of diffs
  * @returns {JSON}
  */
-function newVisualize(doc, edits) {
+function wordStyle(doc, edits) {
 
     /**
      * Counters of diffs
@@ -1081,9 +1081,6 @@ function newVisualize(doc, edits) {
                     case "TEXTREPLACE":
                         let trPos = [], trDelContent = [], trInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
-                            if (item.id == "STRUCTURAL-0001") {
-                                console.log("y")
-                            }
                             let mechanical_diff = item.items[index];
                             if (mechanical_diff.operation === "DEL") {
                                 trPos.push(mechanical_diff.startPosition);
@@ -1140,7 +1137,7 @@ function newVisualize(doc, edits) {
                         deleteCounter++;
                         break;
 
-                    case "MOVE":    // modificare: creare funz apposita da chiamare una volta aver checkato tutte le mech. Eseguire il del del nodo e l'ins del nodo nella nuova pos
+                    case "MOVE":
                         let mvDelPos = [], mvInsPos = [], mvDelContent = [], mvInsContent = [];
                         for (let index = item.items.length -1; index >= 0; index--){
                             let mechanical_diff = item.items[index];
@@ -1153,11 +1150,9 @@ function newVisualize(doc, edits) {
                                     mvInsPos.push(mechanical_diff.position);
                                     mvInsContent.push(mechanical_diff.content);
                                 };
-                                if (typeof mvDelPos !== "undefined" && typeof mvDelContent !== "undefined") {
+                                if ((mvDelPos.length + mvInsPos.length) == item.items.length) {
                                     differDelStruct(mvDelPos, mvDelContent, operation, author);
-                                };
-                                if (typeof mvInsPos !== "undefined" && typeof mvInsContent !== "undefined") {
-                                    differInsStruct(mvDelPos, mvDelContent, operation, author);
+                                    differInsStruct(mvInsPos, mvInsContent, operation, author);
                                 };
                             } else {
                                 if (mechanical_diff.operation === "DEL") {

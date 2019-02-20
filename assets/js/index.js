@@ -12,6 +12,9 @@ let docChosen;
 // variable to contain CSS rules
 let cssRules;
 
+// string identifing the active style
+let activeStyle;
+
 // template HTML for nav-pills of style selection
 let navPills = `<section class="section section-lg">
                     <ul class="nav nav-pills nav-pills-circle" style="justify-content: center" id="tabs_2" role="tablist">
@@ -193,6 +196,19 @@ function loadButtons() {
     document.getElementById("v.2012-10-18").addEventListener("click", function(event) {
         cadButton2012pressed(event);
     });
+    if (docChosen == "CAD2017") {
+        // toggle classes in CAD buttons
+        document.getElementById("v.2017-12-13").classList.remove("not-pressed");
+        document.getElementById("v.2017-12-13").classList.add("pressed");
+        document.getElementById("v.2012-10-18").classList.remove("pressed");
+        document.getElementById("v.2012-10-18").classList.add("not-pressed");
+    } else if (docChosen == "CAD2012") {
+        // toggle classes in CAD buttons
+        document.getElementById("v.2017-12-13").classList.remove("pressed");
+        document.getElementById("v.2017-12-13").classList.add("not-pressed");
+        document.getElementById("v.2012-10-18").classList.remove("not-pressed");
+        document.getElementById("v.2012-10-18").classList.add("pressed");
+    };
 };
 
 /**
@@ -251,7 +267,7 @@ function loadCAD(edits) {
                 // store the document
                 doc = results;
                 // call Differ library to Word style
-                let res = newVisualize(doc, edits.responseJSON);
+                let res = wordStyle(doc, edits.responseJSON);
                 // store CSS rules
                 cssRules = res.css;
                 // show results
@@ -293,6 +309,7 @@ function cadButton2012pressed(event) {
     document.getElementById("v.2012-10-18").classList.add("pressed");
     // load Word style for CAD v.2012
     loadCAD(CADedits2012);
+    docChosen = "CAD2012";
 };
 
 /**
@@ -307,6 +324,38 @@ function cadButton2017pressed(event) {
     document.getElementById("v.2012-10-18").classList.add("not-pressed");
     // load Word style for CAD v.2017
     loadCAD(CADedits2017);
+    docChosen = "CAD2017";
+};
+
+/**
+ * Functions to modify document from the navbar
+ */
+function changeCAD2012(event) {
+    event.preventDefault();
+
+    docChosen = "CAD2012";
+
+    if (activeStyle == "Word") {
+        loadWordStyle();
+    } else if (activeStyle == "Wiki") {
+        loadWikiStyle();
+    } else if (activeStyle == "Git") {
+        loadGitStyle();
+    };
+};
+
+function changeCAD2017(event) {
+    event.preventDefault();
+
+    docChosen = "CAD2017";
+
+    if (activeStyle == "Word") {
+        loadWordStyle();
+    } else if (activeStyle == "Wiki") {
+        loadWikiStyle();
+    } else if (activeStyle == "Git") {
+        loadGitStyle();
+    };
 };
 
 /**
@@ -346,6 +395,8 @@ function loadWordStyle() {
         loadCAD(CADedits2012);
     };
 
+    activeStyle = "Word";
+
 };
 
 /**
@@ -367,9 +418,18 @@ function loadWikiStyle() {
     let div = document.createElement("div");
     div.insertAdjacentHTML("afterbegin", wiki);
 
+    let versionBanner = document.createElement("p");
+    versionBanner.classList.add("text-center");
+    if (docChosen == "CAD2017") {
+        versionBanner.innerText = "v. 2017-12-13";
+    } else if (docChosen == "CAD2012") {
+        versionBanner.innerText = "v. 2012-10-18";
+    };
+
     let mod = document.getElementById("mod");
     mod.removeChild(mod.childNodes[2]);
 
+    div.prepend(versionBanner);
     mod.appendChild(div);
 
     if (docChosen=="CAD2017") {
@@ -379,11 +439,13 @@ function loadWikiStyle() {
         // calls the library for Wiki style CAD v.2012
         results = wikiStyle(CADedits2012.responseJSON);
     } else {
-        
+        // calls for others docs
     };
     
     showOldContentsAlt(results);
     showNewContentsAlt(results);
+
+    activeStyle = "Wiki";
 };
 
 /**
@@ -523,12 +585,27 @@ function loadGitStyle() {
     let div = document.createElement("div");
     div.insertAdjacentHTML("afterbegin", git);
 
+    let versionBanner = document.createElement("p");
+    versionBanner.classList.add("text-center");
+    if (docChosen == "CAD2017") {
+        versionBanner.innerText = "v. 2017-12-13";
+    } else if (docChosen == "CAD2012") {
+        versionBanner.innerText = "v. 2012-10-18";
+    };
+    div.prepend(versionBanner);
+
     let mod = document.getElementById("mod");
     mod.replaceChild(div, mod.childNodes[2]);
 
-    // calls Differ library for Git style
-    let res = showGitStyle(CADedits2012.responseJSON);
-    console.log(res)
+    let res;
+    if (docChosen == "CAD2017") {
+        // calls Differ library for Git style
+        
+    } else if (docChosen == "CAD2012") {
+        // calls Differ library for Git style
+        res = showGitStyle(CADedits2012.responseJSON);
+    }
+    
     // stores the timestamps
     let ts = res.timestamps[0];
     let diffs = [];
@@ -561,8 +638,11 @@ function loadGitStyle() {
                 div.append(p_old)
                 let hr = document.createElement("hr");
                 div.append(hr);
-            }
+            };
             $("#git").append(div);
-        }
-    }
+        };
+    };
+
+    activeStyle = "Git";
+
 };
